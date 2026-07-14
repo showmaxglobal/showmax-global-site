@@ -344,6 +344,9 @@ footer{background:var(--black-soft);border-top:1px solid var(--rule);padding:3re
 @media(max-width:520px){.wa-btn{width:48px;height:48px;bottom:1.25rem;left:1.25rem}.scroll-top{bottom:1.25rem;right:1.25rem}}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
 </style>
+<!-- SHO-3 GA4 analytics (privacy: IP anonymized via Google defaults) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=GA4_MEASUREMENT_ID"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','GA4_MEASUREMENT_ID');</script>
 </head>
 <body>
 <a class="sr-only" href="#main">Skip to content</a>
@@ -557,7 +560,7 @@ footer{background:var(--black-soft);border-top:1px solid var(--rule);padding:3re
     </div>
     <div class="foot-links">
       <div class="foot-col"><h5>Services</h5><a href="#services">Branding &amp; Advertisement</a><a href="#services">Digital Marketing</a><a href="#services">Website &amp; SEO</a><a href="#services">Social Media</a><a href="#services">Video Ads Creation</a><a href="#services">Content Strategy</a><a href="#services">Brand Promotion</a><a href="trade-facilitation.html">UAE&ndash;India Trade</a></div>
-      <div class="foot-col"><h5>Company</h5><a href="#about">About us</a><a href="#packages">Packages</a><a href="#process">Our process</a><a href="#faq">FAQ</a><a href="#contact">Contact</a></div>
+      <div class="foot-col"><h5>Company</h5><a href="#about">About us</a><a href="#packages">Packages</a><a href="#process">Our process</a><a href="/blog/">Blog</a><a href="#faq">FAQ</a><a href="#contact">Contact</a></div>
       <div class="foot-col"><h5>Offices</h5><a href="https://www.google.com/maps/search/?api=1&query=16%2C%20Joshi%20Colony%2C%20Near%20Anand%20Hospital%2C%20B.K%20Sindhi%20colony%2C%20Indore%20%28M.P%29%20452001" target="_blank" rel="noopener">Indore, India &#8599;</a><a href="https://www.google.com/maps/search/?api=1&query=SPC%20Free%20Zone%2C%20E311%2C%20Sheikh%20Mohammed%20Bin%20Zayed%20Rd%2C%20AL%20Zahia%2C%20Sharjah%2C%20U.A.E" target="_blank" rel="noopener">Sharjah, UAE &#8599;</a><a href="tel:+917024397999">+91 70243 97999</a><a href="tel:+971523406199">+971 52 340 6199</a></div>
       <div class="foot-col"><h5>Connect</h5><a href="https://www.instagram.com/showmax_global" target="_blank" rel="noopener">Instagram</a><a href="https://www.facebook.com/share/1iaK2ngsa5/" target="_blank" rel="noopener">Facebook</a><a href="https://www.linkedin.com/company/showmax-global/" target="_blank" rel="noopener">LinkedIn</a><a href="https://wa.me/917024397999?text=Hi%20Showmax%20Global%21" target="_blank" rel="noopener">WhatsApp</a><a href="tel:+917024397999">Call us</a><a href="mailto:showmaxglobal@gmail.com">Email</a></div>
     </div>
@@ -640,6 +643,7 @@ var SERVICES=[
   ideal:"Indian businesses entering the UAE, and UAE businesses entering India."}
 ];
 var WA="https://wa.me/917024397999";
+var W3F_KEY="WEB3FORMS_ACCESS_KEY";
 var CHECK='<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F5CB1F" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>';
 
 // ---- Render service cards ----
@@ -720,16 +724,32 @@ form.addEventListener('submit',function(e){
   });
   if(email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){form.email.classList.add('err');ok=false}
   if(!ok)return;
-  var txt="New enquiry for Showmax Global%0A%0A"+
-    "Name: "+encodeURIComponent(name)+"%0A"+
-    "Phone: "+encodeURIComponent(phone)+"%0A"+
-    "Email: "+encodeURIComponent(email)+"%0A"+
-    "Service: "+encodeURIComponent(service||"Not specified")+"%0A"+
-    "Message: "+encodeURIComponent(message||"\u2014");
-  window.open(WA+"?text="+txt,"_blank");
-  document.getElementById('formSuccess').style.display='block';
-  form.reset();
-  setTimeout(function(){document.getElementById('formSuccess').style.display='none'},6000);
+  function waFallback(){
+    var txt="New enquiry for Showmax Global%0A%0A"+
+      "Name: "+encodeURIComponent(name)+"%0A"+
+      "Phone: "+encodeURIComponent(phone)+"%0A"+
+      "Email: "+encodeURIComponent(email)+"%0A"+
+      "Service: "+encodeURIComponent(service||"Not specified")+"%0A"+
+      "Message: "+encodeURIComponent(message||"\u2014");
+    window.open(WA+"?text="+txt,"_blank");
+  }
+  function showOK(){
+    if(window.gtag){gtag('event','generate_lead',{service:service||'Not specified'});}
+    document.getElementById('formSuccess').style.display='block';
+    form.reset();
+    setTimeout(function(){document.getElementById('formSuccess').style.display='none'},6000);
+  }
+  var btn=form.querySelector('button[type=submit]'),orig=btn?btn.textContent:'';
+  if(btn){btn.disabled=true;btn.textContent='Sending\u2026';}
+  fetch('https://api.web3forms.com/submit',{method:'POST',
+    headers:{'Content-Type':'application/json',Accept:'application/json'},
+    body:JSON.stringify({access_key:W3F_KEY,subject:'New enquiry \u2014 Showmax Global',
+      from_name:name,name:name,phone:phone,email:email,
+      service:service||'Not specified',message:message||'\u2014'})})
+   .then(function(r){return r.json();})
+   .then(function(res){ if(res&&res.success){showOK();}else{waFallback();showOK();} })
+   .catch(function(){ waFallback(); showOK(); })
+   .finally(function(){ if(btn){btn.disabled=false;btn.textContent=orig;} });
 });
 
 // ---- Pricing region toggle (INR / AED) ----

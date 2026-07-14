@@ -34,3 +34,36 @@ npx --yes wrangler@latest pages deploy site --project-name=showmax-global
 
 Recommended host: **Cloudflare Pages** — free tier, automatic HTTPS, easy custom domain,
 token-based (no interactive browser login required from the agent).
+
+---
+
+## UPDATE (2026-07-07) — confirmed live host is **Netlify**
+
+Live probe of `https://showmaxglobal.com/` returns `server: Netlify` (HTTP 200). The site is
+already published on Netlify, so **new content deploys through the existing Netlify site** — do
+NOT create a new host. `/blog/` and the 4 article URLs currently return **404** (not yet shipped).
+
+### SHO-106 status: approved, blocked only on a Netlify credential
+- **Board approval gate #3 (live-site modification): GRANTED** (approval_approved, 2026-07-06).
+  The policy blocker is cleared.
+- **Remaining blocker (technical):** no agent holds a Netlify auth token, there is no git remote
+  wired to this repo, and no `netlify` CLI is installed locally. Agents cannot log in or hold the
+  credential.
+
+### Single unblock action for the owner (pick ONE)
+1. **Provide a token** (preferred, lets an agent finish): supply a **Netlify Personal Access
+   Token** (`NETLIFY_AUTH_TOKEN`) + the **Site ID** for showmaxglobal.com. Then deploy is:
+   ```bash
+   # env: NETLIFY_AUTH_TOKEN, NETLIFY_SITE_ID
+   npx --yes netlify-cli@latest deploy --prod --dir=site --site "$NETLIFY_SITE_ID"
+   ```
+2. **Owner self-deploys** the built `site/` directory from branch `sho-106-blog` (commit `0b40d47`):
+   run the command above after `netlify login`, OR drag the `site/` folder onto the Netlify site's
+   Deploys page.
+3. **Wire git deploy:** connect the Netlify site to this repo and merge `sho-106-blog` → `main`
+   (Netlify auto-builds `publish = site`).
+
+### Post-deploy verification (any path)
+`/blog/`, the 4 `/blog/<slug>/` URLs, and `/sitemap.xml` (must now contain the 4 blog `<loc>`s)
+should all return 200; then submit `sitemap.xml` to Google Search Console + Bing (DoD 5) and post
+the 4 live URLs to SHO-106 (DoD 6).
