@@ -139,6 +139,11 @@ footer{background:var(--black-soft);border-top:1px solid var(--rule);padding:2.5
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
 
 /* SMX-LOGO-CSS — shared Showmax lockup (SVG wordmark + real globe) */
+/* logo art images */
+.smx-img{display:block;height:auto;width:auto;max-width:100%}
+.smx-img-nav{height:30px;transition:transform .4s cubic-bezier(.34,1.56,.64,1)}
+a:hover>.smx-img-nav{transform:scale(1.04)}
+.smx-img-foot{height:60px;width:auto;margin-bottom:.4rem}
 .smx-logo{display:inline-flex;align-items:center;line-height:1;text-decoration:none;vertical-align:middle}
 .smx-word{font-family:'Archivo',sans-serif;font-weight:900;color:#fff;display:inline-flex;align-items:center;letter-spacing:-.015em;white-space:nowrap}
 .smx-globe{height:1.2em;width:1.2em;object-fit:contain;margin:0 -.03em;transform:translateY(.05em);filter:drop-shadow(0 2px 9px rgba(0,0,0,.45));transition:transform .5s cubic-bezier(.34,1.56,.64,1)}
@@ -190,7 +195,7 @@ main.blog-index{max-width:1000px;margin:0 auto;padding:7rem clamp(1.1rem,5vw,2re
 </head>
 <body>
 <nav id="nav">
-  <a href="/" aria-label="Showmax Global home"><span class="smx-logo smx-nav" role="img" aria-label="Showmax Global"><span class="smx-word" aria-hidden="true">SH<img class="smx-globe" src="/showmax-globe.png" alt="" aria-hidden="true" width="166" height="166" decoding="async">WMAX</span></span></a>
+  <a href="/" aria-label="Showmax Global home"><img class="smx-img smx-img-nav" src="/showmax-wordmark.png" alt="Showmax Global" width="730" height="131" decoding="async"></a>
   <div class="nav-actions">
     <a href="/" class="back">&larr; Back to main site</a>
     <a href="https://wa.me/917024397999?text=Hi%20Showmax%20Global%2C%20I%27d%20like%20to%20discuss%20UAE%E2%80%93India%20trade%20facilitation." target="_blank" rel="noopener" class="nav-cta">Get in touch</a>
@@ -247,7 +252,7 @@ main.blog-index{max-width:1000px;margin:0 auto;padding:7rem clamp(1.1rem,5vw,2re
 </main>
 <footer>
   <div class="foot-row">
-    <a href="/"><span class="smx-logo smx-foot" role="img" aria-label="Showmax Global"><span class="smx-word" aria-hidden="true">SH<img class="smx-globe" src="/showmax-globe.png" alt="" aria-hidden="true" width="166" height="166" decoding="async">WMAX</span></span></a>
+    <a href="/"><img class="smx-img smx-img-foot" src="/showmax-lockup.png" alt="Showmax Global — Your Gateway To Global Growth" width="834" height="225" loading="lazy" decoding="async"></a>
     <nav class="foot-nav">
       <a href="/">Home</a>
       <a href="/#services">Services</a>
