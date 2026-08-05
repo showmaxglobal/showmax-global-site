@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#0A0A0B">
+<meta name="theme-color" content="#08080A">
 <meta name="robots" content="index, follow">
 <meta name="author" content="Showmax Global">
 <meta name="geo.region" content="IN-MP">
@@ -26,10 +26,9 @@
 <meta name="twitter:image" content="https://www.showmaxglobal.com/og-image.jpg">
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230A0A0B'/%3E%3Ccircle cx='32' cy='32' r='20' fill='%23F5CB1F'/%3E%3Cg fill='none' stroke='%23B2871B' stroke-width='1.6'%3E%3Cellipse cx='32' cy='32' rx='9' ry='20'/%3E%3Cellipse cx='32' cy='32' rx='20' ry='9'/%3E%3Cline x1='12' y1='32' x2='52' y2='32'/%3E%3Cline x1='32' y1='12' x2='32' y2='52'/%3E%3C/g%3E%3Ccircle cx='32' cy='32' r='12.5' fill='%237E1019'/%3E%3Cpath d='M28.5 26.5 L38.5 32 L28.5 37.5 Z' fill='%23fff'/%3E%3C/svg%3E">
 <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230A0A0B'/%3E%3Ccircle cx='32' cy='32' r='20' fill='%23F5CB1F'/%3E%3Cg fill='none' stroke='%23B2871B' stroke-width='1.6'%3E%3Cellipse cx='32' cy='32' rx='9' ry='20'/%3E%3Cellipse cx='32' cy='32' rx='20' ry='9'/%3E%3Cline x1='12' y1='32' x2='52' y2='32'/%3E%3Cline x1='32' y1='12' x2='32' y2='52'/%3E%3C/g%3E%3Ccircle cx='32' cy='32' r='12.5' fill='%237E1019'/%3E%3Cpath d='M28.5 26.5 L38.5 32 L28.5 37.5 Z' fill='%23fff'/%3E%3C/svg%3E">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://images.unsplash.com">
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="preload" href="assets/fonts/archivo-var.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/inter-var.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/instrument-serif-italic.woff2" as="font" type="font/woff2" crossorigin>
 <script type="application/ld+json">
 {
   "@context":"https://schema.org",
@@ -71,7 +70,7 @@
   "sameAs":["https://www.instagram.com/showmax_global","https://www.facebook.com/share/1iaK2ngsa5/","https://www.linkedin.com/company/showmax-global/"],
   "hasOfferCatalog":{
     "@type":"OfferCatalog",
-    "name":"Digital Marketing &amp; Branding Services",
+    "name":"Digital Marketing & Branding Services",
     "itemListElement":[
       {"@type":"Offer","itemOffered":{"@type":"Service","name":"Branding & Advertisement"}},
       {"@type":"Offer","itemOffered":{"@type":"Service","name":"Digital Marketing"}},
@@ -91,604 +90,963 @@
   "@type":"FAQPage",
   "mainEntity":[
     {"@type":"Question","name":"Where is Showmax Global located?","acceptedAnswer":{"@type":"Answer","text":"We have two offices: our India office at 16, Joshi Colony, Near Anand Hospital, B.K Sindhi Colony, Indore (M.P) 452001, and our UAE office at SPC Free Zone, E311, Sheikh Mohammed Bin Zayed Rd, Al Zahia, Sharjah. We work with clients across India, the UAE and globally."}},
-    {"@type":"Question","name":"What services does Showmax Global offer?","acceptedAnswer":{"@type":"Answer","text":"We offer brand identity, digital marketing, website design and SEO, social media management, content strategy and brand promotion."}},
+    {"@type":"Question","name":"What services does Showmax Global offer?","acceptedAnswer":{"@type":"Answer","text":"We offer branding and advertisement, digital marketing, website design and SEO, social media management, video ads creation, content strategy, brand promotion and UAE-India trade facilitation."}},
     {"@type":"Question","name":"How much does a project cost?","acceptedAnswer":{"@type":"Answer","text":"Every project is quoted individually based on scope. We offer Starter, Growth and Premium packages, plus fully custom engagements. Contact us for a free quote."}},
     {"@type":"Question","name":"How soon will I see results?","acceptedAnswer":{"@type":"Answer","text":"Paid advertising can drive traffic almost immediately, while SEO and organic growth typically show measurable results within 3 to 6 months of consistent work."}}
   ]
 }
 </script>
 <style>
+/* ============================================================
+   SHOWMAX GLOBAL — premium design system
+   ============================================================ */
+@font-face{font-family:'Archivo';src:url('assets/fonts/archivo-var.woff2') format('woff2');font-weight:500 900;font-style:normal;font-display:swap}
+@font-face{font-family:'Instrument Serif';src:url('assets/fonts/instrument-serif-italic.woff2') format('woff2');font-weight:400;font-style:italic;font-display:swap}
+@font-face{font-family:'Inter';src:url('assets/fonts/inter-var.woff2') format('woff2');font-weight:300 600;font-style:normal;font-display:swap}
+
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
-  --gold:#F5CB1F;--gold-deep:#B2871B;--gold-soft:#FFE08A;
-  --blue:#1B4090;--blue-bright:#2C5FC9;
-  --maroon:#6B0C14;--maroon-bright:#9E1722;
-  --black:#0A0A0B;--black-soft:#141417;--black-card:#1A1A1E;
-  --white:#FFFFFF;--grey:#9A9AA2;--grey-dim:#67676E;
-  --rule:rgba(255,255,255,0.10);--rule-strong:rgba(255,255,255,0.18);
-  --section-pad:clamp(3.5rem,8vw,7rem);
+  --bg:#08080A;--bg-1:#0C0C10;--bg-2:#111118;
+  --glass:rgba(255,255,255,.035);--glass-2:rgba(255,255,255,.065);
+  --line:rgba(255,255,255,.08);--line-2:rgba(255,255,255,.17);
+  --gold:#F5CB1F;--gold-soft:#FFE08A;--gold-deep:#B2871B;
+  --blue:#2C5FC9;--blue-deep:#1B4090;--maroon:#6B0C14;
+  --ink:#F5F5F7;--mut:#A7A7B1;--dim:#8A8A94;
+  --font-d:'Archivo',ui-sans-serif,system-ui,sans-serif;
+  --font-s:'Instrument Serif',Georgia,serif;
+  --font-b:'Inter',ui-sans-serif,system-ui,sans-serif;
+  --pad:clamp(1.25rem,4.5vw,4rem);
+  --sect:clamp(6.5rem,11vw,10.5rem);
+  --r:18px;--r-lg:28px;
+  --ease:cubic-bezier(.22,.61,.21,1);
+  --ease-io:cubic-bezier(.77,0,.18,1);
 }
-html{scroll-behavior:smooth;scroll-padding-top:80px}
-body{font-family:'Inter',sans-serif;background:var(--black);color:var(--white);line-height:1.6;overflow-x:hidden;-webkit-font-smoothing:antialiased}
-img{max-width:100%;display:block}
-.wrap{padding-left:clamp(1.1rem,5vw,4rem);padding-right:clamp(1.1rem,5vw,4rem)}
-.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}
+html{scroll-behavior:smooth;scroll-padding-top:96px}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{font-family:var(--font-b);background:var(--bg);color:var(--ink);line-height:1.65;overflow-x:hidden;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+img,video{max-width:100%;display:block}
 a{-webkit-tap-highlight-color:transparent}
-
-/* NAV */
-nav{position:fixed;top:0;left:0;right:0;z-index:100;height:72px;display:flex;align-items:center;justify-content:space-between;padding:0 clamp(1.1rem,5vw,4rem);background:rgba(10,10,11,.85);backdrop-filter:blur(14px);border-bottom:1px solid transparent;transition:border-color .3s,background .3s}
-nav.scrolled{border-color:var(--rule);background:rgba(10,10,11,.96)}
-.nav-logo{display:flex;align-items:center;text-decoration:none}
-.nav-logo img{height:28px;width:auto}
-.nav-links{display:flex;align-items:center;gap:2rem;list-style:none}
-.nav-links a{font-size:.9rem;color:var(--grey);text-decoration:none;font-weight:500;transition:color .2s}
-.nav-links a:hover{color:var(--white)}
-.nav-cta{font-size:.85rem;font-weight:700;padding:.6rem 1.4rem;background:var(--gold);color:var(--black)!important;border-radius:3px;transition:background .2s}
-.nav-cta:hover{background:var(--gold-soft)}
-.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:6px}
-.hamburger span{display:block;width:24px;height:2px;background:var(--white);transition:.3s}
-.hamburger.active span:nth-child(1){transform:translateY(7px) rotate(45deg)}
-.hamburger.active span:nth-child(2){opacity:0}
-.hamburger.active span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
-@media(max-width:920px){
-  .nav-links{display:none;position:fixed;top:72px;left:0;right:0;background:var(--black-soft);flex-direction:column;gap:0;border-bottom:1px solid var(--rule);padding:.5rem 0;max-height:calc(100vh - 72px);overflow:auto}
-  .nav-links.open{display:flex}
-  .nav-links li{width:100%;text-align:center}
-  .nav-links a{display:block;padding:1rem 2rem}
-  .nav-cta{display:block;margin:.6rem 1.5rem;border-radius:3px}
-  .hamburger{display:flex}
+::selection{background:var(--gold);color:#0A0A0B}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:4px}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}
+.skip-link{position:fixed;top:-100px;left:1rem;z-index:400;background:var(--gold);color:#0A0A0B;font-weight:700;font-size:.85rem;padding:.7rem 1.2rem;border-radius:99px;text-decoration:none;transition:top .3s}
+.skip-link:focus{top:1rem}
+@media(hover:hover){
+  ::-webkit-scrollbar{width:10px}
+  ::-webkit-scrollbar-track{background:var(--bg)}
+  ::-webkit-scrollbar-thumb{background:#26262E;border-radius:99px;border:2px solid var(--bg)}
+  ::-webkit-scrollbar-thumb:hover{background:#3A3A44}
 }
+.wrap{padding-left:var(--pad);padding-right:var(--pad)}
+.container{max-width:1320px;margin-inline:auto}
 
-/* HERO */
-.hero{min-height:100svh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:96px clamp(1.1rem,5vw,4rem) 4rem;position:relative;overflow:hidden}
-.hero-glow{position:absolute;top:42%;left:50%;transform:translate(-50%,-50%);width:min(900px,120vw);height:min(900px,120vw);background:radial-gradient(circle,rgba(245,203,31,.14),rgba(27,64,144,.08) 38%,transparent 66%);z-index:0;pointer-events:none}
-.hero-grid-bg{position:absolute;inset:0;background-image:linear-gradient(var(--rule) 1px,transparent 1px),linear-gradient(90deg,var(--rule) 1px,transparent 1px);background-size:64px 64px;-webkit-mask-image:radial-gradient(circle at 50% 42%,#000,transparent 70%);mask-image:radial-gradient(circle at 50% 42%,#000,transparent 70%);opacity:.5;z-index:0}
-.hero-logo{max-width:min(600px,86vw);width:100%;height:auto;position:relative;z-index:2;opacity:0;animation:fadeUp .9s .15s forwards;filter:drop-shadow(0 8px 40px rgba(245,203,31,.12))}
-.hero-tagline{font-family:'Archivo',sans-serif;font-size:clamp(1.05rem,2.4vw,1.6rem);font-weight:600;margin-top:2.25rem;position:relative;z-index:2;opacity:0;animation:fadeUp .8s .4s forwards;max-width:22ch;line-height:1.35}
-.hero-tagline .hl{color:var(--gold)}
-.hero-sub{font-size:clamp(.95rem,1.4vw,1.08rem);color:var(--grey);max-width:46ch;margin-top:1.25rem;font-weight:300;position:relative;z-index:2;opacity:0;animation:fadeUp .8s .55s forwards}
-.hero-actions{display:flex;gap:1rem;margin-top:2.5rem;position:relative;z-index:2;opacity:0;animation:fadeUp .8s .7s forwards;flex-wrap:wrap;justify-content:center}
-.btn-gold{display:inline-flex;align-items:center;gap:.55rem;font-size:.95rem;font-weight:700;padding:.95rem 2.1rem;background:var(--gold);color:var(--black);text-decoration:none;border-radius:3px;transition:transform .15s,background .2s;border:none;cursor:pointer;font-family:'Inter',sans-serif}
-.btn-gold:hover{background:var(--gold-soft);transform:translateY(-2px)}
-.btn-outline{display:inline-flex;align-items:center;gap:.55rem;font-size:.95rem;font-weight:600;padding:.95rem 2.1rem;border:1px solid var(--rule-strong);color:var(--white);text-decoration:none;border-radius:3px;transition:border-color .2s,background .2s;cursor:pointer;background:none;font-family:'Inter',sans-serif}
-.btn-outline:hover{border-color:var(--gold);background:rgba(245,203,31,.06)}
-.hero-scroll{position:absolute;bottom:1.6rem;left:50%;transform:translateX(-50%);z-index:2;opacity:0;animation:fadeIn 1s 1.1s forwards;color:var(--grey-dim);font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;display:flex;flex-direction:column;align-items:center;gap:.5rem}
-.hero-scroll::after{content:'';width:1px;height:30px;background:linear-gradient(var(--gold),transparent);animation:scrollLine 2s ease-in-out infinite}
-@keyframes scrollLine{0%,100%{opacity:.3;transform:scaleY(.6)}50%{opacity:1;transform:scaleY(1)}}
+/* Serif editorial accent */
+.em{font-family:var(--font-s);font-style:italic;font-weight:400;letter-spacing:.005em;line-height:.9;font-size:1.05em}
+.em.g{background:linear-gradient(115deg,#FFE59A 8%,var(--gold) 46%,#E3B31A 82%);-webkit-background-clip:text;background-clip:text;color:transparent}
 
-/* BANNER STRIP */
-.banner-strip{background:var(--blue);overflow:hidden;padding:.85rem 0}
-.banner-track{display:flex;gap:2.5rem;white-space:nowrap;animation:marquee 26s linear infinite;align-items:center;width:max-content}
-.banner-item{font-family:'Archivo',sans-serif;font-size:.85rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#fff;display:flex;align-items:center;gap:1rem;flex-shrink:0}
-.banner-star{color:var(--gold);font-size:.7rem}
+/* ---------- Buttons ---------- */
+.btn{position:relative;display:inline-flex;align-items:center;justify-content:center;gap:.6rem;font-family:var(--font-b);font-size:.95rem;font-weight:600;padding:1rem 2.1rem;border-radius:99px;text-decoration:none;cursor:pointer;border:none;transition:transform .35s var(--ease),box-shadow .35s var(--ease),background .3s,border-color .3s,color .3s;will-change:transform}
+.btn .ar{display:inline-block;transition:transform .35s var(--ease)}
+.btn:hover .ar{transform:translateX(4px)}
+.btn-gold{background:linear-gradient(135deg,#FFDD55,var(--gold) 45%,#DFAC17);color:#0A0A0B;font-weight:700;box-shadow:0 14px 38px -14px rgba(245,203,31,.5),inset 0 1px 0 rgba(255,255,255,.5)}
+.btn-gold:hover{transform:translateY(-2px);box-shadow:0 22px 48px -14px rgba(245,203,31,.62),inset 0 1px 0 rgba(255,255,255,.5)}
+.btn-gold:active{transform:translateY(0)}
+.btn-ghost{background:rgba(255,255,255,.04);color:var(--ink);border:1px solid var(--line-2);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
+.btn-ghost:hover{border-color:rgba(245,203,31,.55);background:rgba(245,203,31,.07);transform:translateY(-2px)}
+
+/* ---------- Eyebrow / section headers ---------- */
+.eyebrow{display:inline-flex;align-items:center;gap:.7rem;font-family:var(--font-d);font-size:.72rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin-bottom:1.4rem}
+.eyebrow::before{content:'';width:26px;height:1px;background:linear-gradient(90deg,var(--gold),transparent)}
+.eyebrow .no{color:var(--dim);font-weight:600;letter-spacing:.14em}
+.s-title{font-family:var(--font-d);font-size:clamp(2.3rem,5.2vw,4.3rem);font-weight:800;line-height:1.04;letter-spacing:-.025em;text-wrap:balance}
+.s-lead{font-size:clamp(1rem,1.3vw,1.13rem);color:var(--mut);max-width:54ch;line-height:1.8;font-weight:300;margin-top:1.4rem}
+.s-lead strong{color:var(--ink);font-weight:500}
+
+/* ---------- Preloader ---------- */
+.loader{position:fixed;inset:0;z-index:300;background:var(--bg);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1.4rem;transition:transform .9s var(--ease-io),visibility .9s}
+.loader svg{width:72px;height:72px;filter:drop-shadow(0 0 26px rgba(245,203,31,.35))}
+.loader .ring{stroke-dasharray:126;stroke-dashoffset:126;animation:ldraw 1.1s .1s var(--ease) forwards}
+.loader .mer{opacity:0;animation:lfade .5s .7s forwards}
+.loader .tri{opacity:0;animation:lfade .5s .9s forwards}
+.loader-word{font-family:var(--font-d);font-weight:700;font-size:.78rem;letter-spacing:.55em;text-indent:.55em;color:var(--mut);text-transform:uppercase;opacity:0;animation:lfade .7s .55s forwards}
+@keyframes ldraw{to{stroke-dashoffset:0}}
+@keyframes lfade{to{opacity:1}}
+html.loaded .loader{transform:translateY(-100%);visibility:hidden}
+html.no-loader .loader{display:none}
+
+/* ---------- Cursor ring ---------- */
+.cursor{position:fixed;top:0;left:0;z-index:290;width:36px;height:36px;margin:-18px 0 0 -18px;border:1.5px solid rgba(245,203,31,.65);border-radius:50%;pointer-events:none;opacity:0;transition:opacity .3s,transform .22s var(--ease),border-color .3s,background .3s;will-change:transform}
+.cursor.on{opacity:1}
+.cursor.grow{transform:scale(1.7);border-color:rgba(245,203,31,.9);background:rgba(245,203,31,.07)}
+@media(pointer:coarse){.cursor{display:none}}
+
+/* ---------- Scroll progress ---------- */
+.progress{position:fixed;top:0;left:0;right:0;height:2px;z-index:210;background:transparent}
+.progress span{display:block;height:100%;width:100%;background:linear-gradient(90deg,var(--gold-deep),var(--gold) 55%,var(--gold-soft));transform-origin:0 50%;transform:scaleX(0)}
+
+/* ---------- Nav ---------- */
+/* Sits above .menu so the logo and the close button stay reachable over the overlay. */
+nav{position:fixed;top:0;left:0;right:0;z-index:260;height:80px;display:flex;align-items:center;justify-content:space-between;padding:0 var(--pad);transition:background .45s,border-color .45s,height .45s;border-bottom:1px solid transparent;background:linear-gradient(180deg,rgba(8,8,10,.62),rgba(8,8,10,0))}
+nav.scrolled{height:68px;background:rgba(8,8,10,.9);backdrop-filter:blur(22px) saturate(1.4);-webkit-backdrop-filter:blur(22px) saturate(1.4);border-color:var(--line)}
+body.menu-open nav{background:transparent;border-color:transparent;backdrop-filter:none;-webkit-backdrop-filter:none}
+.nav-logo{display:flex;align-items:center;text-decoration:none}
+.nav-logo img{height:30px;width:auto;filter:drop-shadow(0 2px 14px rgba(245,203,31,.22));transition:transform .5s var(--ease),filter .4s}
+.nav-logo:hover img{transform:translateY(-1px);filter:drop-shadow(0 3px 20px rgba(245,203,31,.4))}
+nav.scrolled .nav-logo img{height:27px}
+.nav-links{display:flex;align-items:center;gap:2.1rem;list-style:none}
+.nav-links a:not(.nav-cta){position:relative;font-size:.9rem;color:var(--mut);text-decoration:none;font-weight:500;padding:.4rem 0;transition:color .3s}
+.nav-links a:not(.nav-cta)::after{content:'';position:absolute;left:0;bottom:0;width:100%;height:1px;background:var(--gold);transform:scaleX(0);transform-origin:100% 50%;transition:transform .45s var(--ease)}
+.nav-links a:not(.nav-cta):hover{color:var(--ink)}
+.nav-links a:not(.nav-cta):hover::after{transform:scaleX(1);transform-origin:0 50%}
+.nav-cta{display:inline-flex;align-items:center;gap:.5rem;font-size:.85rem;font-weight:700;padding:.72rem 1.5rem;background:linear-gradient(135deg,#FFDD55,var(--gold) 45%,#DFAC17);color:#0A0A0B!important;border-radius:99px;text-decoration:none;box-shadow:0 10px 26px -10px rgba(245,203,31,.5);transition:transform .35s var(--ease),box-shadow .35s var(--ease)}
+.nav-cta:hover{transform:translateY(-2px);box-shadow:0 16px 34px -10px rgba(245,203,31,.6)}
+.hamburger{display:none;position:relative;z-index:260;width:44px;height:44px;flex-direction:column;align-items:center;justify-content:center;gap:6px;cursor:pointer;background:rgba(255,255,255,.04);border:1px solid var(--line-2);border-radius:50%;transition:background .3s}
+.hamburger span{display:block;width:18px;height:1.6px;background:var(--ink);transition:transform .4s var(--ease),opacity .3s}
+body.menu-open .hamburger span:nth-child(1){transform:translateY(7.6px) rotate(45deg)}
+body.menu-open .hamburger span:nth-child(2){opacity:0}
+body.menu-open .hamburger span:nth-child(3){transform:translateY(-7.6px) rotate(-45deg)}
+
+/* Mobile menu overlay */
+.menu{position:fixed;inset:0;z-index:250;background:rgba(8,8,10,.985);backdrop-filter:blur(26px);-webkit-backdrop-filter:blur(26px);display:flex;flex-direction:column;justify-content:center;padding:6rem var(--pad) 3rem;visibility:hidden;opacity:0;overflow-y:auto;transition:opacity .5s var(--ease),visibility .5s}
+body.menu-open .menu{visibility:visible;opacity:1}
+.menu ul{list-style:none;display:flex;flex-direction:column;gap:.35rem}
+.menu a{display:inline-flex;align-items:baseline;gap:1rem;font-family:var(--font-d);font-size:clamp(2rem,8vw,3rem);font-weight:800;letter-spacing:-.02em;color:var(--ink);text-decoration:none;padding:.35rem 0;opacity:0;transform:translateY(26px);transition:opacity .5s var(--ease),transform .6s var(--ease),color .3s}
+.menu a .mn{font-family:var(--font-d);font-size:.8rem;font-weight:600;color:var(--dim);letter-spacing:.1em}
+.menu a:hover{color:var(--gold)}
+body.menu-open .menu a{opacity:1;transform:none}
+.menu li:nth-child(1) a{transition-delay:.05s}.menu li:nth-child(2) a{transition-delay:.1s}.menu li:nth-child(3) a{transition-delay:.15s}.menu li:nth-child(4) a{transition-delay:.2s}.menu li:nth-child(5) a{transition-delay:.25s}.menu li:nth-child(6) a{transition-delay:.3s}
+.menu-foot{margin-top:auto;padding-top:2rem;border-top:1px solid var(--line);display:flex;flex-wrap:wrap;gap:1rem 2rem;font-size:.85rem;color:var(--mut)}
+.menu-foot a{color:var(--mut);text-decoration:none;font-size:.85rem}
+.menu-foot a:hover{color:var(--gold)}
+
+/* ---------- Hero ---------- */
+/* Bottom padding also has to clear the absolutely-positioned scroll cue. */
+.hero{position:relative;min-height:100svh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:110px var(--pad) 7.5rem;overflow:hidden;isolation:isolate}
+.hero-media{position:absolute;inset:-1px;z-index:-3}
+.hero-media img,.hero-media video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero-media video{opacity:0;transition:opacity 1.2s ease}
+.hero-media video.playing{opacity:1}
+.hero-shade{position:absolute;inset:0;z-index:-2;background:
+  radial-gradient(120% 90% at 50% 30%,transparent 30%,rgba(8,8,10,.55) 78%,var(--bg) 100%),
+  linear-gradient(180deg,rgba(8,8,10,.66) 0%,rgba(8,8,10,.38) 34%,rgba(8,8,10,.5) 62%,var(--bg) 100%)}
+.hero-grain{position:absolute;inset:0;z-index:-1;pointer-events:none;opacity:.05;mix-blend-mode:overlay;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='180' height='180' filter='url(%23n)' opacity='0.5'/%3E%3C/svg%3E")}
+#dust{position:absolute;inset:0;z-index:-1;pointer-events:none}
+.hero-lockup{width:clamp(195px,22vw,300px);height:auto;margin-bottom:1.5rem;filter:drop-shadow(0 12px 46px rgba(0,0,0,.65)) drop-shadow(0 0 30px rgba(245,203,31,.16))}
+/* Short laptop viewports: the lockup plus the headline needs the vertical rhythm pulled in. */
+@media(min-width:721px) and (max-height:860px){
+  .hero{padding-top:92px;padding-bottom:7rem}
+  .hero-lockup{width:clamp(180px,17vw,240px);margin-bottom:1.1rem}
+  .hero-title{font-size:clamp(2.2rem,5vw,4.2rem);margin-top:1.15rem}
+  .hero-sub{margin-top:1.15rem}
+  .hero-actions{margin-top:1.8rem}
+}
+.hero-badge{display:inline-flex;align-items:center;gap:.65rem;font-size:.74rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--mut);background:rgba(255,255,255,.045);border:1px solid var(--line-2);border-radius:99px;padding:.62rem 1.25rem;backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)}
+.hero-badge .dot{width:6px;height:6px;border-radius:50%;background:var(--gold);box-shadow:0 0 12px 2px rgba(245,203,31,.65);animation:pulse 2.6s ease-in-out infinite}
+@keyframes pulse{0%,100%{transform:scale(1);opacity:1}50%{transform:scale(.7);opacity:.6}}
+.hero-title{font-family:var(--font-d);font-size:clamp(2.4rem,6.4vw,5.7rem);font-weight:800;line-height:1.015;letter-spacing:-.032em;margin-top:1.6rem;max-width:15ch;text-wrap:balance}
+.hero-title .ht-line{display:block;overflow:hidden;padding:.08em .12em;margin:-.045em 0}
+.hero-title .ht-in{display:inline-block;will-change:transform}
+/* Hold the hero intro invisible before GSAP takes over so nothing flashes in position
+   and then jumps. Opacity only — a CSS transform here would be absorbed by GSAP as a
+   baseline offset and leave the headline resting off-centre. The head script drops
+   .js-anim if scripting or GSAP never arrives, so the content always ends up visible. */
+html.js-anim .hero-title,html.js-anim [data-hero-el],html.js-anim .chip,html.js-anim .hero-scroll{opacity:0}
+.hero-title .em{text-shadow:0 6px 60px rgba(245,203,31,.22)}
+.hero-sub{font-size:clamp(.98rem,1.35vw,1.14rem);color:var(--mut);max-width:52ch;margin-top:1.7rem;font-weight:300;line-height:1.8}
+.hero-sub strong{color:var(--ink);font-weight:500}
+.hero-actions{display:flex;gap:1rem;margin-top:2.6rem;flex-wrap:wrap;justify-content:center}
+.hero-scroll{position:absolute;bottom:1.9rem;left:50%;transform:translateX(-50%);color:var(--dim);font-size:.66rem;letter-spacing:.34em;text-indent:.34em;text-transform:uppercase;display:flex;flex-direction:column;align-items:center;gap:.7rem}
+.hero-scroll::after{content:'';width:1px;height:40px;background:linear-gradient(var(--gold),transparent);animation:scrollLine 2.2s var(--ease) infinite}
+@keyframes scrollLine{0%{transform:scaleY(0);transform-origin:0 0}45%{transform:scaleY(1);transform-origin:0 0}55%{transform:scaleY(1);transform-origin:0 100%}100%{transform:scaleY(0);transform-origin:0 100%}}
+/* Floating dashboard chips */
+.chip{position:absolute;z-index:2;display:flex;flex-direction:column;gap:.55rem;min-width:172px;padding:1rem 1.15rem;border-radius:16px;background:rgba(14,14,19,.5);border:1px solid var(--line-2);backdrop-filter:blur(18px) saturate(1.5);-webkit-backdrop-filter:blur(18px) saturate(1.5);box-shadow:0 24px 60px -22px rgba(0,0,0,.75),inset 0 1px 0 rgba(255,255,255,.08);text-align:left;will-change:transform}
+.chip .ch-top{display:flex;align-items:center;justify-content:space-between;gap:1rem;font-size:.62rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--dim)}
+.chip .ch-top b{color:#4ADE80;font-weight:700;letter-spacing:0;font-size:.7rem}
+.chip .ch-val{font-family:var(--font-d);font-size:1.5rem;font-weight:800;letter-spacing:-.02em;color:var(--ink)}
+.chip svg{width:100%;height:34px}
+.chip-1{top:29%;left:max(3.5vw,1.5rem);animation:float1 7s ease-in-out infinite}
+.chip-2{top:56%;right:max(3.5vw,1.5rem);animation:float2 8.5s ease-in-out infinite}
+@keyframes float1{0%,100%{transform:translateY(0) rotate(-1.2deg)}50%{transform:translateY(-14px) rotate(-2deg)}}
+@keyframes float2{0%,100%{transform:translateY(0) rotate(1.4deg)}50%{transform:translateY(-18px) rotate(2.2deg)}}
+@media(max-width:1180px){.chip{display:none}}
+
+/* ---------- Marquee ---------- */
+.banner-strip{position:relative;border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:linear-gradient(180deg,rgba(255,255,255,.02),rgba(255,255,255,0));overflow:hidden;padding:1.35rem 0;-webkit-mask-image:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent);mask-image:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent)}
+.banner-track{display:flex;gap:3.2rem;white-space:nowrap;width:max-content;animation:marquee 36s linear infinite}
+.banner-strip:hover .banner-track{animation-play-state:paused}
+.banner-item{font-family:var(--font-d);font-size:.88rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:rgba(245,245,247,.82);display:flex;align-items:center;gap:3.2rem;flex-shrink:0}
+.banner-star{color:var(--gold);font-size:.72rem;text-shadow:0 0 14px rgba(245,203,31,.6)}
 @keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 
-/* SECTIONS */
-section{padding-top:var(--section-pad);padding-bottom:var(--section-pad)}
-.eyebrow{display:inline-flex;align-items:center;gap:.55rem;font-family:'Archivo',sans-serif;font-size:.72rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);margin-bottom:1.1rem}
-.eyebrow::before{content:'';width:22px;height:2px;background:var(--gold)}
-.s-title{font-family:'Archivo',sans-serif;font-size:clamp(1.9rem,4.4vw,3.4rem);font-weight:800;line-height:1.05;letter-spacing:-.02em}
-.s-title .hl{color:var(--gold)}
-.s-body{font-size:1rem;color:var(--grey);max-width:50ch;line-height:1.75;font-weight:300;margin-top:1.25rem}
+/* ---------- Sections base ---------- */
+section{padding-top:var(--sect);padding-bottom:var(--sect);position:relative}
+.sect-line::before{content:'';position:absolute;top:0;left:var(--pad);right:var(--pad);height:1px;background:linear-gradient(90deg,var(--line-2),transparent 60%)}
 
-/* ABOUT */
-.about-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(2.5rem,5vw,5rem);align-items:center}
-.about-card{position:relative;border-radius:6px;overflow:hidden;background:linear-gradient(135deg,var(--black-soft),var(--black));border:1px solid var(--rule);padding:clamp(2rem,4vw,3rem);aspect-ratio:1/1;display:flex;flex-direction:column;justify-content:center}
-.about-card::before{content:'';position:absolute;top:0;left:0;right:0;height:5px;background:linear-gradient(90deg,var(--gold-deep),var(--gold),var(--gold-soft))}
-.about-card-globe{position:absolute;right:-60px;bottom:-60px;width:240px;height:240px;opacity:.18}
-.about-quote{font-family:'Archivo',sans-serif;font-size:clamp(1.4rem,2.6vw,2rem);font-weight:700;line-height:1.25;position:relative;z-index:1}
-.about-quote .hl{color:var(--gold)}
-.about-quote-by{font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--grey-dim);margin-top:1.5rem;position:relative;z-index:1}
-.about-values{margin-top:2.25rem;display:flex;flex-direction:column}
-.about-value{display:flex;gap:1.1rem;padding:1.1rem 0;border-bottom:1px solid var(--rule)}
-.about-value:last-child{border-bottom:none}
-.av-mark{font-family:'Archivo',sans-serif;font-size:.8rem;font-weight:800;color:var(--black);background:var(--gold);width:26px;height:26px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px}
-.av-text h4{font-size:.98rem;font-weight:600;margin-bottom:3px}
-.av-text p{font-size:.88rem;color:var(--grey);line-height:1.6;font-weight:300}
-@media(max-width:860px){.about-grid{grid-template-columns:1fr}.about-card{aspect-ratio:auto;min-height:260px}}
+/* ---------- Reveal defaults (JS-driven; CSS fallback) ---------- */
+[data-rev]{opacity:0;transform:translateY(34px);filter:blur(8px);transition:opacity .9s var(--ease),transform 1s var(--ease),filter .9s var(--ease)}
+[data-rev].in,html.no-motion [data-rev]{opacity:1;transform:none;filter:none}
+html.gsap [data-rev]{transition:none}
 
-/* STATS */
-.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--rule);border:1px solid var(--rule);border-radius:6px;overflow:hidden}
-.stat{background:var(--black);padding:2rem 1.5rem;text-align:center}
-.stat strong{font-family:'Archivo',sans-serif;font-size:clamp(1.8rem,4vw,2.6rem);font-weight:900;color:var(--gold);display:block;line-height:1}
-.stat span{font-size:.8rem;color:var(--grey);margin-top:.5rem;display:block;font-weight:300}
-@media(max-width:680px){.stats{grid-template-columns:1fr 1fr}}
+/* ---------- About ---------- */
+.about-grid{display:grid;grid-template-columns:1.02fr .98fr;gap:clamp(2.6rem,5.5vw,5.5rem);align-items:center}
+.about-media{position:relative}
+.about-frame{position:relative;border-radius:var(--r-lg);overflow:hidden;border:1px solid var(--line-2);box-shadow:0 40px 90px -40px rgba(0,0,0,.8);aspect-ratio:4/3.4}
+.about-frame img{width:100%;height:100%;object-fit:cover;transform:scale(1.08);will-change:transform;filter:saturate(.82) brightness(.86) contrast(1.06)}
+.about-frame::after{content:'';position:absolute;inset:0;background:linear-gradient(200deg,rgba(8,8,10,0) 40%,rgba(8,8,10,.55));pointer-events:none}
+.about-quote{position:absolute;right:clamp(-.5rem,-2vw,-2rem);bottom:-2.2rem;max-width:min(340px,78%);background:rgba(13,13,18,.72);border:1px solid var(--line-2);border-radius:20px;padding:1.5rem 1.7rem;backdrop-filter:blur(20px) saturate(1.4);-webkit-backdrop-filter:blur(20px) saturate(1.4);box-shadow:0 30px 70px -28px rgba(0,0,0,.85),inset 0 1px 0 rgba(255,255,255,.07)}
+.about-quote p{font-family:var(--font-s);font-style:italic;font-size:1.24rem;line-height:1.4;color:var(--ink)}
+.about-quote p .q-gold{color:var(--gold)}
+.about-quote cite{display:block;font-family:var(--font-b);font-style:normal;font-size:.72rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--dim);margin-top:.9rem}
+.about-globe{position:absolute;left:-3.2rem;top:-3.2rem;width:150px;height:150px;opacity:.5;filter:drop-shadow(0 0 24px rgba(245,203,31,.25));animation:slowspin 40s linear infinite}
+@keyframes slowspin{to{transform:rotate(360deg)}}
+.about-values{margin-top:2.6rem;display:flex;flex-direction:column}
+.about-value{display:flex;gap:1.4rem;padding:1.35rem 1.2rem;border-top:1px solid var(--line);transition:background .4s,border-color .4s;border-radius:12px}
+.about-value:last-child{border-bottom:1px solid var(--line)}
+.about-value:hover{background:var(--glass)}
+.av-mark{font-family:var(--font-d);font-weight:800;font-size:.82rem;color:var(--gold);border:1px solid rgba(245,203,31,.4);width:34px;height:34px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex:none;margin-top:.15rem;background:rgba(245,203,31,.06)}
+.av-text h3{font-family:var(--font-d);font-size:1.04rem;font-weight:700;letter-spacing:-.01em}
+.av-text p{font-size:.93rem;color:var(--mut);font-weight:300;margin-top:.35rem;line-height:1.7}
 
-/* SERVICES */
-.services{background:var(--black-soft);border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
-.services-head{max-width:720px}
-.services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:1.25rem;margin-top:3.25rem}
-.svc{position:relative;background:var(--black);border:1px solid var(--rule);border-radius:6px;padding:1.9rem;overflow:hidden;transition:border-color .25s,transform .25s;cursor:pointer;text-align:left;width:100%;font-family:inherit;color:inherit;display:flex;flex-direction:column}
-.svc:hover,.svc:focus-visible{border-color:var(--gold);transform:translateY(-4px);outline:none}
-.svc::after{content:'';position:absolute;top:0;left:0;width:100%;height:3px;background:var(--gold);transform:scaleX(0);transform-origin:left;transition:transform .3s}
-.svc:hover::after,.svc:focus-visible::after{transform:scaleX(1)}
-.svc-num{font-family:'Archivo',sans-serif;font-size:.75rem;font-weight:700;color:var(--grey-dim);letter-spacing:.1em}
-.svc-icon{margin:1rem 0 1.1rem}
-.svc-name{font-family:'Archivo',sans-serif;font-size:1.25rem;font-weight:700;margin-bottom:.65rem}
-.svc-desc{font-size:.9rem;color:var(--grey);line-height:1.65;font-weight:300;flex:1}
-.svc-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:1.25rem}
-.svc-tag{font-size:.68rem;font-weight:600;padding:4px 10px;border-radius:2px;background:rgba(27,64,144,.25);border:1px solid rgba(44,95,201,.4);color:#9DBDF2}
-.svc-more{margin-top:1.25rem;font-size:.82rem;font-weight:700;color:var(--gold);display:inline-flex;align-items:center;gap:.4rem}
+/* ---------- Services ---------- */
+.services-head{display:grid;grid-template-columns:1.25fr .75fr;gap:2rem;align-items:end;margin-bottom:clamp(2.6rem,5vw,4.2rem)}
+.services-head .s-lead{margin-top:1.2rem}
+.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.1rem}
+.svc{position:relative;text-align:left;background:linear-gradient(165deg,rgba(255,255,255,.05),rgba(255,255,255,.015) 55%);border:1px solid var(--line);border-radius:var(--r);padding:0;cursor:pointer;font-family:var(--font-b);color:var(--ink);overflow:hidden;transition:transform .5s var(--ease),border-color .4s,box-shadow .5s var(--ease);will-change:transform;display:flex;flex-direction:column;min-height:100%}
+.svc-shot{position:relative;display:block;aspect-ratio:16/9;overflow:hidden;border-bottom:1px solid var(--line)}
+.svc-shot img{width:100%;height:100%;object-fit:cover;filter:saturate(.8) brightness(.72);transition:transform .8s var(--ease),filter .6s}
+.svc-shot::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,8,10,.15),rgba(8,8,10,.86));pointer-events:none}
+.svc:hover .svc-shot img{transform:scale(1.07);filter:saturate(1) brightness(.85)}
+.svc-body{display:flex;flex-direction:column;flex:1;padding:1.5rem 1.7rem 1.6rem}
+.svc::before{content:'';position:absolute;inset:0;border-radius:inherit;background:radial-gradient(420px 300px at var(--mx,50%) var(--my,0%),rgba(245,203,31,.1),transparent 65%);opacity:0;transition:opacity .5s;pointer-events:none}
+.svc:hover{transform:translateY(-8px);border-color:rgba(245,203,31,.38);box-shadow:0 34px 70px -30px rgba(0,0,0,.85),0 0 0 1px rgba(245,203,31,.12),0 20px 70px -30px rgba(245,203,31,.2)}
+.svc:hover::before{opacity:1}
+.svc-top{display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:1.1rem;margin-top:-3.4rem;position:relative;z-index:2}
+.svc-num{font-family:var(--font-d);font-size:.78rem;font-weight:700;letter-spacing:.18em;color:var(--dim)}
+.svc-icon{width:52px;height:52px;border-radius:14px;background:rgba(245,203,31,.07);border:1px solid rgba(245,203,31,.22);display:flex;align-items:center;justify-content:center;transition:background .4s,box-shadow .4s,transform .5s var(--ease)}
+.svc-icon svg{width:26px;height:26px;stroke:var(--gold)}
+.svc:hover .svc-icon{background:rgba(245,203,31,.13);box-shadow:0 0 30px -6px rgba(245,203,31,.4);transform:scale(1.06)}
+.svc:hover .svc-icon [pathLength]{stroke-dasharray:100;animation:draw 1.1s var(--ease)}
+@keyframes draw{from{stroke-dashoffset:100}to{stroke-dashoffset:0}}
+.svc-name{font-family:var(--font-d);font-size:1.32rem;font-weight:700;letter-spacing:-.015em}
+.svc-desc{font-size:.92rem;color:var(--mut);font-weight:300;line-height:1.7;margin-top:.7rem;flex:1}
+.svc-tags{display:flex;flex-wrap:wrap;gap:.45rem;margin-top:1.15rem}
+.svc-tag{font-size:.68rem;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--mut);border:1px solid var(--line);border-radius:99px;padding:.32rem .75rem;background:rgba(255,255,255,.02)}
+.svc-more{display:inline-flex;align-items:center;gap:.5rem;font-size:.83rem;font-weight:600;color:var(--gold);margin-top:1.4rem}
+.svc-more::after{content:'\2192';transition:transform .35s var(--ease)}
+.svc:hover .svc-more::after{transform:translateX(5px)}
 
-/* MODAL */
-.modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,.78);backdrop-filter:blur(4px);z-index:200;display:none;align-items:center;justify-content:center;padding:1.25rem;opacity:0;transition:opacity .25s}
-.modal-overlay.open{display:flex;opacity:1}
-.modal{background:var(--black-soft);border:1px solid var(--rule-strong);border-radius:8px;max-width:560px;width:100%;max-height:88vh;overflow-y:auto;position:relative;transform:translateY(20px);transition:transform .3s}
-.modal-overlay.open .modal{transform:none}
-.modal::before{content:'';position:absolute;top:0;left:0;right:0;height:5px;background:linear-gradient(90deg,var(--gold-deep),var(--gold),var(--gold-soft));border-radius:8px 8px 0 0}
-.modal-close{position:absolute;top:1rem;right:1rem;width:34px;height:34px;border-radius:50%;background:rgba(255,255,255,.07);border:none;color:var(--white);font-size:1.1rem;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:background .2s}
-.modal-close:hover{background:rgba(255,255,255,.15)}
-.modal-body{padding:2.25rem}
-.modal-icon{margin-bottom:1rem}
-.modal-title{font-family:'Archivo',sans-serif;font-size:1.6rem;font-weight:800;margin-bottom:.75rem}
-.modal-desc{font-size:.95rem;color:var(--grey);line-height:1.7;font-weight:300;margin-bottom:1.5rem}
-.modal-sub{font-family:'Archivo',sans-serif;font-size:.72rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);margin-bottom:.85rem}
-.modal-list{list-style:none;display:flex;flex-direction:column;gap:.65rem;margin-bottom:1.5rem}
-.modal-list li{display:flex;gap:.65rem;font-size:.9rem;color:var(--white);font-weight:300}
-.modal-list li svg{flex-shrink:0;margin-top:3px}
-.modal-ideal{background:var(--black);border:1px solid var(--rule);border-radius:5px;padding:1rem 1.25rem;margin-bottom:1.5rem;font-size:.87rem;color:var(--grey);font-weight:300}
-.modal-ideal strong{color:var(--white);font-weight:600}
-.modal-actions{display:flex;gap:.75rem;flex-wrap:wrap}
-@media(max-width:520px){.modal-body{padding:1.75rem 1.35rem}.modal-actions .btn-gold,.modal-actions .btn-outline{width:100%;justify-content:center}}
+/* ---------- Showreel strip ---------- */
+.reel{padding-top:0}
+.reel-head{display:flex;align-items:baseline;justify-content:space-between;gap:2rem;margin-bottom:2.2rem}
+.reel-note{font-size:.8rem;color:var(--dim);letter-spacing:.12em;text-transform:uppercase}
+.reel-strip{overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)}
+.reel-track{display:flex;gap:1.2rem;width:max-content;animation:marquee 48s linear infinite}
+.reel-strip:hover .reel-track{animation-play-state:paused}
+.reel-card{position:relative;width:clamp(250px,26vw,380px);aspect-ratio:4/3;border-radius:var(--r);overflow:hidden;border:1px solid var(--line-2);flex:none}
+.reel-card img{width:100%;height:100%;object-fit:cover;filter:saturate(.85);transition:transform .8s var(--ease),filter .6s}
+.reel-card:hover img{transform:scale(1.06);filter:saturate(1.1)}
+.reel-card::after{content:'';position:absolute;inset:0;background:linear-gradient(185deg,transparent 55%,rgba(8,8,10,.72));pointer-events:none}
+.reel-tag{position:absolute;left:1rem;bottom:1rem;z-index:2;font-size:.68rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--ink);background:rgba(10,10,12,.55);border:1px solid var(--line-2);border-radius:99px;padding:.4rem .9rem;backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
 
-/* PACKAGES */
-.pkg-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.25rem;margin-top:3.25rem}
-.cur-toggle{display:inline-flex;background:var(--black);border:1px solid var(--rule-strong);border-radius:999px;padding:4px;margin-top:1.75rem;gap:4px}
-.cur-toggle button{border:none;background:none;color:var(--grey);font-family:'Inter',sans-serif;font-weight:600;font-size:.85rem;padding:.5rem 1.2rem;border-radius:999px;cursor:pointer;transition:background .2s,color .2s}
-.cur-toggle button.active{background:var(--gold);color:var(--black)}
-.pkg-note{font-size:.82rem;color:var(--grey-dim);margin:1.75rem auto 0;text-align:center;max-width:64ch;font-weight:300;line-height:1.6}
-.pkg{position:relative;background:var(--black-soft);border:1px solid var(--rule);border-radius:8px;padding:2rem;display:flex;flex-direction:column;transition:border-color .25s,transform .25s}
-.pkg:hover{transform:translateY(-4px)}
-.pkg.featured{border-color:var(--gold);background:linear-gradient(180deg,rgba(245,203,31,.06),var(--black-soft))}
-.pkg-flag{position:absolute;top:-12px;left:50%;transform:translateX(-50%);background:var(--gold);color:var(--black);font-family:'Archivo',sans-serif;font-size:.65rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;padding:5px 14px;border-radius:20px;white-space:nowrap}
-.pkg-name{font-family:'Archivo',sans-serif;font-size:1.3rem;font-weight:800;margin-bottom:.4rem}
-.pkg-for{font-size:.82rem;color:var(--grey-dim);margin-bottom:1.25rem;font-weight:300}
-.pkg-price{font-family:'Archivo',sans-serif;font-size:2rem;font-weight:900;color:var(--gold);line-height:1}
-.pkg-price span{font-size:.8rem;color:var(--grey);font-weight:400;display:block;margin-top:.35rem;font-family:'Inter',sans-serif}
-.pkg-list{list-style:none;display:flex;flex-direction:column;gap:.7rem;margin:1.5rem 0;flex:1}
-.pkg-list li{display:flex;gap:.6rem;font-size:.88rem;color:var(--grey);font-weight:300}
-.pkg-list li svg{flex-shrink:0;margin-top:3px}
-.pkg .btn-gold,.pkg .btn-outline{width:100%;justify-content:center}
+/* ---------- Stats band ---------- */
+.stats-band{position:relative;overflow:hidden;padding:clamp(4.5rem,8vw,7rem) var(--pad);isolation:isolate}
+.stats-band .band-bg{position:absolute;inset:0;z-index:-2}
+.stats-band .band-bg img{width:100%;height:120%;object-fit:cover;will-change:transform}
+.stats-band .band-shade{position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,var(--bg) 0%,rgba(8,8,10,.68) 22%,rgba(8,8,10,.68) 78%,var(--bg) 100%)}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);max-width:1320px;margin-inline:auto}
+.stat{padding:1rem 2rem;text-align:center;position:relative}
+.stat+.stat::before{content:'';position:absolute;left:0;top:18%;bottom:18%;width:1px;background:linear-gradient(180deg,transparent,var(--line-2),transparent)}
+.stat strong{display:block;font-family:var(--font-d);font-size:clamp(2.6rem,5vw,4.2rem);font-weight:900;letter-spacing:-.03em;background:linear-gradient(180deg,#FFF 30%,rgba(255,255,255,.55));-webkit-background-clip:text;background-clip:text;color:transparent}
+.stat strong .u{background:linear-gradient(115deg,#FFE59A,var(--gold));-webkit-background-clip:text;background-clip:text;color:transparent}
+/* Direct child only — the counter spans live inside <strong> and must stay inline. */
+.stat>span{display:block;font-size:.78rem;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--mut);margin-top:.7rem}
 
-/* PROCESS */
-.proc-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(2.5rem,5vw,5rem);align-items:start}
-.proc-steps{display:flex;flex-direction:column}
-.proc-step{display:grid;grid-template-columns:64px 1fr;gap:1.5rem;padding:1.6rem 0;border-bottom:1px solid var(--rule)}
-.proc-step:last-child{border-bottom:none}
-.proc-num{font-family:'Archivo',sans-serif;font-size:2.4rem;font-weight:900;line-height:1;background:linear-gradient(180deg,var(--gold),var(--gold-deep));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
-.proc-step h3{font-family:'Archivo',sans-serif;font-size:1.1rem;font-weight:700;margin-bottom:.4rem}
-.proc-step p{font-size:.9rem;color:var(--grey);line-height:1.7;font-weight:300}
-.proc-tags{display:flex;gap:6px;flex-wrap:wrap;margin-top:.8rem}
-.proc-tag{font-size:.68rem;padding:3px 10px;border:1px solid var(--rule-strong);color:var(--grey);border-radius:2px}
-@media(max-width:860px){.proc-grid{grid-template-columns:1fr}}
+/* ---------- Packages ---------- */
+.cur-toggle{display:inline-flex;gap:.25rem;margin-top:1.8rem;padding:.3rem;border:1px solid var(--line-2);border-radius:99px;background:rgba(255,255,255,.035);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+.cur-toggle button{font-family:var(--font-b);font-size:.82rem;font-weight:600;letter-spacing:.02em;color:var(--mut);background:none;border:none;border-radius:99px;padding:.6rem 1.3rem;cursor:pointer;transition:color .3s,background .4s var(--ease),box-shadow .4s}
+.cur-toggle button:hover{color:var(--ink)}
+.cur-toggle button.active{color:#0A0A0B;background:linear-gradient(135deg,#FFDD55,var(--gold) 45%,#DFAC17);box-shadow:0 8px 22px -8px rgba(245,203,31,.55)}
+.pkg-price .amount{display:inline-block;transition:opacity .28s var(--ease),transform .28s var(--ease)}
+.pkg-price .amount.swap{opacity:0;transform:translateY(-8px)}
+.pkg-note{font-size:.86rem;color:var(--dim);font-weight:300;line-height:1.75;max-width:74ch;margin:2.2rem auto 0;text-align:center}
+.pkg-note strong{color:var(--mut);font-weight:600}
+.pkg-note a{color:var(--gold);text-decoration:none}
+.pkg-note a:hover{text-decoration:underline;text-underline-offset:4px}
+@property --ba{syntax:'<angle>';initial-value:0deg;inherits:false}
+.pkg-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem;align-items:stretch;margin-top:clamp(2.6rem,5vw,4rem)}
+.pkg{position:relative;display:flex;flex-direction:column;background:linear-gradient(170deg,rgba(255,255,255,.045),rgba(255,255,255,.012) 60%);border:1px solid var(--line);border-radius:var(--r-lg);padding:2.3rem 2rem 2rem;transition:transform .5s var(--ease),border-color .4s,box-shadow .5s var(--ease)}
+.pkg:hover{transform:translateY(-8px);border-color:var(--line-2);box-shadow:0 40px 80px -36px rgba(0,0,0,.85)}
+.pkg.featured{background:linear-gradient(var(--bg-2),var(--bg-2)) padding-box,conic-gradient(from var(--ba),rgba(245,203,31,0) 0deg,rgba(245,203,31,.75) 40deg,rgba(44,95,201,.45) 110deg,rgba(245,203,31,0) 170deg,rgba(245,203,31,.65) 260deg,rgba(245,203,31,0) 330deg) border-box;border:1px solid transparent;animation:spinBorder 7s linear infinite;box-shadow:0 30px 80px -30px rgba(245,203,31,.16),0 40px 90px -40px rgba(0,0,0,.9)}
+@keyframes spinBorder{to{--ba:360deg}}
+.pkg.featured:hover{transform:translateY(-10px)}
+.pkg-flag{position:absolute;top:-13px;left:50%;transform:translateX(-50%);font-size:.66rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:#0A0A0B;background:linear-gradient(135deg,#FFDD55,var(--gold));padding:.5rem 1.15rem;border-radius:99px;white-space:nowrap;box-shadow:0 10px 26px -8px rgba(245,203,31,.6)}
+.pkg-name{font-family:var(--font-d);font-size:1.05rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--gold)}
+.pkg-for{font-size:.88rem;color:var(--dim);font-weight:300;margin-top:.5rem}
+.pkg-price{font-family:var(--font-d);font-size:clamp(2.1rem,3vw,2.7rem);font-weight:800;letter-spacing:-.02em;margin-top:1.5rem;line-height:1}
+/* Exclude .amount — it carries the headline price, not the sub-label. */
+.pkg-price span:not(.amount){display:block;font-family:var(--font-b);font-size:.78rem;font-weight:400;letter-spacing:.05em;color:var(--dim);margin-top:.6rem}
+.pkg-list{list-style:none;margin:1.7rem 0 2rem;display:flex;flex-direction:column;gap:.85rem;flex:1}
+.pkg-list li{display:flex;gap:.8rem;font-size:.92rem;color:var(--mut);font-weight:300;line-height:1.55}
+.pkg-list svg{flex:none;margin-top:.22rem}
+.pkg .btn{width:100%}
 
-/* WHY */
-.why-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.25rem;margin-top:3rem}
-.why{background:var(--black);border:1px solid var(--rule);border-radius:6px;padding:1.9rem;transition:border-color .25s}
-.why:hover{border-color:var(--rule-strong)}
-.why-ic{width:42px;height:42px;border-radius:50%;background:rgba(245,203,31,.1);border:1px solid rgba(245,203,31,.3);display:flex;align-items:center;justify-content:center;margin-bottom:1.1rem;color:var(--gold);font-size:1.1rem}
-.why h4{font-family:'Archivo',sans-serif;font-size:1rem;font-weight:700;margin-bottom:.55rem}
-.why p{font-size:.87rem;color:var(--grey);line-height:1.65;font-weight:300}
+/* ---------- Process ---------- */
+.proc-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(3rem,6vw,6rem);align-items:start}
+.proc-sticky{position:sticky;top:120px}
+.proc-cta{margin-top:2.4rem;padding:1.6rem 1.7rem;border:1px solid var(--line-2);border-radius:20px;background:linear-gradient(160deg,rgba(245,203,31,.07),rgba(255,255,255,.02) 55%);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+.proc-cta p{font-size:.92rem;color:var(--mut);font-weight:300}
+.proc-cta p strong{color:var(--ink);font-weight:600}
+.proc-cta a{display:inline-flex;align-items:center;gap:.5rem;margin-top:.9rem;color:var(--gold);font-weight:600;font-size:.9rem;text-decoration:none}
+.proc-cta a:hover{text-decoration:underline;text-underline-offset:4px}
+.proc-steps{position:relative;display:flex;flex-direction:column;gap:.4rem}
+.proc-rail{position:absolute;left:31px;top:16px;bottom:16px;width:1px;background:var(--line)}
+.proc-rail i{position:absolute;inset:0;background:linear-gradient(var(--gold),var(--gold-deep));transform:scaleY(0);transform-origin:0 0}
+.proc-step{position:relative;display:flex;gap:1.9rem;padding:1.6rem 0}
+.proc-num{position:relative;z-index:2;font-family:var(--font-d);font-size:1rem;font-weight:800;width:62px;height:62px;border-radius:50%;background:var(--bg-1);border:1px solid var(--line-2);color:var(--dim);display:flex;align-items:center;justify-content:center;flex:none;transition:color .5s,border-color .5s,box-shadow .5s,background .5s}
+.proc-step.on .proc-num{color:#0A0A0B;background:linear-gradient(135deg,#FFDD55,var(--gold));border-color:transparent;box-shadow:0 0 34px -6px rgba(245,203,31,.55)}
+.proc-body h3{font-family:var(--font-d);font-size:1.45rem;font-weight:700;letter-spacing:-.015em}
+.proc-body p{font-size:.95rem;color:var(--mut);font-weight:300;margin-top:.55rem;max-width:46ch;line-height:1.75}
+.proc-tags{display:flex;flex-wrap:wrap;gap:.45rem;margin-top:1rem}
+.proc-tag{font-size:.67rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--mut);border:1px solid var(--line);border-radius:99px;padding:.3rem .75rem}
 
-/* FAQ */
-.faq-wrap{max-width:760px;margin:3rem auto 0}
-.faq{border-bottom:1px solid var(--rule)}
-.faq-q{width:100%;background:none;border:none;color:var(--white);font-family:'Inter',sans-serif;font-size:1rem;font-weight:500;text-align:left;padding:1.4rem 0;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:1rem}
-.faq-q:hover{color:var(--gold)}
-.faq-q .plus{flex-shrink:0;width:22px;height:22px;position:relative;transition:transform .3s}
-.faq-q .plus::before,.faq-q .plus::after{content:'';position:absolute;background:var(--gold);transition:opacity .3s}
-.faq-q .plus::before{top:50%;left:0;right:0;height:2px;transform:translateY(-50%)}
-.faq-q .plus::after{left:50%;top:0;bottom:0;width:2px;transform:translateX(-50%)}
-.faq.open .plus::after{opacity:0}
-.faq-a{max-height:0;overflow:hidden;transition:max-height .35s ease}
-.faq-a p{padding:0 0 1.4rem;font-size:.92rem;color:var(--grey);line-height:1.7;font-weight:300}
+/* ---------- Why ---------- */
+.why-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.1rem;margin-top:clamp(2.6rem,5vw,4rem)}
+.why{position:relative;background:linear-gradient(165deg,rgba(255,255,255,.05),rgba(255,255,255,.015) 55%);border:1px solid var(--line);border-radius:var(--r);padding:2rem 1.9rem;overflow:hidden;transition:transform .5s var(--ease),border-color .4s,box-shadow .5s}
+.why:hover{transform:translateY(-6px);border-color:rgba(245,203,31,.3);box-shadow:0 30px 66px -30px rgba(0,0,0,.85)}
+.why-ic{width:50px;height:50px;border-radius:14px;background:rgba(245,203,31,.07);border:1px solid rgba(245,203,31,.22);display:flex;align-items:center;justify-content:center;margin-bottom:1.3rem;transition:box-shadow .4s,background .4s}
+.why:hover .why-ic{background:rgba(245,203,31,.13);box-shadow:0 0 28px -6px rgba(245,203,31,.4)}
+.why-ic svg{width:24px;height:24px;stroke:var(--gold)}
+.why:hover .why-ic [pathLength]{stroke-dasharray:100;animation:draw 1.1s var(--ease)}
+.why h3{font-family:var(--font-d);font-size:1.18rem;font-weight:700;letter-spacing:-.01em}
+.why p{font-size:.93rem;color:var(--mut);font-weight:300;margin-top:.6rem;line-height:1.75}
 
-/* CTA */
-.cta{position:relative;text-align:center;overflow:hidden;background:linear-gradient(180deg,var(--black),var(--black-soft))}
-.cta-glow{position:absolute;bottom:-30%;left:50%;transform:translateX(-50%);width:700px;height:500px;background:radial-gradient(circle,rgba(245,203,31,.12),transparent 65%);pointer-events:none}
-.cta-title{font-family:'Archivo',sans-serif;font-size:clamp(2.1rem,5.5vw,4rem);font-weight:900;line-height:1.05;letter-spacing:-.02em;max-width:18ch;margin:1.2rem auto 1.3rem;position:relative;z-index:1}
-.cta-title .hl{color:var(--gold)}
-.cta-sub{font-size:1.02rem;color:var(--grey);max-width:42ch;margin:0 auto 2.5rem;font-weight:300;position:relative;z-index:1}
-.cta-actions{display:flex;justify-content:center;gap:1rem;flex-wrap:wrap;position:relative;z-index:1}
+/* ---------- FAQ ---------- */
+.faq-wrap{max-width:780px;margin:clamp(2.4rem,5vw,3.6rem) auto 0;display:flex;flex-direction:column;gap:.8rem}
+.faq{background:linear-gradient(165deg,rgba(255,255,255,.04),rgba(255,255,255,.012));border:1px solid var(--line);border-radius:16px;overflow:hidden;transition:border-color .4s}
+.faq.open{border-color:rgba(245,203,31,.32)}
+.faq-q{display:flex;align-items:center;justify-content:space-between;gap:1.5rem;width:100%;text-align:left;font-family:var(--font-d);font-size:1.02rem;font-weight:600;letter-spacing:-.005em;color:var(--ink);background:none;border:none;cursor:pointer;padding:1.35rem 1.5rem}
+.faq-q .plus{position:relative;width:30px;height:30px;flex:none;border:1px solid var(--line-2);border-radius:50%;transition:transform .5s var(--ease),background .4s,border-color .4s}
+.faq-q .plus::before,.faq-q .plus::after{content:'';position:absolute;top:50%;left:50%;background:var(--ink);transition:background .3s}
+.faq-q .plus::before{width:12px;height:1.5px;transform:translate(-50%,-50%)}
+.faq-q .plus::after{width:1.5px;height:12px;transform:translate(-50%,-50%)}
+.faq.open .faq-q .plus{transform:rotate(135deg);background:rgba(245,203,31,.12);border-color:rgba(245,203,31,.5)}
+.faq.open .faq-q .plus::before,.faq.open .faq-q .plus::after{background:var(--gold)}
+.faq-a{display:grid;grid-template-rows:0fr;transition:grid-template-rows .55s var(--ease)}
+.faq.open .faq-a{grid-template-rows:1fr}
+.faq-a>div{overflow:hidden}
+.faq-a p{font-size:.94rem;color:var(--mut);font-weight:300;line-height:1.8;padding:0 1.5rem 1.4rem;max-width:62ch}
 
-/* CONTACT */
-.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2.5rem,5vw,5rem)}
-.contact-detail{display:flex;gap:1rem;padding:1.1rem 0;border-bottom:1px solid var(--rule)}
-.contact-detail:last-of-type{border-bottom:none}
-.cd-ic{width:42px;height:42px;border-radius:50%;border:1px solid var(--rule-strong);display:flex;align-items:center;justify-content:center;flex-shrink:0;color:var(--gold);font-size:1rem}
-.cd-text p{font-size:.72rem;text-transform:uppercase;letter-spacing:.1em;color:var(--grey-dim);margin-bottom:3px}
-.cd-text a,.cd-text span{font-size:.95rem;color:var(--white);text-decoration:none}
+/* ---------- CTA band ---------- */
+.cta-band{position:relative;overflow:hidden;padding:clamp(7rem,13vw,12rem) var(--pad);text-align:center;isolation:isolate}
+.cta-band .band-bg{position:absolute;inset:0;z-index:-2}
+.cta-band .band-bg img{width:100%;height:115%;object-fit:cover;object-position:center 30%;will-change:transform}
+.cta-band .band-shade{position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,var(--bg) 0%,rgba(8,8,10,.45) 26%,rgba(8,8,10,.55) 70%,var(--bg) 100%)}
+.cta-title{font-family:var(--font-d);font-size:clamp(2.6rem,6.4vw,5.6rem);font-weight:800;line-height:1.03;letter-spacing:-.03em;max-width:18ch;margin-inline:auto;text-wrap:balance}
+.cta-sub{font-size:clamp(.98rem,1.3vw,1.12rem);color:var(--mut);max-width:46ch;margin:1.6rem auto 0;font-weight:300;line-height:1.8}
+.cta-actions{display:flex;gap:1rem;margin-top:2.7rem;flex-wrap:wrap;justify-content:center}
+
+/* ---------- Contact ---------- */
+.contact-grid{display:grid;grid-template-columns:.92fr 1.08fr;gap:clamp(2.5rem,5vw,4.5rem);align-items:start;margin-top:clamp(2.6rem,5vw,4rem)}
+.contact-card{border:1px solid var(--line-2);border-radius:var(--r-lg);overflow:hidden;background:linear-gradient(170deg,rgba(255,255,255,.045),rgba(255,255,255,.012))}
+.contact-photo{position:relative;aspect-ratio:16/8.5;overflow:hidden}
+.contact-photo img{width:100%;height:100%;object-fit:cover;object-position:center 60%}
+.contact-photo::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,8,10,.1),rgba(12,12,16,.92))}
+.contact-photo .cp-cap{position:absolute;left:1.4rem;bottom:1.1rem;z-index:2;font-size:.68rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--mut)}
+.contact-list{padding:1.6rem 1.6rem 1.8rem;display:flex;flex-direction:column;gap:.4rem}
+.contact-detail{display:flex;align-items:flex-start;gap:1.1rem;padding:.85rem .6rem;border-radius:14px;transition:background .35s}
+.contact-detail:hover{background:var(--glass)}
+.cd-ic{width:42px;height:42px;flex:none;border-radius:12px;background:rgba(245,203,31,.07);border:1px solid rgba(245,203,31,.22);display:flex;align-items:center;justify-content:center}
+.cd-ic svg{width:19px;height:19px;stroke:var(--gold)}
+.cd-text p{font-size:.66rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--dim)}
+.cd-text a,.cd-text span{display:block;font-size:.96rem;color:var(--ink);text-decoration:none;margin-top:.3rem;font-weight:400;line-height:1.55}
 .cd-text a:hover{color:var(--gold)}
-.map-link:hover{text-decoration:underline}
-.form{display:flex;flex-direction:column;gap:1rem}
-.fg{display:flex;flex-direction:column;gap:.4rem}
-.fg label{font-size:.72rem;text-transform:uppercase;letter-spacing:.1em;color:var(--grey);font-weight:600}
-.fg input,.fg textarea,.fg select{width:100%;padding:.8rem 1rem;border:1px solid var(--rule-strong);border-radius:3px;background:var(--black);font-family:'Inter',sans-serif;font-size:.92rem;color:var(--white);transition:border-color .2s;resize:none;-webkit-appearance:none;appearance:none}
-.fg input::placeholder,.fg textarea::placeholder{color:var(--grey-dim)}
-.fg input:focus,.fg textarea:focus,.fg select:focus{outline:none;border-color:var(--gold)}
-.fg input.err,.fg textarea.err,.fg select.err{border-color:var(--maroon-bright)}
-.fg select option{background:var(--black-soft)}
+.contact-social{display:flex;gap:.7rem;padding:0 2.2rem 2rem}
+.contact-social a{width:40px;height:40px;border-radius:50%;border:1px solid var(--line-2);display:flex;align-items:center;justify-content:center;color:var(--mut);transition:color .3s,border-color .3s,transform .35s var(--ease),background .3s}
+.contact-social a:hover{color:#0A0A0B;background:var(--gold);border-color:var(--gold);transform:translateY(-3px)}
+.contact-social svg{width:17px;height:17px;fill:currentColor}
+/* Form */
+.form{background:linear-gradient(170deg,rgba(255,255,255,.05),rgba(255,255,255,.015) 60%);border:1px solid var(--line-2);border-radius:var(--r-lg);padding:clamp(1.6rem,3vw,2.4rem);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);box-shadow:0 40px 90px -44px rgba(0,0,0,.85)}
 .frow{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
-.form-note{font-size:.78rem;color:var(--grey-dim);text-align:center;margin-top:.25rem}
-.form-success{display:none;padding:1rem;border:1px solid rgba(245,203,31,.4);background:rgba(245,203,31,.06);border-radius:3px;font-size:.9rem;color:var(--gold);text-align:center}
-@media(max-width:860px){.contact-grid{grid-template-columns:1fr}.frow{grid-template-columns:1fr}}
+.fg{display:flex;flex-direction:column;gap:.5rem;margin-bottom:1.1rem}
+.fg label{font-size:.68rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--dim)}
+.fg input,.fg select,.fg textarea{font-family:var(--font-b);font-size:.96rem;font-weight:400;color:var(--ink);background:rgba(255,255,255,.04);border:1px solid var(--line-2);border-radius:12px;padding:.92rem 1.05rem;transition:border-color .3s,background .3s,box-shadow .3s;width:100%;appearance:none}
+.fg input::placeholder,.fg textarea::placeholder{color:#5A5A64;font-weight:300}
+.fg input:hover,.fg select:hover,.fg textarea:hover{border-color:rgba(255,255,255,.26)}
+.fg input:focus,.fg select:focus,.fg textarea:focus{outline:none;border-color:rgba(245,203,31,.6);background:rgba(245,203,31,.045);box-shadow:0 0 0 4px rgba(245,203,31,.09)}
+.fg input.err,.fg select.err{border-color:rgba(158,23,34,.75);background:rgba(158,23,34,.07)}
+.fg select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%23A7A7B1' stroke-width='1.6'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 1.05rem center;cursor:pointer}
+.fg select option{background:var(--bg-2);color:var(--ink)}
+.fg textarea{resize:vertical;min-height:110px}
+.form-note{font-size:.8rem;color:var(--dim);text-align:center;margin-top:.9rem}
+.form-note a{color:var(--mut)}
+.form-note a:hover{color:var(--gold)}
+.form-success{display:none;margin-top:1rem;padding:.95rem 1.2rem;border-radius:12px;background:rgba(74,222,128,.08);border:1px solid rgba(74,222,128,.35);color:#4ADE80;font-size:.9rem;font-weight:500;text-align:center}
 
-/* FOOTER */
-footer{background:var(--black-soft);border-top:1px solid var(--rule);padding:3rem clamp(1.1rem,5vw,4rem) 2rem}
-.foot-top{display:flex;justify-content:space-between;gap:2rem;flex-wrap:wrap;padding-bottom:2rem;border-bottom:1px solid var(--rule)}
-.foot-brand img{height:32px;margin-bottom:1rem}
-.foot-brand p{font-size:.85rem;color:var(--grey);max-width:26ch;line-height:1.6;font-weight:300}
-.foot-social{display:flex;gap:.6rem;margin-top:1.25rem}
-.foot-social a{width:38px;height:38px;border-radius:50%;border:1px solid var(--rule-strong);display:flex;align-items:center;justify-content:center;color:var(--grey);transition:color .2s,background .2s,border-color .2s}
-.foot-social a:hover{color:var(--black);background:var(--gold);border-color:var(--gold);transform:translateY(-2px)}
-.foot-social svg{width:17px;height:17px}
-.foot-links{display:flex;gap:3rem;flex-wrap:wrap}
-.foot-col h5{font-family:'Archivo',sans-serif;font-size:.72rem;text-transform:uppercase;letter-spacing:.12em;color:var(--grey-dim);margin-bottom:1rem;font-weight:700}
-.foot-col a{display:block;font-size:.87rem;color:var(--grey);text-decoration:none;margin-bottom:.6rem;transition:color .2s;background:none;border:none;cursor:pointer;font-family:'Inter',sans-serif;padding:0;text-align:left}
-.foot-col a:hover{color:var(--gold)}
-.foot-bottom{display:flex;justify-content:space-between;align-items:center;padding-top:1.5rem;flex-wrap:wrap;gap:1rem}
-.foot-bottom p{font-size:.78rem;color:var(--grey-dim)}
-.foot-bottom a{color:var(--gold);text-decoration:none}
+/* ---------- Footer ---------- */
+footer{border-top:1px solid var(--line);background:linear-gradient(180deg,var(--bg),#0A0A0E);position:relative;overflow:hidden}
+.foot-mega{padding:clamp(3rem,6vw,4.5rem) var(--pad) 0;text-align:center;user-select:none}
+.foot-mega span{font-family:var(--font-d);font-weight:900;font-size:clamp(1.7rem,7.4vw,7.4rem);letter-spacing:.01em;line-height:1;white-space:nowrap;color:transparent;-webkit-text-stroke:1px rgba(255,255,255,.13);display:inline-block;transition:color 1s var(--ease),-webkit-text-stroke-color .6s}
+.foot-mega span:hover{color:rgba(245,203,31,.06);-webkit-text-stroke-color:rgba(245,203,31,.34)}
+.foot-top{display:grid;grid-template-columns:1.35fr 1fr 1fr .9fr .9fr;gap:2.5rem;padding:clamp(2.6rem,5vw,4rem) var(--pad);max-width:1320px;margin-inline:auto}
+.foot-lockup{width:min(232px,72%);height:auto;margin-bottom:1.3rem;opacity:.95}
+.foot-brand p{font-size:.95rem;color:var(--mut);font-weight:300;max-width:32ch;line-height:1.8}
+.foot-social{display:flex;gap:.7rem;margin-top:1.5rem}
+.foot-social a{width:40px;height:40px;border-radius:50%;border:1px solid var(--line-2);display:flex;align-items:center;justify-content:center;color:var(--mut);transition:color .3s,border-color .3s,transform .35s var(--ease),background .3s}
+.foot-social a:hover{color:#0A0A0B;background:var(--gold);border-color:var(--gold);transform:translateY(-3px)}
+.foot-social svg{width:17px;height:17px;fill:currentColor}
+.foot-col h4{font-family:var(--font-d);font-size:.72rem;font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:var(--dim);margin-bottom:1.2rem}
+.foot-col a{display:block;font-size:.92rem;color:var(--mut);text-decoration:none;padding:.34rem 0;font-weight:300;transition:color .3s,transform .3s var(--ease)}
+.foot-col a:hover{color:var(--gold);transform:translateX(4px)}
+.foot-bottom{display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap;border-top:1px solid var(--line);padding:1.5rem var(--pad);max-width:1320px;margin-inline:auto;font-size:.82rem;color:var(--dim)}
+.foot-bottom a{color:var(--dim);text-decoration:none}
+.foot-bottom a:hover{color:var(--gold)}
 
-/* ANIM */
-@keyframes fadeUp{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
-@keyframes fadeIn{from{opacity:0}to{opacity:1}}
-.reveal{opacity:0;transform:translateY(28px);transition:opacity .7s,transform .7s}
-.reveal.visible{opacity:1;transform:none}
+/* ---------- Modal ---------- */
+.modal-overlay{position:fixed;inset:0;z-index:270;background:rgba(5,5,7,.72);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);display:flex;align-items:center;justify-content:center;padding:1.2rem;opacity:0;visibility:hidden;transition:opacity .45s var(--ease),visibility .45s}
+.modal-overlay.open{opacity:1;visibility:visible}
+.modal{position:relative;width:min(600px,100%);max-height:min(84vh,760px);overflow:auto;background:linear-gradient(170deg,#15151C,#0D0D12);border:1px solid var(--line-2);border-radius:var(--r-lg);padding:clamp(1.8rem,4vw,2.8rem);box-shadow:0 60px 130px -40px rgba(0,0,0,.95),inset 0 1px 0 rgba(255,255,255,.07);transform:translateY(26px) scale(.97);transition:transform .5s var(--ease)}
+.modal-overlay.open .modal{transform:none}
+.modal-close{position:absolute;top:1.1rem;right:1.1rem;width:40px;height:40px;border-radius:50%;background:rgba(255,255,255,.05);border:1px solid var(--line-2);color:var(--mut);font-size:1.25rem;line-height:1;cursor:pointer;transition:color .3s,border-color .3s,transform .4s var(--ease)}
+.modal-close:hover{color:var(--ink);border-color:rgba(245,203,31,.5);transform:rotate(90deg)}
+.modal-icon{width:58px;height:58px;border-radius:16px;background:rgba(245,203,31,.08);border:1px solid rgba(245,203,31,.25);display:flex;align-items:center;justify-content:center;margin-bottom:1.3rem}
+.modal-icon svg{width:28px;height:28px;stroke:var(--gold)}
+.modal-title{font-family:var(--font-d);font-size:1.7rem;font-weight:800;letter-spacing:-.02em}
+.modal-desc{font-size:.97rem;color:var(--mut);font-weight:300;line-height:1.8;margin-top:.9rem}
+.modal-sub{font-family:var(--font-d);font-size:.72rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-top:1.7rem}
+.modal-list{list-style:none;margin-top:.9rem;display:flex;flex-direction:column;gap:.65rem}
+.modal-list li{display:flex;gap:.75rem;font-size:.93rem;color:var(--mut);font-weight:300;line-height:1.6}
+.modal-list svg{flex:none;margin-top:.2rem}
+.modal-ideal{margin-top:1.6rem;padding:1rem 1.2rem;border-radius:14px;background:rgba(245,203,31,.05);border:1px solid rgba(245,203,31,.18);font-size:.9rem;color:var(--mut);font-weight:300;line-height:1.7}
+.modal-ideal strong{color:var(--ink);font-weight:600}
+.modal-actions{display:flex;gap:.9rem;margin-top:1.8rem;flex-wrap:wrap}
 
-/* FABs */
-.scroll-top{position:fixed;bottom:2rem;right:1.5rem;width:44px;height:44px;background:var(--gold);color:var(--black);border:none;border-radius:3px;font-size:1.1rem;cursor:pointer;opacity:0;pointer-events:none;transition:opacity .3s;z-index:50;display:flex;align-items:center;justify-content:center;font-weight:700}
-.scroll-top.show{opacity:1;pointer-events:auto}
-.wa-btn{position:fixed;bottom:2rem;left:1.5rem;width:52px;height:52px;background:#25D366;border-radius:50%;display:flex;align-items:center;justify-content:center;text-decoration:none;box-shadow:0 4px 16px rgba(37,211,102,.4);z-index:50;transition:transform .2s}
-.wa-btn:hover{transform:scale(1.08)}
+/* ---------- Floating buttons ---------- */
+.wa-btn{position:fixed;bottom:1.6rem;left:1.6rem;z-index:180;width:56px;height:56px;border-radius:50%;background:#22C15E;display:flex;align-items:center;justify-content:center;box-shadow:0 16px 40px -12px rgba(34,193,94,.55);transition:transform .4s var(--ease),box-shadow .4s}
+.wa-btn::before{content:'';position:absolute;inset:-5px;border-radius:50%;border:1.5px solid rgba(34,193,94,.5);animation:waPulse 2.4s ease-out infinite}
+@keyframes waPulse{0%{transform:scale(.85);opacity:1}70%,100%{transform:scale(1.28);opacity:0}}
+.wa-btn:hover{transform:translateY(-4px) scale(1.04);box-shadow:0 22px 50px -12px rgba(34,193,94,.7)}
 .wa-btn svg{width:28px;height:28px;fill:#fff}
-@media(max-width:520px){.wa-btn{width:48px;height:48px;bottom:1.25rem;left:1.25rem}.scroll-top{bottom:1.25rem;right:1.25rem}}
-@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+.scroll-top{position:fixed;bottom:1.6rem;right:1.6rem;z-index:180;width:48px;height:48px;border-radius:50%;background:rgba(14,14,19,.6);border:1px solid var(--line-2);color:var(--gold);font-size:1.05rem;cursor:pointer;opacity:0;visibility:hidden;transform:translateY(14px);transition:opacity .4s,transform .4s var(--ease),visibility .4s,border-color .3s;backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
+.scroll-top.show{opacity:1;visibility:visible;transform:none}
+.scroll-top:hover{border-color:rgba(245,203,31,.55)}
 
-/* ===================== VISUAL REFRESH (additive layer) ===================== */
-/* --- Showmax logo lockup (replaces base64 PNGs; matches official lockup) --- */
-.smx-logo{display:inline-flex;flex-direction:column;align-items:center;gap:.55em;line-height:1}
-.smx-word{font-family:'Archivo',sans-serif;font-weight:900;color:#fff;display:inline-flex;align-items:center;letter-spacing:-.015em;white-space:nowrap}
-.smx-globe{height:1.2em;width:1.2em;object-fit:contain;margin:0 -.03em;transform:translateY(.05em);filter:drop-shadow(0 2px 9px rgba(0,0,0,.45));transition:transform .5s cubic-bezier(.34,1.56,.64,1)}
-.smx-tagbar{font-family:'Archivo',sans-serif;font-weight:600;color:#fff;background:linear-gradient(135deg,#1B4090,#2C5FC9);border-radius:.55em;padding:.5em 1.35em;letter-spacing:.02em;white-space:nowrap;box-shadow:0 8px 28px rgba(27,64,144,.38)}
-.smx-nav .smx-word{font-size:1.32rem}
-.nav-logo:hover .smx-globe{transform:translateY(.05em) rotate(16deg) scale(1.08)}
-.smx-hero{gap:.65em}
-.smx-hero .smx-word{font-size:clamp(2.6rem,9.4vw,5.4rem);text-shadow:0 8px 44px rgba(0,0,0,.5)}
-.smx-hero .smx-tagbar{font-size:clamp(.82rem,2.2vw,1.12rem)}
-.smx-foot{align-items:flex-start;margin-bottom:1rem}
-.smx-foot .smx-word{font-size:1.62rem}
-.smx-foot .smx-tagbar{font-size:.64rem}
+/* ---------- Responsive ---------- */
+@media(max-width:1100px){
+  .services-grid{grid-template-columns:repeat(2,1fr)}
+  .services-head{grid-template-columns:1fr}
+  .stats{grid-template-columns:repeat(2,1fr);gap:2.2rem 0}
+  .stat:nth-child(3)::before{display:none}
+  .foot-top{grid-template-columns:1fr 1fr;gap:2.2rem}
+  .foot-brand{grid-column:1/-1}
+}
+@media(max-width:920px){
+  .nav-links{display:none}
+  .hamburger{display:flex}
+  .about-grid,.proc-grid,.contact-grid{grid-template-columns:1fr}
+  .proc-sticky{position:static}
+  .about-media{max-width:560px}
+  .about-quote{right:0}
+  .pkg-grid{grid-template-columns:1fr;max-width:520px;margin-inline:auto}
+  .why-grid{grid-template-columns:1fr}
+}
+@media(max-width:720px){
+  :root{--sect:clamp(5rem,16vw,6.5rem)}
+  .services-grid{grid-template-columns:1fr}
+  .frow{grid-template-columns:1fr}
+  .hero{padding-top:96px}
+  .hero-badge{font-size:.62rem;letter-spacing:.14em;padding:.55rem 1rem}
+  .banner-item{gap:2.2rem}
+  .banner-track{gap:2.2rem}
+  .about-quote{position:static;max-width:none;margin-top:1rem}
+  .about-frame{aspect-ratio:4/3}
+  .about-globe{display:none}
+  .wa-btn{width:50px;height:50px;bottom:1.15rem;left:1.15rem}
+  .wa-btn svg{width:25px;height:25px}
+  .scroll-top{bottom:1.15rem;right:1.15rem;width:44px;height:44px}
+  .stat{padding:.6rem 1rem}
+  /* Clear the floating WhatsApp / back-to-top buttons. */
+  .foot-bottom{justify-content:center;text-align:center;padding-bottom:5.5rem}
+}
+@media(max-width:520px){
+  .stats{grid-template-columns:1fr 1fr;gap:1.8rem 0}
+  .hero-actions .btn{width:100%;justify-content:center}
+  .cta-actions .btn{width:100%}
+  .modal-actions .btn{width:100%}
+}
 
-/* --- Hero: cinematic background + floating gradient orbs --- */
-.hero-bg{position:absolute;inset:0;z-index:0;overflow:hidden}
-.hero-bg img{width:100%;height:100%;object-fit:cover;opacity:.55;animation:heroPan 38s ease-in-out infinite alternate;will-change:transform}
-.hero-bg::after{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 50% 32%,rgba(10,10,11,.18),rgba(10,10,11,.85) 78%),linear-gradient(180deg,rgba(10,10,11,.5),rgba(10,10,11,.32) 45%,rgba(10,10,11,.96))}
-@keyframes heroPan{from{transform:scale(1.04) translateY(0)}to{transform:scale(1.13) translateY(-14px)}}
-.hero-orbs{position:absolute;inset:0;z-index:1;pointer-events:none;transition:transform .3s ease-out;will-change:transform}
-.orb{position:absolute;border-radius:50%;filter:blur(70px);opacity:.5;will-change:transform}
-.orb-a{width:min(430px,58vw);height:min(430px,58vw);left:7%;top:16%;background:radial-gradient(circle,rgba(245,203,31,.34),transparent 65%);animation:orbFloat 16s ease-in-out infinite alternate}
-.orb-b{width:min(370px,52vw);height:min(370px,52vw);right:5%;top:30%;background:radial-gradient(circle,rgba(44,95,201,.4),transparent 65%);animation:orbFloat 21s 2s ease-in-out infinite alternate-reverse}
-.orb-c{width:min(300px,46vw);height:min(300px,46vw);left:40%;bottom:3%;background:radial-gradient(circle,rgba(158,23,34,.32),transparent 65%);animation:orbFloat 18s 1s ease-in-out infinite alternate}
-@keyframes orbFloat{from{transform:translate3d(0,0,0) scale(1)}to{transform:translate3d(42px,-36px,0) scale(1.12)}}
-
-/* --- Scroll-reveal variants + refinement --- */
-.reveal.rv-l{transform:translateX(-34px)}
-.reveal.rv-r{transform:translateX(34px)}
-.reveal.rv-zoom{transform:scale(.94) translateY(12px)}
-.reveal.rv-blur{transform:translateY(18px);filter:blur(10px);transition:opacity .8s,transform .8s,filter .8s}
-.reveal.visible{transform:none;filter:none}
-
-/* --- Image blur-up loading (no layout shift; explicit dimensions kept) --- */
-.lazy-img{opacity:0;filter:blur(16px);transform:scale(1.06);transition:opacity .7s ease,filter .9s ease,transform 1s ease}
-.lazy-img.ld{opacity:1;filter:none;transform:none}
-
-/* --- About: photographic quote card --- */
-.about-card{isolation:isolate}
-.about-media{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-1}
-.about-media.ld{opacity:.42}
-.about-media-scrim{position:absolute;inset:0;z-index:-1;background:linear-gradient(165deg,rgba(10,10,11,.42),rgba(10,10,11,.9) 82%)}
-.about-card:hover .about-media{transform:scale(1.05);transition:transform 1.4s ease}
-
-/* --- Service cards: media strip, cursor spotlight, 3D tilt --- */
-.services-grid,.pkg-grid,.why-grid{perspective:1000px}
-.svc-media{display:block;margin:-1.9rem -1.9rem 1.35rem;aspect-ratio:16/9;overflow:hidden;border-bottom:1px solid var(--rule);position:relative}
-.svc-media::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,10,11,.05),rgba(10,10,11,.55));pointer-events:none}
-.svc-media img{width:100%;height:100%;object-fit:cover}
-.svc:hover .svc-media img.ld{transform:scale(1.07);transition:transform .8s ease}
-.svc::before,.pkg::before,.why::before{content:'';position:absolute;inset:0;border-radius:inherit;opacity:0;transition:opacity .35s;background:radial-gradient(240px circle at var(--mx,50%) var(--my,50%),rgba(245,203,31,.09),transparent 65%);pointer-events:none;z-index:1}
-.svc:hover::before,.pkg:hover::before,.why:hover::before{opacity:1}
-.svc:hover,.svc:focus-visible{transform:translateY(-5px) rotateX(var(--rx,0deg)) rotateY(var(--ry,0deg));box-shadow:0 18px 44px -18px rgba(0,0,0,.65)}
-.pkg{position:relative}
-.pkg:hover{transform:translateY(-5px) rotateX(var(--rx,0deg)) rotateY(var(--ry,0deg));box-shadow:0 18px 44px -18px rgba(0,0,0,.6)}
-.why{position:relative;transition:border-color .25s,transform .25s,box-shadow .25s}
-.why:hover{transform:translateY(-3px) rotateX(var(--rx,0deg)) rotateY(var(--ry,0deg))}
-.why-ic svg{display:block}
-
-/* --- Featured package: slow animated gradient border --- */
-/* Featured plan: static premium gradient border (no motion — keeps text readable) */
-.pkg.featured{border:1.5px solid transparent;background:linear-gradient(180deg,rgba(245,203,31,.06),var(--black-soft)) padding-box,linear-gradient(135deg,var(--gold-deep),var(--gold) 42%,#2C5FC9 82%,var(--gold-deep)) border-box}
-
-/* --- Buttons: ripple + shine --- */
-.btn-gold{position:relative;overflow:hidden}
-.smx-ripple{position:absolute;border-radius:50%;background:rgba(10,10,11,.3);transform:scale(0);animation:smxRip .6s ease-out forwards;pointer-events:none}
-@keyframes smxRip{to{transform:scale(2.6);opacity:0}}
-.btn-gold::after{content:'';position:absolute;top:0;left:-80%;width:45%;height:100%;background:linear-gradient(105deg,transparent,rgba(255,255,255,.5),transparent);transform:skewX(-20deg);transition:left .6s ease;pointer-events:none}
-.btn-gold:hover::after{left:130%}
-
-/* --- Nav & footer: animated link underlines + scroll progress --- */
-.nav-links a:not(.nav-cta){background-image:linear-gradient(var(--gold),var(--gold));background-repeat:no-repeat;background-size:0% 1.5px;background-position:0 100%;transition:background-size .28s,color .2s;padding-bottom:2px}
-.nav-links a:not(.nav-cta):hover{background-size:100% 1.5px}
-.foot-col a{background-image:linear-gradient(var(--gold),var(--gold));background-repeat:no-repeat;background-size:0% 1px;background-position:0 100%;transition:background-size .25s,color .2s;width:fit-content}
-.foot-col a:hover{background-size:100% 1px}
-.scroll-progress{position:fixed;top:0;left:0;right:0;height:2px;z-index:120;background:linear-gradient(90deg,var(--gold-deep),var(--gold),var(--gold-soft));transform-origin:0 50%;transform:scaleX(0);pointer-events:none}
-
-/* --- Section atmosphere: soft blurred colour orbs (services/packages/why share .services) --- */
-.services{position:relative;overflow:hidden}
-.services::before{content:'';position:absolute;top:-140px;right:-120px;width:460px;height:460px;border-radius:50%;background:radial-gradient(circle,rgba(245,203,31,.07),transparent 65%);filter:blur(70px);pointer-events:none}
-.services::after{content:'';position:absolute;bottom:-160px;left:-140px;width:520px;height:520px;border-radius:50%;background:radial-gradient(circle,rgba(44,95,201,.08),transparent 65%);filter:blur(80px);pointer-events:none}
-#faq{position:relative;overflow:hidden}
-#faq::before{content:'';position:absolute;top:18%;right:-140px;width:420px;height:420px;border-radius:50%;background:radial-gradient(circle,rgba(44,95,201,.07),transparent 65%);filter:blur(70px);pointer-events:none}
-.cta::before{content:'';position:absolute;top:8%;left:4%;width:300px;height:300px;border-radius:50%;background:radial-gradient(circle,rgba(44,95,201,.14),transparent 65%);filter:blur(64px);pointer-events:none}
-
-/* --- Process media --- */
-.proc-media{margin-top:2rem;border-radius:8px;overflow:hidden;border:1px solid var(--rule);aspect-ratio:3/2;position:relative}
-.proc-media::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(10,10,11,.5));pointer-events:none}
-.proc-media img{width:100%;height:100%;object-fit:cover}
-.proc-media:hover img.ld{transform:scale(1.05);transition:transform 1.2s ease}
-
-/* --- Form focus polish --- */
-.fg input:focus,.fg textarea:focus,.fg select:focus{box-shadow:0 0 0 3px rgba(245,203,31,.16)}
-.fg:focus-within label{color:var(--gold)}
-
-/* --- Stats hover glow --- */
-.stat{transition:background .3s}
-.stat:hover{background:#101014}
-.stat strong{font-variant-numeric:tabular-nums}
-
-/* --- Motion accessibility & small screens --- */
+/* ---------- Reduced motion ---------- */
 @media(prefers-reduced-motion:reduce){
-  .lazy-img{opacity:1;filter:none;transform:none}
-  .about-media{opacity:.42}
-  .hero-orbs{display:none}
-  .scroll-progress{display:none}
-  .btn-gold::after{display:none}
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+  [data-rev]{opacity:1;transform:none;filter:none}
+  .banner-track,.reel-track{animation:none;flex-wrap:wrap;justify-content:center}
+  .chip{display:none}
+  .hero-media video{display:none}
+  .cursor{display:none}
+  .loader{display:none}
 }
-@media(max-width:680px){
-  .orb{filter:blur(48px);opacity:.38}
-  .smx-foot .smx-tagbar{font-size:.58rem}
-  .services::before,.services::after,#faq::before{width:300px;height:300px;filter:blur(56px)}
-}
-/* =================== /VISUAL REFRESH (additive layer) ==================== */
-
-/* logo art images (replaces CSS lockup) */
-.smx-img{display:block;height:auto;width:auto;max-width:100%}
-.nav-logo .smx-img-nav{height:30px;transition:transform .4s cubic-bezier(.34,1.56,.64,1)}
-.nav-logo:hover .smx-img-nav{transform:scale(1.04)}
-.foot-brand img.smx-img-foot{height:62px;width:auto;margin-bottom:.4rem}
-.smx-img-hero{filter:drop-shadow(0 8px 40px rgba(245,203,31,.12))}
 </style>
-<!-- SHO-3 GA4 analytics (privacy: IP anonymized via Google defaults) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=GA4_MEASUREMENT_ID"></script>
-<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','GA4_MEASUREMENT_ID');</script>
+<script>
+/* Arms the hero intro before first paint, with a self-clearing safety net so a
+   blocked or failed GSAP load can never leave the headline parked off-stage. */
+(function(){var d=document.documentElement;
+  try{ if(window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches) return; }catch(e){}
+  d.classList.add('js-anim');
+  setTimeout(function(){d.classList.remove('js-anim');},2600);
+})();
+</script>
 </head>
 <body>
-<a class="sr-only" href="#main">Skip to content</a>
-<nav id="nav">
-  <a href="#home" class="nav-logo" aria-label="Showmax Global home"><img class="smx-img smx-img-nav" src="/showmax-wordmark.png" alt="Showmax Global" width="730" height="131" decoding="async"></a>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- Preloader -->
+<div class="loader" id="loader" aria-hidden="true">
+  <svg viewBox="0 0 64 64" fill="none" aria-hidden="true">
+    <circle class="ring" cx="32" cy="32" r="20" stroke="#F5CB1F" stroke-width="2.2" pathLength="126"/>
+    <g class="mer" fill="none" stroke="#B2871B" stroke-width="1.4">
+      <ellipse cx="32" cy="32" rx="9" ry="20"/><ellipse cx="32" cy="32" rx="20" ry="9"/>
+      <line x1="12" y1="32" x2="52" y2="32"/><line x1="32" y1="12" x2="32" y2="52"/>
+    </g>
+    <path class="tri" d="M27 24 L43 32 L27 40 Z" fill="#F5CB1F"/>
+  </svg>
+  <div class="loader-word">Showmax&nbsp;Global</div>
+</div>
+
+<!-- Custom cursor ring -->
+<div class="cursor" id="cursor" aria-hidden="true"></div>
+
+<!-- Scroll progress -->
+<div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="#home" class="nav-logo" aria-label="Showmax Global home">
+    <img src="assets/img/showmax-wordmark.webp" alt="Showmax Global" width="730" height="131" decoding="async">
+  </a>
   <ul class="nav-links" id="navLinks">
     <li><a href="#about">About</a></li>
     <li><a href="#services">Services</a></li>
     <li><a href="#packages">Packages</a></li>
     <li><a href="#process">Process</a></li>
     <li><a href="#faq">FAQ</a></li>
-    <li><a href="#contact" class="nav-cta">Get in touch</a></li>
+    <li><a href="#contact" class="nav-cta magnetic"><span class="m-in">Get in touch</span></a></li>
   </ul>
-  <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
 </nav>
 
+<!-- Fullscreen mobile menu -->
+<div class="menu" id="menu" aria-hidden="true">
+  <ul>
+    <li><a href="#about"><span class="mn">01</span>About</a></li>
+    <li><a href="#services"><span class="mn">02</span>Services</a></li>
+    <li><a href="#packages"><span class="mn">03</span>Packages</a></li>
+    <li><a href="#process"><span class="mn">04</span>Process</a></li>
+    <li><a href="#faq"><span class="mn">05</span>FAQ</a></li>
+    <li><a href="#contact"><span class="mn">06</span>Contact</a></li>
+  </ul>
+  <div class="menu-foot">
+    <a href="tel:+917024397999">+91 70243 97999</a>
+    <a href="mailto:showmaxglobal@gmail.com">showmaxglobal@gmail.com</a>
+    <span>Indore, MP — India</span>
+  </div>
+</div>
+
 <main id="main">
-<!-- HERO -->
+
+<!-- ============ HERO ============ -->
 <section class="hero" id="home">
-  <div class="hero-bg" aria-hidden="true"><img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1920&q=55" alt="" width="1920" height="1280" fetchpriority="high" decoding="async"></div><div class="hero-glow"></div><div class="hero-grid-bg"></div><div class="hero-orbs" aria-hidden="true"><i class="orb orb-a"></i><i class="orb orb-b"></i><i class="orb orb-c"></i></div>
-  <img class="hero-logo smx-img-hero" src="/showmax-lockup.png" alt="Showmax Global — Your Gateway To Global Growth" width="834" height="225" fetchpriority="high" decoding="async">
-  <h1 class="hero-tagline">We build brands that are <span class="hl">impossible to ignore.</span></h1>
-  <p class="hero-sub">Showmax Global is a premium digital marketing &amp; branding agency with offices in <strong>Indore, India</strong> and <strong>Sharjah, UAE</strong> — turning ambitious businesses into market leaders across both markets.</p>
-  <div class="hero-actions">
-    <a href="#contact" class="btn-gold">Start your project &rarr;</a>
-    <a href="#services" class="btn-outline">Explore services</a>
+  <div class="hero-media" aria-hidden="true">
+    <picture>
+      <source type="image/avif" srcset="assets/img/hero-768.avif 768w, assets/img/hero-1280.avif 1280w, assets/img/hero-1920.avif 1920w, assets/img/hero-2560.avif 2560w" sizes="100vw">
+      <source type="image/webp" srcset="assets/img/hero-768.webp 768w, assets/img/hero-1280.webp 1280w, assets/img/hero-1920.webp 1920w, assets/img/hero-2560.webp 2560w" sizes="100vw">
+      <img src="assets/img/hero-1280.jpg" alt="" width="2752" height="1536" fetchpriority="high" decoding="async">
+    </picture>
+    <video id="heroVideo" muted loop playsinline preload="none" aria-hidden="true" tabindex="-1"></video>
+  </div>
+  <div class="hero-shade" aria-hidden="true"></div>
+  <div class="hero-grain" aria-hidden="true"></div>
+  <canvas id="dust" aria-hidden="true"></canvas>
+
+  <div class="chip chip-1" data-depth="26" aria-hidden="true">
+    <div class="ch-top"><span>Campaign reach</span><b>&#9650; 248%</b></div>
+    <div class="ch-val">1.2M</div>
+    <svg viewBox="0 0 140 34" fill="none" preserveAspectRatio="none"><path d="M2 30 C18 28 24 22 36 22 S56 26 68 18 90 6 104 10 128 4 138 2" stroke="#F5CB1F" stroke-width="1.8" stroke-linecap="round"/><path d="M2 30 C18 28 24 22 36 22 S56 26 68 18 90 6 104 10 128 4 138 2 L138 34 L2 34 Z" fill="url(#chipg1)" opacity=".35"/><defs><linearGradient id="chipg1" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#F5CB1F"/><stop offset="1" stop-color="#F5CB1F" stop-opacity="0"/></linearGradient></defs></svg>
+  </div>
+  <div class="chip chip-2" data-depth="-20" aria-hidden="true">
+    <div class="ch-top"><span>Return on ad spend</span><b>&#9650; 5.2&times;</b></div>
+    <div class="ch-val">ROAS</div>
+    <svg viewBox="0 0 140 34" fill="none" preserveAspectRatio="none"><g stroke="#2C5FC9" stroke-width="7" stroke-linecap="round" opacity=".85"><line x1="10" y1="30" x2="10" y2="22"/><line x1="30" y1="30" x2="30" y2="18"/><line x1="50" y1="30" x2="50" y2="21"/><line x1="70" y1="30" x2="70" y2="12"/><line x1="90" y1="30" x2="90" y2="15"/><line x1="110" y1="30" x2="110" y2="7"/></g><line x1="130" y1="30" x2="130" y2="3" stroke="#F5CB1F" stroke-width="7" stroke-linecap="round"/></svg>
+  </div>
+
+  <img class="hero-lockup" data-hero-el src="assets/img/showmax-lockup.webp" alt="Showmax Global — Your Gateway To Global Growth" width="834" height="225" fetchpriority="high" decoding="async">
+  <span class="hero-badge" data-hero-el><span class="dot"></span>Indore, India &nbsp;&middot;&nbsp; Sharjah, UAE</span>
+  <h1 class="hero-title" id="heroTitle">
+    <span class="ht-line"><span class="ht-in">We build brands</span></span>
+    <span class="ht-line"><span class="ht-in">that are <em class="em g">impossible</em></span></span>
+    <span class="ht-line"><span class="ht-in"><em class="em g">to ignore.</em></span></span>
+  </h1>
+  <p class="hero-sub" data-hero-el>A premium digital marketing &amp; branding agency with offices in <strong>Indore, India</strong> and <strong>Sharjah, UAE</strong> — turning ambitious businesses into market leaders across both markets.</p>
+  <div class="hero-actions" data-hero-el>
+    <a href="#contact" class="btn btn-gold magnetic"><span class="m-in">Start your project <span class="ar">&rarr;</span></span></a>
+    <a href="#services" class="btn btn-ghost magnetic"><span class="m-in">Explore services</span></a>
   </div>
   <div class="hero-scroll" aria-hidden="true">Scroll</div>
 </section>
 
+<!-- ============ MARQUEE ============ -->
 <div class="banner-strip" aria-hidden="true">
   <div class="banner-track">
-    <span class="banner-item"><span class="banner-star">&#9733;</span>Branding &amp; Advertisement</span><span class="banner-item"><span class="banner-star">&#9733;</span>Digital Marketing</span><span class="banner-item"><span class="banner-star">&#9733;</span>Video Ads Creation</span><span class="banner-item"><span class="banner-star">&#9733;</span>Social Media</span><span class="banner-item"><span class="banner-star">&#9733;</span>SEO &amp; Content</span><span class="banner-item"><span class="banner-star">&#9733;</span>Website Design</span><span class="banner-item"><span class="banner-star">&#9733;</span>Brand Promotion</span><span class="banner-item"><span class="banner-star">&#9733;</span>UAE&ndash;India Trade</span><span class="banner-item"><span class="banner-star">&#9733;</span>Your Gateway To Global Growth</span>
-    <span class="banner-item"><span class="banner-star">&#9733;</span>Branding &amp; Advertisement</span><span class="banner-item"><span class="banner-star">&#9733;</span>Digital Marketing</span><span class="banner-item"><span class="banner-star">&#9733;</span>Video Ads Creation</span><span class="banner-item"><span class="banner-star">&#9733;</span>Social Media</span><span class="banner-item"><span class="banner-star">&#9733;</span>SEO &amp; Content</span><span class="banner-item"><span class="banner-star">&#9733;</span>Website Design</span><span class="banner-item"><span class="banner-star">&#9733;</span>Brand Promotion</span><span class="banner-item"><span class="banner-star">&#9733;</span>UAE&ndash;India Trade</span><span class="banner-item"><span class="banner-star">&#9733;</span>Your Gateway To Global Growth</span>
+    <span class="banner-item"><span class="banner-star">&#10022;</span>Branding &amp; Advertisement</span><span class="banner-item"><span class="banner-star">&#10022;</span>Digital Marketing</span><span class="banner-item"><span class="banner-star">&#10022;</span>Video Ads Creation</span><span class="banner-item"><span class="banner-star">&#10022;</span>Social Media</span><span class="banner-item"><span class="banner-star">&#10022;</span>SEO &amp; Content</span><span class="banner-item"><span class="banner-star">&#10022;</span>Website Design</span><span class="banner-item"><span class="banner-star">&#10022;</span>Brand Promotion</span><span class="banner-item"><span class="banner-star">&#10022;</span>UAE&ndash;India Trade</span><span class="banner-item"><span class="banner-star">&#10022;</span>Your Gateway To Global Growth</span>
+    <span class="banner-item"><span class="banner-star">&#10022;</span>Branding &amp; Advertisement</span><span class="banner-item"><span class="banner-star">&#10022;</span>Digital Marketing</span><span class="banner-item"><span class="banner-star">&#10022;</span>Video Ads Creation</span><span class="banner-item"><span class="banner-star">&#10022;</span>Social Media</span><span class="banner-item"><span class="banner-star">&#10022;</span>SEO &amp; Content</span><span class="banner-item"><span class="banner-star">&#10022;</span>Website Design</span><span class="banner-item"><span class="banner-star">&#10022;</span>Brand Promotion</span><span class="banner-item"><span class="banner-star">&#10022;</span>UAE&ndash;India Trade</span><span class="banner-item"><span class="banner-star">&#10022;</span>Your Gateway To Global Growth</span>
   </div>
 </div>
 
-<!-- ABOUT -->
+<!-- ============ ABOUT ============ -->
 <section id="about" class="wrap">
-  <div class="about-grid">
-    <div class="about-card reveal rv-l"><img class="about-media lazy-img" src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=900&q=60" alt="Showmax Global creative team collaborating on laptops in the studio" loading="lazy" decoding="async" width="900" height="600"><span class="about-media-scrim" aria-hidden="true"></span>
-      <svg class="about-card-globe" viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="46" fill="none" stroke="#F5CB1F" stroke-width="1.5"/><ellipse cx="50" cy="50" rx="20" ry="46" fill="none" stroke="#F5CB1F" stroke-width="1"/><ellipse cx="50" cy="50" rx="46" ry="20" fill="none" stroke="#F5CB1F" stroke-width="1"/><line x1="4" y1="50" x2="96" y2="50" stroke="#F5CB1F" stroke-width="1"/><line x1="50" y1="4" x2="50" y2="96" stroke="#F5CB1F" stroke-width="1"/></svg>
-      <p class="about-quote">"We don't just market your brand — we make the market <span class="hl">revolve around it.</span>"</p>
-      <p class="about-quote-by">— The Showmax Global promise</p>
-    </div>
-    <div class="reveal rv-r">
-      <p class="eyebrow">Who we are</p>
-      <h2 class="s-title">A studio built for <span class="hl">ambition</span></h2>
-      <p class="s-body">Showmax Global is a premium branding and digital marketing agency with offices in Indore, Madhya Pradesh and Sharjah, UAE. The play button in our mark says it best — we put your brand in motion and on screen, everywhere your customers are looking, across India and the Gulf.</p>
-      <div class="about-values">
-        <div class="about-value"><span class="av-mark">1</span><div class="av-text"><h4>Premium by default</h4><p>From a logo to a full campaign, every deliverable answers one question: does it command attention?</p></div></div>
-        <div class="about-value"><span class="av-mark">2</span><div class="av-text"><h4>Strategy before execution</h4><p>We understand your market before we design or write a single word. Research is never optional.</p></div></div>
-        <div class="about-value"><span class="av-mark">3</span><div class="av-text"><h4>Results that compound</h4><p>We build brand equity — the kind that keeps working long after a campaign ends.</p></div></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- SERVICES -->
-<section id="services" class="services wrap">
-  <div class="services-head">
-    <p class="eyebrow reveal">What we do</p>
-    <h2 class="s-title reveal">Eight disciplines. <span class="hl">One brand.</span></h2>
-    <p class="s-body reveal">From identity to acquisition — every service connects back to one goal: making your brand the obvious choice in your market. Tap any service for full details.</p>
-  </div>
-  <div class="services-grid" id="servicesGrid"></div>
-</section>
-
-<!-- STATS -->
-<section class="wrap" style="padding-top:0">
-  <div class="stats reveal rv-zoom">
-    <div class="stat"><strong>8+</strong><span>Core services</span></div>
-    <div class="stat"><strong>360&deg;</strong><span>Brand coverage</span></div>
-    <div class="stat"><strong>100%</strong><span>Custom strategy</span></div>
-    <div class="stat"><strong>1</strong><span>Goal: your growth</span></div>
-  </div>
-</section>
-
-<!-- PACKAGES -->
-<section id="packages" class="services wrap">
-  <div class="services-head">
-    <p class="eyebrow reveal">Monthly plans</p>
-    <h2 class="s-title reveal">Plans that <span class="hl">scale with you</span></h2>
-    <p class="s-body reveal">Market-rate monthly packages for both of our regions. Switch between India and UAE pricing below — every plan is customisable, and ad spend is billed separately at cost.</p>
-    <div class="cur-toggle reveal" role="tablist" aria-label="Choose pricing region">
-      <button data-cur="inr" class="active" type="button">India (₹)</button>
-      <button data-cur="aed" type="button">UAE (AED)</button>
-    </div>
-  </div>
-  <div class="pkg-grid">
-    <div class="pkg reveal rv-l">
-      <h3 class="pkg-name">Starter</h3>
-      <p class="pkg-for">For new businesses finding their feet</p>
-      <div class="pkg-price"><span class="amount" data-inr="₹18,000" data-aed="AED 1,800">₹18,000</span><span>per month onward</span></div>
-      <ul class="pkg-list"><li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F5CB1F" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Social media management (2 platforms)</li><li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F5CB1F" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>12 posts + 6 short video ads/reels per month</li><li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F5CB1F" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Google Business Profile setup</li><li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F5CB1F" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Branding refresh (logo touch-up + profile kit)</li><li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F5CB1F" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Monthly performance report</li></ul>
-      <a class="btn-outline" href="https://wa.me/917024397999?text=Hi%20Showmax%20Global%2C%20I%27m%20interested%20in%20the%20STARTER%20package.%20Please%20share%20details." target="_blank" rel="noopener">Choose Starter</a>
-    </div>
-    <div class="pkg featured reveal rv-zoom">
-      <span class="pkg-flag">Most popular</span>
-      <h3 class="pkg-name">Growth</h3>
-      <p class="pkg-for">For businesses ready to scale fast</p>
-      <div class="pkg-price"><span class="amount" data-inr="₹45,000" data-aed="AED 4,500">₹45,000</span><span>per month onward</span></div>
-      <ul class="pkg-list"><li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F5CB1F" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Everything in Starter</li><li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F5CB1F" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Branding &amp; Advertisement creatives</li><li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F5CB1F" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Paid ads management (Meta + Google)</li><li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F5CB1F" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>SEO + 2 blog articles / month</li><li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F5CB1F" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Website design or revamp</li><li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F5CB1F" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>10 video ads/reels per month</li><li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F5CB1F" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Bi-weekly strategy calls</li></ul>
-      <a class="btn-gold" href="https://wa.me/917024397999?text=Hi%20Showmax%20Global%2C%20I%27m%20interested%20in%20the%20GROWTH%20package.%20Please%20share%20details." target="_blank" rel="noopener">Choose Growth</a>
-    </div>
-    <div class="pkg reveal rv-r">
-      <h3 class="pkg-name">Premium</h3>
-      <p class="pkg-for">For brands that want to dominate</p>
-      <div class="pkg-price"><span class="amount" data-inr="₹95,000" data-aed="AED 9,500">₹95,000</span><span>per month onward</span></div>
-      <ul class="pkg-list"><li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F5CB1F" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Everything in Growth</li><li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F5CB1F" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Full Branding &amp; Advertisement suite</li><li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F5CB1F" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Premium video ad production</li><li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F5CB1F" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Dedicated account manager</li><li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F5CB1F" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Influencer &amp; PR campaigns</li><li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F5CB1F" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>UAE&ndash;India trade facilitation advisory</li><li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F5CB1F" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Priority support &amp; weekly reporting</li></ul>
-      <a class="btn-outline" href="https://wa.me/917024397999?text=Hi%20Showmax%20Global%2C%20I%27m%20interested%20in%20the%20PREMIUM%20package.%20Please%20share%20details." target="_blank" rel="noopener">Get a quote</a>
-    </div>
-  </div>
-  <p class="pkg-note reveal">Prices are agency fees and exclude advertising budget (paid directly to the platforms). <strong>UAE&ndash;India Trade Facilitation</strong> is scoped and quoted per engagement — <a href="https://wa.me/917024397999?text=Hi%20Showmax%20Global%2C%20I%27m%20interested%20in%20the%20TRADE%20FACILITATION%20package.%20Please%20share%20details." target="_blank" rel="noopener" style="color:var(--gold);text-decoration:none">ask us for a custom proposal</a>.</p>
-</section>
-
-<!-- PROCESS -->
-<section id="process" class="wrap">
-  <div class="proc-grid">
-    <div class="reveal rv-l">
-      <p class="eyebrow">How we work</p>
-      <h2 class="s-title">Our <span class="hl">process</span></h2>
-      <p class="s-body">No guesswork. No generic decks. Every project moves through the same four stages that keep your strategy tight and your results measurable.</p>
-      <div class="proc-media reveal rv-zoom"><img class="lazy-img" src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=900&q=60" alt="Showmax Global strategy session — planning a campaign roadmap on a whiteboard" loading="lazy" decoding="async" width="900" height="600"></div>
-    </div>
-    <div class="proc-steps reveal rv-r">
-      <div class="proc-step"><span class="proc-num">01</span><div><h3>Discover</h3><p>We audit your market, study your competitors and map the white space where your brand can win.</p><div class="proc-tags"><span class="proc-tag">Market research</span><span class="proc-tag">Competitor audit</span></div></div></div>
-      <div class="proc-step"><span class="proc-num">02</span><div><h3>Strategise</h3><p>We build a positioning strategy and roadmap. You see exactly what we're building, why and when — before a pixel moves.</p><div class="proc-tags"><span class="proc-tag">Positioning</span><span class="proc-tag">Roadmap</span></div></div></div>
-      <div class="proc-step"><span class="proc-num">03</span><div><h3>Execute</h3><p>Design, copy, campaigns and content — delivered to a premium standard and on schedule. No surprises.</p><div class="proc-tags"><span class="proc-tag">Design</span><span class="proc-tag">Content</span><span class="proc-tag">Campaigns</span></div></div></div>
-      <div class="proc-step"><span class="proc-num">04</span><div><h3>Optimise</h3><p>We track, analyse and continuously improve. Data from every campaign makes your brand stronger over time.</p><div class="proc-tags"><span class="proc-tag">Analytics</span><span class="proc-tag">Reporting</span></div></div></div>
-    </div>
-  </div>
-</section>
-
-<!-- WHY -->
-<section id="why" class="services wrap">
-  <p class="eyebrow reveal">Why Showmax</p>
-  <h2 class="s-title reveal">The difference is in the <span class="hl">details</span></h2>
-  <div class="why-grid">
-    <div class="why reveal"><div class="why-ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14.5 14.5 0 010 18M12 3a14.5 14.5 0 000 18"/></svg></div><h4>Indore-first, globally minded</h4><p>We know the local Indore market deeply — the culture, the competition, the opportunities — while building brands that travel far beyond it.</p></div>
-    <div class="why reveal"><div class="why-ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><circle cx="11" cy="11" r="2"/></svg></div><h4>No templates. Ever.</h4><p>Every strategy, design and campaign is built from scratch for your brief. Your business isn't a template and neither is our work.</p></div>
-    <div class="why reveal"><div class="why-ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l9 4.9V17L12 22l-9-5V6.9L12 2z"/><path d="M12 22V12M21 6.9L12 12 3 6.9"/></svg></div><h4>End-to-end ownership</h4><p>Strategy, design, copy and marketing under one roof. No outsourcing, no broken telephone — one focused team on your brand.</p></div>
-    <div class="why reveal"><div class="why-ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7z"/><circle cx="12" cy="12" r="3"/></svg></div><h4>Transparent delivery</h4><p>You'll always know what's done, what's in progress and what's next. Surprises are for birthdays, not agencies.</p></div>
-  </div>
-</section>
-
-<!-- FAQ -->
-<section id="faq" class="wrap">
-  <p class="eyebrow reveal" style="justify-content:center;display:flex">Questions</p>
-  <h2 class="s-title reveal" style="text-align:center">Frequently <span class="hl">asked</span></h2>
-  <div class="faq-wrap">
-    <div class="faq reveal"><button class="faq-q">Where is Showmax Global located?<span class="plus"></span></button><div class="faq-a"><p>We have two offices: our <strong>India office</strong> at 16, Joshi Colony, Near Anand Hospital, B.K Sindhi Colony, Indore (M.P) 452001, and our <strong>UAE office</strong> at SPC Free Zone, E311, Sheikh Mohammed Bin Zayed Rd, Al Zahia, Sharjah. We work with clients across India, the UAE and globally.</p></div></div>
-    <div class="faq reveal"><button class="faq-q">What services do you offer?<span class="plus"></span></button><div class="faq-a"><p>Brand identity, digital marketing, website design &amp; SEO, social media management, content strategy and brand promotion — six disciplines that cover your entire brand presence.</p></div></div>
-    <div class="faq reveal"><button class="faq-q">How much does a project cost?<span class="plus"></span></button><div class="faq-a"><p>We offer Starter, Growth and Premium packages, plus fully custom engagements. Pricing depends on scope — reach out for a free, no-obligation quote tailored to your goals.</p></div></div>
-    <div class="faq reveal"><button class="faq-q">How soon will I see results?<span class="plus"></span></button><div class="faq-a"><p>Paid advertising can drive traffic almost immediately. SEO and organic growth typically show measurable results within 3 to 6 months of consistent work. We set realistic expectations from day one.</p></div></div>
-    <div class="faq reveal"><button class="faq-q">Do you work with small businesses?<span class="plus"></span></button><div class="faq-a"><p>Absolutely. Our Starter package is built specifically for new and small businesses. We grow with you — many clients begin small and scale up as results come in.</p></div></div>
-  </div>
-</section>
-
-<!-- CTA -->
-<section class="cta wrap">
-  <div class="cta-glow"></div>
-  <p class="eyebrow reveal" style="justify-content:center;display:flex">Ready to grow?</p>
-  <h2 class="cta-title reveal rv-blur">Let's build something <span class="hl">remarkable</span></h2>
-  <p class="cta-sub reveal">Tell us about your brand. We'll tell you exactly how we'd take it to the next level.</p>
-  <div class="cta-actions reveal">
-    <a href="#contact" class="btn-gold">Start a conversation &rarr;</a>
-    <a href="https://wa.me/917024397999?text=Hi%20Showmax%20Global%2C%20I%27d%20like%20to%20discuss%20a%20project." class="btn-outline" target="_blank" rel="noopener">WhatsApp us</a>
-  </div>
-</section>
-
-<!-- CONTACT -->
-<section id="contact" class="wrap">
-  <div class="contact-grid">
-    <div class="reveal rv-l">
-      <p class="eyebrow">Get in touch</p>
-      <h2 class="s-title">Let's talk about your <span class="hl">brand</span></h2>
-      <p class="s-body">We work with ambitious businesses ready to invest in their market presence. Fill in the form and it'll open WhatsApp with your details ready to send — or reach us directly.</p>
-      <div style="margin-top:2rem">
-        <div class="contact-detail"><div class="cd-ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg></div><div class="cd-text"><p>Phone / WhatsApp</p><a href="tel:+917024397999">+91 70243 97999</a></div></div>
-        <div class="contact-detail"><div class="cd-ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 6L2 7"/></svg></div><div class="cd-text"><p>Email</p><a href="mailto:showmaxglobal@gmail.com">showmaxglobal@gmail.com</a></div></div>
-        <div class="contact-detail"><div class="cd-ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 1116 0z"/><circle cx="12" cy="10" r="3"/></svg></div><div class="cd-text"><p>India Office</p><a class="map-link" href="https://www.google.com/maps/search/?api=1&query=16%2C%20Joshi%20Colony%2C%20Near%20Anand%20Hospital%2C%20B.K%20Sindhi%20colony%2C%20Indore%20%28M.P%29%20452001" target="_blank" rel="noopener">16, Joshi Colony, Near Anand Hospital, B.K Sindhi Colony, Indore (M.P) 452001 &#8599;</a></div></div>
-        <div class="contact-detail"><div class="cd-ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 1116 0z"/><circle cx="12" cy="10" r="3"/></svg></div><div class="cd-text"><p>UAE Office</p><a class="map-link" href="https://www.google.com/maps/search/?api=1&query=SPC%20Free%20Zone%2C%20E311%2C%20Sheikh%20Mohammed%20Bin%20Zayed%20Rd%2C%20AL%20Zahia%2C%20Sharjah%2C%20U.A.E" target="_blank" rel="noopener">SPC Free Zone, E311, Sheikh Mohammed Bin Zayed Rd, Al Zahia, Sharjah, U.A.E &#8599;</a><br><a href="tel:+971523406199">+971 52 340 6199</a></div></div>
-        <div class="contact-detail"><div class="cd-ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div><div class="cd-text"><p>Working hours</p><span>Mon – Sat &nbsp;10:00 AM – 7:00 PM</span></div></div>
-      </div>
-    </div>
-    <div class="reveal rv-r">
-      <form class="form" id="contactForm" novalidate>
-        <div class="frow">
-          <div class="fg"><label for="name">Your name</label><input type="text" id="name" name="name" placeholder="Rahul Sharma" required></div>
-          <div class="fg"><label for="phone">Phone number</label><input type="tel" id="phone" name="phone" placeholder="+91 98765 43210" required></div>
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-media" data-rev>
+        <svg class="about-globe" viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="46" fill="none" stroke="#F5CB1F" stroke-width="1"/><ellipse cx="50" cy="50" rx="20" ry="46" fill="none" stroke="#F5CB1F" stroke-width=".7"/><ellipse cx="50" cy="50" rx="46" ry="20" fill="none" stroke="#F5CB1F" stroke-width=".7"/><line x1="4" y1="50" x2="96" y2="50" stroke="#F5CB1F" stroke-width=".7"/><line x1="50" y1="4" x2="50" y2="96" stroke="#F5CB1F" stroke-width=".7"/></svg>
+        <div class="about-frame">
+          <picture>
+            <source type="image/avif" srcset="assets/img/about-studio-720.avif 720w, assets/img/about-studio-1080.avif 1080w, assets/img/about-studio-1600.avif 1600w" sizes="(max-width:920px) 92vw, 46vw">
+            <source type="image/webp" srcset="assets/img/about-studio-720.webp 720w, assets/img/about-studio-1080.webp 1080w, assets/img/about-studio-1600.webp 1600w" sizes="(max-width:920px) 92vw, 46vw">
+            <img src="assets/img/about-studio-1080.webp" alt="Premium creative workspace at the Showmax Global studio, lit by a warm brass lamp" width="2400" height="1792" loading="lazy" decoding="async" data-plx>
+          </picture>
         </div>
-        <div class="fg"><label for="email">Email address</label><input type="email" id="email" name="email" placeholder="rahul@yourbusiness.com" required></div>
+        <blockquote class="about-quote">
+          <p>&ldquo;We don't just market your brand — we make the market <span class="q-gold">revolve around it.</span>&rdquo;</p>
+          <cite>— The Showmax Global promise</cite>
+        </blockquote>
+      </div>
+      <div>
+        <p class="eyebrow" data-rev><span class="no">01</span>&nbsp;&middot;&nbsp;Who we are</p>
+        <h2 class="s-title" data-rev>A studio built<br>for <em class="em g">ambition</em></h2>
+        <p class="s-lead" data-rev>Showmax Global is a premium branding and digital marketing agency with offices in <strong>Indore, Madhya Pradesh</strong> and <strong>Sharjah, UAE</strong>. The play button in our mark says it best — we put your brand <strong>in motion and on screen</strong>, everywhere your customers are looking.</p>
+        <div class="about-values">
+          <div class="about-value" data-rev><span class="av-mark">1</span><div class="av-text"><h3>Premium by default</h3><p>From a logo to a full campaign, every deliverable answers one question: does it command attention?</p></div></div>
+          <div class="about-value" data-rev><span class="av-mark">2</span><div class="av-text"><h3>Strategy before execution</h3><p>We understand your market before we design or write a single word. Research is never optional.</p></div></div>
+          <div class="about-value" data-rev><span class="av-mark">3</span><div class="av-text"><h3>Results that compound</h3><p>We build brand equity — the kind that keeps working long after a campaign ends.</p></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICES ============ -->
+<section id="services" class="wrap sect-line">
+  <div class="container">
+    <div class="services-head">
+      <div>
+        <p class="eyebrow" data-rev><span class="no">02</span>&nbsp;&middot;&nbsp;What we do</p>
+        <h2 class="s-title" data-rev>Eight disciplines.<br><em class="em g">One brand.</em></h2>
+      </div>
+      <p class="s-lead" data-rev>From identity to acquisition — every service connects back to one goal: making your brand the obvious choice in your market. Tap any service for full details.</p>
+    </div>
+    <div class="services-grid" id="servicesGrid">
+      <button type="button" class="svc" data-svc="0" data-rev aria-label="View details for Branding and Advertisement">
+        <span class="svc-shot"><img src="assets/img/work-brand-720.webp" alt="Luxury black and gold brand stationery with gold foil edges" width="720" height="405" loading="lazy" decoding="async"></span>
+        <span class="svc-body">
+          <span class="svc-top"><span class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9" pathLength="100"/><path d="M12 3a17 17 0 010 18M5 7c4 2 10 2 14 0M5 17c4-2 10-2 14 0" pathLength="100"/><path d="M10 9.5 L15 12 L10 14.5 Z" fill="#F5CB1F" stroke="none"/></svg></span><span class="svc-num">01</span></span>
+          <h3 class="svc-name">Branding &amp; Advertisement</h3>
+          <p class="svc-desc">A complete brand identity plus the advertising creative to put it to work — logo, visual system and campaign-ready ads that command attention.</p>
+          <span class="svc-tags"><span class="svc-tag">Logo &amp; identity</span><span class="svc-tag">Ad creatives</span><span class="svc-tag">Brand guidelines</span></span>
+          <span class="svc-more">Learn more</span>
+        </span>
+      </button>
+      <button type="button" class="svc" data-svc="1" data-rev aria-label="View details for Digital Marketing">
+        <span class="svc-shot"><img src="assets/img/work-laptop-720.webp" alt="Marketing analytics dashboard glowing on a laptop at night" width="720" height="405" loading="lazy" decoding="async"></span>
+        <span class="svc-body">
+          <span class="svc-top"><span class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l5-5 4 4 8-8" pathLength="100"/><path d="M15 8h5v5" pathLength="100"/></svg></span><span class="svc-num">02</span></span>
+          <h3 class="svc-name">Digital Marketing</h3>
+          <p class="svc-desc">Performance-driven campaigns across Google, Meta and LinkedIn — designed to generate real leads, not just impressions.</p>
+          <span class="svc-tags"><span class="svc-tag">Google Ads</span><span class="svc-tag">Meta Ads</span><span class="svc-tag">Lead gen</span></span>
+          <span class="svc-more">Learn more</span>
+        </span>
+      </button>
+      <button type="button" class="svc" data-svc="2" data-rev aria-label="View details for Website and SEO">
+        <span class="svc-shot"><img src="assets/img/svc-web-720.webp" alt="A website design shown across a desktop monitor and phone in a dark studio" width="720" height="405" loading="lazy" decoding="async"></span>
+        <span class="svc-body">
+          <span class="svc-top"><span class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="14" rx="2.5" pathLength="100"/><path d="M3 8.5h18" pathLength="100"/><circle cx="13.5" cy="12.5" r="2.6" pathLength="100"/><path d="M15.5 14.5 L18 17" pathLength="100"/></svg></span><span class="svc-num">03</span></span>
+          <h3 class="svc-name">Website &amp; SEO</h3>
+          <p class="svc-desc">Websites that convert visitors into customers, and SEO strategies that make you the first result — not an afterthought.</p>
+          <span class="svc-tags"><span class="svc-tag">Web design</span><span class="svc-tag">On-page SEO</span><span class="svc-tag">Local SEO</span></span>
+          <span class="svc-more">Learn more</span>
+        </span>
+      </button>
+      <button type="button" class="svc" data-svc="3" data-rev aria-label="View details for Social Media">
+        <span class="svc-shot"><img src="assets/img/work-mobile-720.webp" alt="A social media feed glowing on a smartphone held in the hand" width="720" height="405" loading="lazy" decoding="async"></span>
+        <span class="svc-body">
+          <span class="svc-top"><span class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3.2" pathLength="100"/><circle cx="12" cy="12" r="8.8" stroke-dasharray="3.4 3.2"/><circle cx="19.5" cy="5.5" r="1.6" fill="#F5CB1F" stroke="none"/><circle cx="4.5" cy="18.5" r="1.6" fill="#F5CB1F" stroke="none"/></svg></span><span class="svc-num">04</span></span>
+          <h3 class="svc-name">Social Media</h3>
+          <p class="svc-desc">Consistent, on-brand content and community management for Instagram, LinkedIn and beyond — so your presence never goes quiet.</p>
+          <span class="svc-tags"><span class="svc-tag">Instagram</span><span class="svc-tag">LinkedIn</span><span class="svc-tag">Content calendar</span></span>
+          <span class="svc-more">Learn more</span>
+        </span>
+      </button>
+      <button type="button" class="svc" data-svc="4" data-rev aria-label="View details for Video Ads Creation">
+        <span class="svc-shot"><img src="assets/img/svc-video-720.webp" alt="Professional cinema camera filming a commercial on a dark studio set" width="720" height="405" loading="lazy" decoding="async"></span>
+        <span class="svc-body">
+          <span class="svc-top"><span class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="6.5" width="13" height="11" rx="2.5" pathLength="100"/><path d="M15.5 11l6-3.2v8.4l-6-3.2z" pathLength="100"/><path d="M7 10.8 L10.5 12 L7 13.2 Z" fill="#F5CB1F" stroke="none"/></svg></span><span class="svc-num">05</span></span>
+          <h3 class="svc-name">Video Ads Creation</h3>
+          <p class="svc-desc">Thumb-stopping video ads and reels — scripted, shot and edited to grab attention in the first three seconds and drive action.</p>
+          <span class="svc-tags"><span class="svc-tag">Reels &amp; shorts</span><span class="svc-tag">Ad films</span><span class="svc-tag">Motion graphics</span></span>
+          <span class="svc-more">Learn more</span>
+        </span>
+      </button>
+      <button type="button" class="svc" data-svc="5" data-rev aria-label="View details for Content Strategy">
+        <span class="svc-shot"><img src="assets/img/about-studio-720.webp" alt="A writer’s desk lit by a brass lamp with an ultrawide monitor" width="720" height="405" loading="lazy" decoding="async"></span>
+        <span class="svc-body">
+          <span class="svc-top"><span class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v12H8l-4 4z" pathLength="100"/><path d="M8 9h8M8 12h5" pathLength="100"/></svg></span><span class="svc-num">06</span></span>
+          <h3 class="svc-name">Content Strategy</h3>
+          <p class="svc-desc">Blogs, reels, case studies and copy — crafted to establish authority in your industry and rank in search engines.</p>
+          <span class="svc-tags"><span class="svc-tag">Copywriting</span><span class="svc-tag">Blog SEO</span><span class="svc-tag">Video scripts</span></span>
+          <span class="svc-more">Learn more</span>
+        </span>
+      </button>
+      <button type="button" class="svc" data-svc="6" data-rev aria-label="View details for Brand Promotion">
+        <span class="svc-shot"><img src="assets/img/team-studio-720.webp" alt="A creative team reviewing campaign visuals on a large studio screen" width="720" height="405" loading="lazy" decoding="async"></span>
+        <span class="svc-body">
+          <span class="svc-top"><span class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l18-5v12L3 13z" pathLength="100"/><path d="M11.6 16.8a3 3 0 11-5.8-1.6" pathLength="100"/></svg></span><span class="svc-num">07</span></span>
+          <h3 class="svc-name">Brand Promotion</h3>
+          <p class="svc-desc">PR strategies, influencer partnerships and launch campaigns that put your brand in front of the right audience at the right moment.</p>
+          <span class="svc-tags"><span class="svc-tag">PR &amp; outreach</span><span class="svc-tag">Influencer</span><span class="svc-tag">Launch campaigns</span></span>
+          <span class="svc-more">Learn more</span>
+        </span>
+      </button>
+      <button type="button" class="svc" data-svc="7" data-page="trade-facilitation.html" data-rev aria-label="View details for UAE-India Trade Facilitation">
+        <span class="svc-shot"><img src="assets/img/svc-uae-720.webp" alt="Dubai skyline at night across the water" width="720" height="405" loading="lazy" decoding="async"></span>
+        <span class="svc-body">
+          <span class="svc-top"><span class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9" pathLength="100"/><path d="M3 12h18" pathLength="100"/><path d="M12 3a15 15 0 010 18M12 3a15 15 0 000 18" pathLength="100"/><path d="M8.5 7.5 L11 9 L8.5 10.5 Z" fill="#F5CB1F" stroke="none"/></svg></span><span class="svc-num">08</span></span>
+          <h3 class="svc-name">UAE&ndash;India Trade Facilitation</h3>
+          <p class="svc-desc">Your bridge between the Indian and UAE markets — helping businesses on both sides expand, find partners and grow across borders.</p>
+          <span class="svc-tags"><span class="svc-tag">Market entry</span><span class="svc-tag">Partner sourcing</span><span class="svc-tag">CEPA advisory</span></span>
+          <span class="svc-more">Learn more</span>
+        </span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SHOWREEL ============ -->
+<section class="reel" aria-label="The Showmax visual standard">
+  <div class="container wrap">
+    <div class="reel-head">
+      <p class="eyebrow" data-rev style="margin-bottom:0">The Showmax standard</p>
+      <p class="reel-note" data-rev>Craft in every frame</p>
+    </div>
+  </div>
+  <div class="reel-strip" data-rev>
+    <div class="reel-track">
+      <div class="reel-card"><img src="assets/img/work-brand-720.webp" srcset="assets/img/work-brand-720.webp 720w, assets/img/work-brand-1080.webp 1080w" sizes="(max-width:720px) 70vw, 26vw" alt="Luxury black and gold brand stationery design" loading="lazy" decoding="async"><span class="reel-tag">Branding &amp; Advertisement</span></div>
+      <div class="reel-card"><img src="assets/img/svc-video-720.webp" srcset="assets/img/svc-video-720.webp 720w, assets/img/svc-video-1080.webp 1080w" sizes="(max-width:720px) 70vw, 26vw" alt="Cinema camera filming a video advertisement on a dark studio set" loading="lazy" decoding="async"><span class="reel-tag">Video Ads Creation</span></div>
+      <div class="reel-card"><img src="assets/img/work-laptop-720.webp" srcset="assets/img/work-laptop-720.webp 720w, assets/img/work-laptop-1080.webp 1080w" sizes="(max-width:720px) 70vw, 26vw" alt="Laptop displaying a glowing marketing analytics dashboard at night" loading="lazy" decoding="async"><span class="reel-tag">Performance Marketing</span></div>
+      <div class="reel-card"><img src="assets/img/work-mobile-720.webp" srcset="assets/img/work-mobile-720.webp 720w, assets/img/work-mobile-1080.webp 1080w" sizes="(max-width:720px) 70vw, 26vw" alt="Hand holding a smartphone with a glowing social media feed" loading="lazy" decoding="async"><span class="reel-tag">Social Media</span></div>
+      <div class="reel-card"><img src="assets/img/svc-uae-720.webp" srcset="assets/img/svc-uae-720.webp 720w, assets/img/svc-uae-1080.webp 1080w" sizes="(max-width:720px) 70vw, 26vw" alt="Dubai skyline at night reflected in still water" loading="lazy" decoding="async"><span class="reel-tag">UAE&ndash;India Trade</span></div>
+      <div class="reel-card"><img src="assets/img/team-studio-720.webp" srcset="assets/img/team-studio-720.webp 720w, assets/img/team-studio-1080.webp 1080w" sizes="(max-width:720px) 70vw, 26vw" alt="Creative team reviewing campaign visuals on a large studio screen" loading="lazy" decoding="async"><span class="reel-tag">Strategy &amp; Team</span></div>
+      <div class="reel-card" aria-hidden="true"><img src="assets/img/work-brand-720.webp" srcset="assets/img/work-brand-720.webp 720w, assets/img/work-brand-1080.webp 1080w" sizes="(max-width:720px) 70vw, 26vw" alt="" loading="lazy" decoding="async"><span class="reel-tag">Branding &amp; Advertisement</span></div>
+      <div class="reel-card" aria-hidden="true"><img src="assets/img/svc-video-720.webp" srcset="assets/img/svc-video-720.webp 720w, assets/img/svc-video-1080.webp 1080w" sizes="(max-width:720px) 70vw, 26vw" alt="" loading="lazy" decoding="async"><span class="reel-tag">Video Ads Creation</span></div>
+      <div class="reel-card" aria-hidden="true"><img src="assets/img/work-laptop-720.webp" srcset="assets/img/work-laptop-720.webp 720w, assets/img/work-laptop-1080.webp 1080w" sizes="(max-width:720px) 70vw, 26vw" alt="" loading="lazy" decoding="async"><span class="reel-tag">Performance Marketing</span></div>
+      <div class="reel-card" aria-hidden="true"><img src="assets/img/work-mobile-720.webp" srcset="assets/img/work-mobile-720.webp 720w, assets/img/work-mobile-1080.webp 1080w" sizes="(max-width:720px) 70vw, 26vw" alt="" loading="lazy" decoding="async"><span class="reel-tag">Social Media</span></div>
+      <div class="reel-card" aria-hidden="true"><img src="assets/img/svc-uae-720.webp" srcset="assets/img/svc-uae-720.webp 720w, assets/img/svc-uae-1080.webp 1080w" sizes="(max-width:720px) 70vw, 26vw" alt="" loading="lazy" decoding="async"><span class="reel-tag">UAE&ndash;India Trade</span></div>
+      <div class="reel-card" aria-hidden="true"><img src="assets/img/team-studio-720.webp" srcset="assets/img/team-studio-720.webp 720w, assets/img/team-studio-1080.webp 1080w" sizes="(max-width:720px) 70vw, 26vw" alt="" loading="lazy" decoding="async"><span class="reel-tag">Strategy &amp; Team</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ STATS ============ -->
+<div class="stats-band" role="region" aria-label="Showmax Global in numbers">
+  <div class="band-bg" aria-hidden="true"><img src="assets/img/data-viz-1600.webp" srcset="assets/img/data-viz-960.webp 960w, assets/img/data-viz-1600.webp 1600w, assets/img/data-viz-2400.webp 2400w" sizes="100vw" alt="" loading="lazy" decoding="async" data-plx-band></div>
+  <div class="band-shade" aria-hidden="true"></div>
+  <div class="stats">
+    <div class="stat" data-rev><strong><span class="cnt" data-to="8">0</span><span class="u">+</span></strong><span>Core services</span></div>
+    <div class="stat" data-rev><strong><span class="cnt" data-to="360">0</span><span class="u">&deg;</span></strong><span>Brand coverage</span></div>
+    <div class="stat" data-rev><strong><span class="cnt" data-to="100">0</span><span class="u">%</span></strong><span>Custom strategy</span></div>
+    <div class="stat" data-rev><strong><span class="cnt" data-to="1">0</span></strong><span>Goal: your growth</span></div>
+  </div>
+</div>
+
+<!-- ============ PACKAGES ============ -->
+<section id="packages" class="wrap">
+  <div class="container">
+    <p class="eyebrow" data-rev><span class="no">03</span>&nbsp;&middot;&nbsp;Packages</p>
+    <h2 class="s-title" data-rev>Plans that <em class="em g">scale with you</em></h2>
+    <p class="s-lead" data-rev>Market-rate monthly packages for both of our regions. Switch between India and UAE pricing below — every plan is customisable, and ad spend is billed separately at cost.</p>
+    <div class="cur-toggle" data-rev role="tablist" aria-label="Choose pricing region">
+      <button data-cur="inr" class="active" type="button" role="tab" aria-selected="true">India (&#8377;)</button>
+      <button data-cur="aed" type="button" role="tab" aria-selected="false">UAE (AED)</button>
+    </div>
+    <div class="pkg-grid">
+      <div class="pkg" data-rev>
+        <h3 class="pkg-name">Starter</h3>
+        <p class="pkg-for">For new businesses finding their feet</p>
+        <div class="pkg-price"><span class="amount" data-inr="₹18,000" data-aed="AED 1,800">₹18,000</span><span>per month onward</span></div>
+        <ul class="pkg-list"><li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F5CB1F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Social media management (2 platforms)</li><li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F5CB1F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>12 posts + 4 reels / month</li><li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F5CB1F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Google Business Profile setup</li><li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F5CB1F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Monthly performance report</li></ul>
+        <a class="btn btn-ghost" href="https://wa.me/917024397999?text=Hi%20Showmax%20Global%2C%20I%27m%20interested%20in%20the%20STARTER%20package.%20Please%20share%20details." target="_blank" rel="noopener">Choose Starter</a>
+      </div>
+      <div class="pkg featured" data-rev>
+        <span class="pkg-flag">Most popular</span>
+        <h3 class="pkg-name">Growth</h3>
+        <p class="pkg-for">For businesses ready to scale fast</p>
+        <div class="pkg-price"><span class="amount" data-inr="₹45,000" data-aed="AED 4,500">₹45,000</span><span>per month onward</span></div>
+        <ul class="pkg-list"><li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F5CB1F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Everything in Starter</li><li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F5CB1F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Branding &amp; Advertisement creatives</li><li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F5CB1F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Paid ads management (Meta + Google)</li><li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F5CB1F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>SEO + 2 blog articles / month</li><li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F5CB1F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Website design or revamp</li><li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F5CB1F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>10 video ads/reels per month</li><li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F5CB1F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Bi-weekly strategy calls</li></ul>
+        <a class="btn btn-gold" href="https://wa.me/917024397999?text=Hi%20Showmax%20Global%2C%20I%27m%20interested%20in%20the%20GROWTH%20package.%20Please%20share%20details." target="_blank" rel="noopener">Choose Growth</a>
+      </div>
+      <div class="pkg" data-rev>
+        <h3 class="pkg-name">Premium</h3>
+        <p class="pkg-for">For brands that want to dominate</p>
+        <div class="pkg-price"><span class="amount" data-inr="₹95,000" data-aed="AED 9,500">₹95,000</span><span>per month onward</span></div>
+        <ul class="pkg-list"><li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F5CB1F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Everything in Growth</li><li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F5CB1F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Full Branding &amp; Advertisement suite</li><li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F5CB1F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Premium video ad production</li><li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F5CB1F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Dedicated account manager</li><li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F5CB1F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Influencer &amp; PR campaigns</li><li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F5CB1F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>UAE&ndash;India trade facilitation advisory</li><li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F5CB1F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Priority support &amp; weekly reporting</li></ul>
+        <a class="btn btn-ghost" href="https://wa.me/917024397999?text=Hi%20Showmax%20Global%2C%20I%27m%20interested%20in%20the%20PREMIUM%20package.%20Please%20share%20details." target="_blank" rel="noopener">Get a quote</a>
+      </div>
+    </div>
+    <p class="pkg-note" data-rev>Prices are agency fees and exclude advertising budget, which is paid directly to the platforms. <strong>UAE&ndash;India Trade Facilitation</strong> is scoped and quoted per engagement — <a href="https://wa.me/917024397999?text=Hi%20Showmax%20Global%2C%20I%27m%20interested%20in%20the%20TRADE%20FACILITATION%20package.%20Please%20share%20details." target="_blank" rel="noopener">ask us for a custom proposal</a>.</p>
+  </div>
+</section>
+
+<!-- ============ PROCESS ============ -->
+<section id="process" class="wrap sect-line">
+  <div class="container">
+    <div class="proc-grid">
+      <div class="proc-sticky">
+        <p class="eyebrow" data-rev><span class="no">04</span>&nbsp;&middot;&nbsp;How we work</p>
+        <h2 class="s-title" data-rev>Our <em class="em g">process</em></h2>
+        <p class="s-lead" data-rev>No guesswork. No generic decks. Every project moves through the same four stages that keep your strategy tight and your results measurable.</p>
+        <div class="proc-cta" data-rev>
+          <p><strong>Not sure where to start?</strong> Tell us where your brand is stuck — we'll map the way forward on a free call.</p>
+          <a href="https://wa.me/917024397999?text=Hi%20Showmax%20Global%2C%20I%27d%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener">Book a discovery call &rarr;</a>
+        </div>
+      </div>
+      <div class="proc-steps" id="procSteps">
+        <div class="proc-rail" aria-hidden="true"><i id="procRail"></i></div>
+        <div class="proc-step" data-rev><span class="proc-num">01</span><div class="proc-body"><h3>Discover</h3><p>We audit your market, study your competitors and map the white space where your brand can win.</p><div class="proc-tags"><span class="proc-tag">Market research</span><span class="proc-tag">Competitor audit</span></div></div></div>
+        <div class="proc-step" data-rev><span class="proc-num">02</span><div class="proc-body"><h3>Strategise</h3><p>We build a positioning strategy and roadmap. You see exactly what we're building, why and when — before a pixel moves.</p><div class="proc-tags"><span class="proc-tag">Positioning</span><span class="proc-tag">Roadmap</span></div></div></div>
+        <div class="proc-step" data-rev><span class="proc-num">03</span><div class="proc-body"><h3>Execute</h3><p>Design, copy, campaigns and content — delivered to a premium standard and on schedule. No surprises.</p><div class="proc-tags"><span class="proc-tag">Design</span><span class="proc-tag">Content</span><span class="proc-tag">Campaigns</span></div></div></div>
+        <div class="proc-step" data-rev><span class="proc-num">04</span><div class="proc-body"><h3>Optimise</h3><p>We track, analyse and continuously improve. Data from every campaign makes your brand stronger over time.</p><div class="proc-tags"><span class="proc-tag">Analytics</span><span class="proc-tag">Reporting</span></div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHY ============ -->
+<section id="why" class="wrap">
+  <div class="container">
+    <p class="eyebrow" data-rev><span class="no">05</span>&nbsp;&middot;&nbsp;Why Showmax</p>
+    <h2 class="s-title" data-rev>The difference is in<br>the <em class="em g">details</em></h2>
+    <div class="why-grid">
+      <div class="why" data-rev>
+        <div class="why-ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round"><path d="M12 21s-6.5-5.2-6.5-10.2a6.5 6.5 0 0113 0C18.5 15.8 12 21 12 21z" pathLength="100"/><circle cx="12" cy="10.5" r="2.4" pathLength="100"/></svg></div>
+        <h3>Indore-first, globally minded</h3>
+        <p>We know the local Indore market deeply — the culture, the competition, the opportunities — while building brands that travel far beyond it.</p>
+      </div>
+      <div class="why" data-rev>
+        <div class="why-ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l9 5-9 5-9-5z" pathLength="100"/><path d="M3 13l9 5 9-5" pathLength="100"/><path d="M3 17l9 5 9-5" pathLength="100" opacity=".45"/></svg></div>
+        <h3>No templates. Ever.</h3>
+        <p>Every strategy, design and campaign is built from scratch for your brief. Your business isn't a template and neither is our work.</p>
+      </div>
+      <div class="why" data-rev>
+        <div class="why-ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round"><circle cx="8.4" cy="12" r="5.4" pathLength="100"/><circle cx="15.6" cy="12" r="5.4" pathLength="100"/></svg></div>
+        <h3>End-to-end ownership</h3>
+        <p>Strategy, design, copy and marketing under one roof. No outsourcing, no broken telephone — one focused team on your brand.</p>
+      </div>
+      <div class="why" data-rev>
+        <div class="why-ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round"><path d="M2.5 12S6 5.5 12 5.5 21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12z" pathLength="100"/><circle cx="12" cy="12" r="2.8" pathLength="100"/></svg></div>
+        <h3>Transparent delivery</h3>
+        <p>You'll always know what's done, what's in progress and what's next. Surprises are for birthdays, not agencies.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section id="faq" class="wrap sect-line">
+  <div class="container" style="text-align:center">
+    <p class="eyebrow" data-rev style="justify-content:center"><span class="no">06</span>&nbsp;&middot;&nbsp;Questions</p>
+    <h2 class="s-title" data-rev>Frequently <em class="em g">asked</em></h2>
+    <div class="faq-wrap" style="text-align:left">
+      <div class="faq" data-rev><button class="faq-q" aria-expanded="false">Where is Showmax Global located?<span class="plus" aria-hidden="true"></span></button><div class="faq-a"><div><p>We have two offices: our <strong>India office</strong> at 16, Joshi Colony, Near Anand Hospital, B.K Sindhi Colony, Indore (M.P) 452001, and our <strong>UAE office</strong> at SPC Free Zone, E311, Sheikh Mohammed Bin Zayed Rd, Al Zahia, Sharjah. We work with clients across India, the UAE and globally.</p></div></div></div>
+      <div class="faq" data-rev><button class="faq-q" aria-expanded="false">What services do you offer?<span class="plus" aria-hidden="true"></span></button><div class="faq-a"><div><p>Branding &amp; advertisement, digital marketing, website design &amp; SEO, social media management, video ads creation, content strategy, brand promotion and UAE&ndash;India trade facilitation — eight disciplines that cover your entire brand presence.</p></div></div></div>
+      <div class="faq" data-rev><button class="faq-q" aria-expanded="false">How much does a project cost?<span class="plus" aria-hidden="true"></span></button><div class="faq-a"><div><p>We offer Starter, Growth and Premium packages, plus fully custom engagements. Pricing depends on scope — reach out for a free, no-obligation quote tailored to your goals.</p></div></div></div>
+      <div class="faq" data-rev><button class="faq-q" aria-expanded="false">How soon will I see results?<span class="plus" aria-hidden="true"></span></button><div class="faq-a"><div><p>Paid advertising can drive traffic almost immediately. SEO and organic growth typically show measurable results within 3 to 6 months of consistent work. We set realistic expectations from day one.</p></div></div></div>
+      <div class="faq" data-rev><button class="faq-q" aria-expanded="false">Do you work with small businesses?<span class="plus" aria-hidden="true"></span></button><div class="faq-a"><div><p>Absolutely. Our Starter package is built specifically for new and small businesses. We grow with you — many clients begin small and scale up as results come in.</p></div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA ============ -->
+<section class="cta-band" aria-label="Start a project with Showmax Global">
+  <div class="band-bg" aria-hidden="true"><img src="assets/img/globe-cta-1600.webp" srcset="assets/img/globe-cta-960.webp 960w, assets/img/globe-cta-1600.webp 1600w, assets/img/globe-cta-2400.webp 2400w" sizes="100vw" alt="" loading="lazy" decoding="async" data-plx-band></div>
+  <div class="band-shade" aria-hidden="true"></div>
+  <p class="eyebrow" data-rev style="justify-content:center">Ready to grow?</p>
+  <h2 class="cta-title" data-rev>Let's build something<br><em class="em g">remarkable</em></h2>
+  <p class="cta-sub" data-rev>Tell us about your brand. We'll tell you exactly how we'd take it to the next level.</p>
+  <div class="cta-actions" data-rev>
+    <a href="#contact" class="btn btn-gold magnetic"><span class="m-in">Start a conversation <span class="ar">&rarr;</span></span></a>
+    <a href="https://wa.me/917024397999?text=Hi%20Showmax%20Global%2C%20I%27d%20like%20to%20discuss%20a%20project." class="btn btn-ghost magnetic" target="_blank" rel="noopener"><span class="m-in">WhatsApp us</span></a>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section id="contact" class="wrap">
+  <div class="container">
+    <p class="eyebrow" data-rev><span class="no">07</span>&nbsp;&middot;&nbsp;Get in touch</p>
+    <h2 class="s-title" data-rev>Let's talk about<br>your <em class="em g">brand</em></h2>
+    <p class="s-lead" data-rev>We work with ambitious businesses ready to invest in their market presence. Fill in the form and it'll open WhatsApp with your details ready to send — or reach us directly.</p>
+    <div class="contact-grid">
+      <div class="contact-card" data-rev>
+        <div class="contact-photo">
+          <picture>
+            <source type="image/avif" srcset="assets/img/office-dusk-720.avif 720w, assets/img/office-dusk-1080.avif 1080w" sizes="(max-width:920px) 92vw, 42vw">
+            <source type="image/webp" srcset="assets/img/office-dusk-720.webp 720w, assets/img/office-dusk-1080.webp 1080w" sizes="(max-width:920px) 92vw, 42vw">
+            <img src="assets/img/office-dusk-720.webp" alt="Showmax Global studio ambience at dusk" width="1856" height="2304" loading="lazy" decoding="async">
+          </picture>
+          <span class="cp-cap">Indore, India &nbsp;&middot;&nbsp; Sharjah, UAE</span>
+        </div>
+        <div class="contact-list">
+          <div class="contact-detail"><div class="cd-ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6A19.8 19.8 0 012.1 4.2 2 2 0 014.1 2h3a2 2 0 012 1.7c.13.96.36 1.9.7 2.8a2 2 0 01-.45 2.1l-1.3 1.3a16 16 0 006 6l1.3-1.3a2 2 0 012.1-.45c.9.34 1.84.57 2.8.7A2 2 0 0122 16.9z"/></svg></div><div class="cd-text"><p>India — Phone / WhatsApp</p><a href="tel:+917024397999">+91 70243 97999</a></div></div>
+          <div class="contact-detail"><div class="cd-ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="4.5" width="19" height="15" rx="2.5"/><path d="M3 6.5l9 6.5 9-6.5"/></svg></div><div class="cd-text"><p>Email</p><a href="mailto:showmaxglobal@gmail.com">showmaxglobal@gmail.com</a></div></div>
+          <div class="contact-detail"><div class="cd-ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round"><path d="M12 21s-6.5-5.2-6.5-10.2a6.5 6.5 0 0113 0C18.5 15.8 12 21 12 21z"/><circle cx="12" cy="10.5" r="2.4"/></svg></div><div class="cd-text"><p>India Office</p><a class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=16%2C%20Joshi%20Colony%2C%20Near%20Anand%20Hospital%2C%20B.K%20Sindhi%20colony%2C%20Indore%20%28M.P%29%20452001" target="_blank" rel="noopener">16, Joshi Colony, Near Anand Hospital,<br>B.K Sindhi Colony, Indore (M.P) 452001 &#8599;</a></div></div>
+          <div class="contact-detail"><div class="cd-ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round"><path d="M12 21s-6.5-5.2-6.5-10.2a6.5 6.5 0 0113 0C18.5 15.8 12 21 12 21z"/><circle cx="12" cy="10.5" r="2.4"/></svg></div><div class="cd-text"><p>UAE Office</p><a class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=SPC%20Free%20Zone%2C%20E311%2C%20Sheikh%20Mohammed%20Bin%20Zayed%20Rd%2C%20AL%20Zahia%2C%20Sharjah%2C%20U.A.E" target="_blank" rel="noopener">SPC Free Zone, E311, Sheikh Mohammed Bin Zayed Rd,<br>Al Zahia, Sharjah, U.A.E &#8599;</a><a href="tel:+971523406199">+971 52 340 6199</a></div></div>
+          <div class="contact-detail"><div class="cd-ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.2 2"/></svg></div><div class="cd-text"><p>Working hours</p><span>Mon – Sat &nbsp;10:00 AM – 7:00 PM</span></div></div>
+        </div>
+        <div class="contact-social">
+          <a href="https://www.instagram.com/showmax_global" target="_blank" rel="noopener" aria-label="Showmax Global on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.42-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07M12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63c-.79.31-1.46.72-2.12 1.38C1.36 2.67.95 3.34.63 4.14.33 4.9.13 5.78.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91.31.79.72 1.46 1.38 2.12.66.66 1.33 1.07 2.12 1.38.76.3 1.64.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56.79-.31 1.46-.72 2.12-1.38.66-.66 1.07-1.33 1.38-2.12.3-.76.5-1.64.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91-.31-.79-.72-1.46-1.38-2.12C21.33 1.36 20.66.95 19.86.63c-.76-.3-1.64-.5-2.91-.56C15.67.01 15.26 0 12 0zm0 5.84A6.16 6.16 0 1018.16 12 6.16 6.16 0 0012 5.84zM12 16a4 4 0 114-4 4 4 0 01-4 4zm6.41-10.85a1.44 1.44 0 11-1.44-1.44 1.44 1.44 0 011.44 1.44z"/></svg></a>
+          <a href="https://www.facebook.com/share/1iaK2ngsa5/" target="_blank" rel="noopener" aria-label="Showmax Global on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07C0 18.1 4.39 23.1 10.13 24v-8.44H7.08v-3.49h3.05V9.41c0-3.02 1.79-4.69 4.53-4.69 1.31 0 2.68.24 2.68.24v2.97h-1.51c-1.49 0-1.96.93-1.96 1.89v2.25h3.33l-.53 3.49h-2.8V24C19.61 23.1 24 18.1 24 12.07z"/></svg></a>
+          <a href="https://www.linkedin.com/company/showmax-global/" target="_blank" rel="noopener" aria-label="Showmax Global on LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 110-4.12 2.06 2.06 0 010 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.22.79 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></a>
+        </div>
+      </div>
+      <form class="form" id="contactForm" novalidate data-rev>
+        <div class="frow">
+          <div class="fg"><label for="name">Your name</label><input type="text" id="name" name="name" placeholder="Rahul Sharma" autocomplete="name" required></div>
+          <div class="fg"><label for="phone">Phone number</label><input type="tel" id="phone" name="phone" placeholder="+91 98765 43210" autocomplete="tel" required></div>
+        </div>
+        <div class="fg"><label for="email">Email address</label><input type="email" id="email" name="email" placeholder="rahul@yourbusiness.com" autocomplete="email" required></div>
         <div class="fg"><label for="service">Service you're interested in</label><select id="service" name="service"><option value="">Select a service</option><option>Branding &amp; Advertisement</option><option>Digital Marketing</option><option>Website &amp; SEO</option><option>Social Media</option><option>Video Ads Creation</option><option>Content Strategy</option><option>Brand Promotion</option><option>UAE&ndash;India Trade Facilitation</option><option>Full package</option></select></div>
         <div class="fg"><label for="message">Tell us about your project</label><textarea id="message" name="message" rows="4" placeholder="Brief description of your business and what you're looking to achieve..."></textarea></div>
-        <button type="submit" class="btn-gold" style="width:100%;justify-content:center;margin-top:.4rem">Send via WhatsApp &rarr;</button>
-        <p class="form-note">Or email us directly at showmaxglobal@gmail.com</p>
-        <div id="formSuccess" class="form-success">&#10003; Opening WhatsApp with your message — just hit send!</div>
+        <button type="submit" class="btn btn-gold" style="width:100%">Send via WhatsApp <span class="ar">&rarr;</span></button>
+        <p class="form-note">Or email us directly at <a href="mailto:showmaxglobal@gmail.com">showmaxglobal@gmail.com</a></p>
+        <div id="formSuccess" class="form-success" role="status">&#10003; Opening WhatsApp with your message — just hit send!</div>
       </form>
     </div>
   </div>
 </section>
 </main>
 
-<!-- FOOTER -->
+<!-- ============ FOOTER ============ -->
 <footer>
+  <div class="foot-mega" aria-hidden="true"><span>SHOWMAX&nbsp;GLOBAL</span></div>
   <div class="foot-top">
     <div class="foot-brand">
-      <img class="smx-img smx-img-foot" src="/showmax-lockup.png" alt="Showmax Global — Your Gateway To Global Growth" width="834" height="225" loading="lazy" decoding="async">
+      <img class="foot-lockup" src="assets/img/showmax-lockup.webp" alt="Showmax Global — Your Gateway To Global Growth" width="834" height="225" loading="lazy" decoding="async">
       <p>Your gateway to global growth. Offices in Indore, India &amp; Sharjah, UAE — built for the world.</p>
-      <div class="foot-social"><a href="https://www.instagram.com/showmax_global" target="_blank" rel="noopener" aria-label="Showmax Global on Instagram"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.42-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07M12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63c-.79.31-1.46.72-2.12 1.38C1.36 2.67.95 3.34.63 4.14.33 4.9.13 5.78.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91.31.79.72 1.46 1.38 2.12.66.66 1.33 1.07 2.12 1.38.76.3 1.64.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56.79-.31 1.46-.72 2.12-1.38.66-.66 1.07-1.33 1.38-2.12.3-.76.5-1.64.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91-.31-.79-.72-1.46-1.38-2.12C21.33 1.36 20.66.95 19.86.63c-.76-.3-1.64-.5-2.91-.56C15.67.01 15.26 0 12 0zm0 5.84A6.16 6.16 0 1018.16 12 6.16 6.16 0 0012 5.84zM12 16a4 4 0 114-4 4 4 0 01-4 4zm6.41-10.85a1.44 1.44 0 11-1.44-1.44 1.44 1.44 0 011.44 1.44z"/></svg></a><a href="https://www.facebook.com/share/1iaK2ngsa5/" target="_blank" rel="noopener" aria-label="Showmax Global on Facebook"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07C0 18.1 4.39 23.1 10.13 24v-8.44H7.08v-3.49h3.05V9.41c0-3.02 1.79-4.69 4.53-4.69 1.31 0 2.68.24 2.68.24v2.97h-1.51c-1.49 0-1.96.93-1.96 1.89v2.25h3.33l-.53 3.49h-2.8V24C19.61 23.1 24 18.1 24 12.07z"/></svg></a><a href="https://www.linkedin.com/company/showmax-global/" target="_blank" rel="noopener" aria-label="Showmax Global on LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 110-4.12 2.06 2.06 0 010 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.22.79 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></a></div>
+      <div class="foot-social">
+        <a href="https://www.instagram.com/showmax_global" target="_blank" rel="noopener" aria-label="Showmax Global on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.42-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07M12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63c-.79.31-1.46.72-2.12 1.38C1.36 2.67.95 3.34.63 4.14.33 4.9.13 5.78.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91.31.79.72 1.46 1.38 2.12.66.66 1.33 1.07 2.12 1.38.76.3 1.64.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56.79-.31 1.46-.72 2.12-1.38.66-.66 1.07-1.33 1.38-2.12.3-.76.5-1.64.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91-.31-.79-.72-1.46-1.38-2.12C21.33 1.36 20.66.95 19.86.63c-.76-.3-1.64-.5-2.91-.56C15.67.01 15.26 0 12 0zm0 5.84A6.16 6.16 0 1018.16 12 6.16 6.16 0 0012 5.84zM12 16a4 4 0 114-4 4 4 0 01-4 4zm6.41-10.85a1.44 1.44 0 11-1.44-1.44 1.44 1.44 0 011.44 1.44z"/></svg></a>
+        <a href="https://www.facebook.com/share/1iaK2ngsa5/" target="_blank" rel="noopener" aria-label="Showmax Global on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07C0 18.1 4.39 23.1 10.13 24v-8.44H7.08v-3.49h3.05V9.41c0-3.02 1.79-4.69 4.53-4.69 1.31 0 2.68.24 2.68.24v2.97h-1.51c-1.49 0-1.96.93-1.96 1.89v2.25h3.33l-.53 3.49h-2.8V24C19.61 23.1 24 18.1 24 12.07z"/></svg></a>
+        <a href="https://www.linkedin.com/company/showmax-global/" target="_blank" rel="noopener" aria-label="Showmax Global on LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 110-4.12 2.06 2.06 0 010 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.22.79 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></a>
+      </div>
     </div>
-    <div class="foot-links">
-      <div class="foot-col"><h5>Services</h5><a href="#services">Branding &amp; Advertisement</a><a href="#services">Digital Marketing</a><a href="#services">Website &amp; SEO</a><a href="#services">Social Media</a><a href="#services">Video Ads Creation</a><a href="#services">Content Strategy</a><a href="#services">Brand Promotion</a><a href="trade-facilitation.html">UAE&ndash;India Trade</a></div>
-      <div class="foot-col"><h5>Company</h5><a href="#about">About us</a><a href="#packages">Packages</a><a href="#process">Our process</a><a href="/blog/">Blog</a><a href="#faq">FAQ</a><a href="#contact">Contact</a></div>
-      <div class="foot-col"><h5>Offices</h5><a href="https://www.google.com/maps/search/?api=1&query=16%2C%20Joshi%20Colony%2C%20Near%20Anand%20Hospital%2C%20B.K%20Sindhi%20colony%2C%20Indore%20%28M.P%29%20452001" target="_blank" rel="noopener">Indore, India &#8599;</a><a href="https://www.google.com/maps/search/?api=1&query=SPC%20Free%20Zone%2C%20E311%2C%20Sheikh%20Mohammed%20Bin%20Zayed%20Rd%2C%20AL%20Zahia%2C%20Sharjah%2C%20U.A.E" target="_blank" rel="noopener">Sharjah, UAE &#8599;</a><a href="tel:+917024397999">+91 70243 97999</a><a href="tel:+971523406199">+971 52 340 6199</a></div>
-      <div class="foot-col"><h5>Connect</h5><a href="https://www.instagram.com/showmax_global" target="_blank" rel="noopener">Instagram</a><a href="https://www.facebook.com/share/1iaK2ngsa5/" target="_blank" rel="noopener">Facebook</a><a href="https://www.linkedin.com/company/showmax-global/" target="_blank" rel="noopener">LinkedIn</a><a href="https://wa.me/917024397999?text=Hi%20Showmax%20Global%21" target="_blank" rel="noopener">WhatsApp</a><a href="tel:+917024397999">Call us</a><a href="mailto:showmaxglobal@gmail.com">Email</a></div>
-    </div>
+    <div class="foot-col"><h4>Services</h4><a href="#services">Branding &amp; Advertisement</a><a href="#services">Digital Marketing</a><a href="#services">Website &amp; SEO</a><a href="#services">Social Media</a><a href="#services">Video Ads Creation</a><a href="#services">Content Strategy</a><a href="#services">Brand Promotion</a><a href="trade-facilitation.html">UAE&ndash;India Trade</a></div>
+    <div class="foot-col"><h4>Company</h4><a href="#about">About us</a><a href="#packages">Packages</a><a href="#process">Our process</a><a href="/blog/">Blog</a><a href="#faq">FAQ</a><a href="#contact">Contact</a></div>
+    <div class="foot-col"><h4>Offices</h4><a href="https://www.google.com/maps/search/?api=1&amp;query=16%2C%20Joshi%20Colony%2C%20Near%20Anand%20Hospital%2C%20B.K%20Sindhi%20colony%2C%20Indore%20%28M.P%29%20452001" target="_blank" rel="noopener">Indore, India &#8599;</a><a href="https://www.google.com/maps/search/?api=1&amp;query=SPC%20Free%20Zone%2C%20E311%2C%20Sheikh%20Mohammed%20Bin%20Zayed%20Rd%2C%20AL%20Zahia%2C%20Sharjah%2C%20U.A.E" target="_blank" rel="noopener">Sharjah, UAE &#8599;</a><a href="tel:+917024397999">+91 70243 97999</a><a href="tel:+971523406199">+971 52 340 6199</a></div>
+    <div class="foot-col"><h4>Connect</h4><a href="https://www.instagram.com/showmax_global" target="_blank" rel="noopener">Instagram</a><a href="https://www.facebook.com/share/1iaK2ngsa5/" target="_blank" rel="noopener">Facebook</a><a href="https://www.linkedin.com/company/showmax-global/" target="_blank" rel="noopener">LinkedIn</a><a href="https://wa.me/917024397999?text=Hi%20Showmax%20Global%21" target="_blank" rel="noopener">WhatsApp</a><a href="tel:+917024397999">Call us</a><a href="mailto:showmaxglobal@gmail.com">Email</a></div>
   </div>
   <div class="foot-bottom">
     <p>&copy; 2025 Showmax Global. All rights reserved.</p>
@@ -696,7 +1054,7 @@ footer{background:var(--black-soft);border-top:1px solid var(--rule);padding:3re
   </div>
 </footer>
 
-<!-- MODAL -->
+<!-- ============ MODAL ============ -->
 <div class="modal-overlay" id="modalOverlay" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
   <div class="modal">
     <button class="modal-close" id="modalClose" aria-label="Close">&times;</button>
@@ -704,275 +1062,11 @@ footer{background:var(--black-soft);border-top:1px solid var(--rule);padding:3re
   </div>
 </div>
 
-<a href="https://wa.me/917024397999?text=Hi%20Showmax%20Global%2C%20I%27d%20like%20to%20discuss%20a%20project." class="wa-btn" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
+<a href="https://wa.me/917024397999?text=Hi%20Showmax%20Global%2C%20I%27d%20like%20to%20discuss%20a%20project." class="wa-btn" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
 <button class="scroll-top" id="scrollTop" aria-label="Back to top">&uarr;</button>
-<script>
-// ---- Service detail data (powers "Explore services" modals) ----
-var SERVICES=[
- {num:"01",img:"https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=640&q=60",imgAlt:"Brand designers reviewing logo concepts and colour swatches at a creative studio desk",name:"Branding &amp; Advertisement",
-  icon:'<svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#F5CB1F" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M12 3v18M3 12h18M5 7c4 2 10 2 14 0M5 17c4-2 10-2 14 0"/></svg>',
-  desc:"A complete brand identity plus the advertising creative to put it to work — logo, visual system and campaign-ready ads that command attention.",
-  tags:["Logo &amp; identity","Ad creatives","Brand guidelines"],
-  long:"Your brand is the first thing people judge and the last thing they forget. We build a complete visual identity — then turn it into advertising creative that actually sells, across print, social and digital.",
-  includes:["Custom logo design (primary + variations)","Colour palette &amp; typography system","Complete brand guidelines document","Advertisement &amp; campaign creatives (print + digital)","Social media profile &amp; stationery kit"],
-  ideal:"new businesses, rebrands, and brands that need both an identity and ads that convert."},
- {num:"02",img:"https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=640&q=60",imgAlt:"Marketing analytics dashboard with campaign performance graphs on a laptop",name:"Digital Marketing",
-  icon:'<svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#F5CB1F" stroke-width="1.5"><path d="M3 17l5-5 4 4 8-8"/><path d="M16 7h5v5"/></svg>',
-  desc:"Performance-driven campaigns across Google, Meta and LinkedIn — designed to generate real leads, not just impressions.",
-  tags:["Google Ads","Meta Ads","Lead gen"],
-  long:"Impressions don't pay the bills — customers do. We build and manage paid campaigns engineered around one metric that matters: qualified leads at a cost that makes sense for your business.",
-  includes:["Google &amp; Meta ad campaign setup","Audience research &amp; targeting","Ad creative &amp; copywriting","Conversion tracking &amp; pixels","Weekly optimisation &amp; reporting"],
-  ideal:"businesses that need a predictable, scalable flow of enquiries and sales."},
- {num:"03",img:"https://images.unsplash.com/photo-1547658719-da2b51169166?auto=format&fit=crop&w=640&q=60",imgAlt:"Responsive website design in progress on a developer\u2019s laptop",name:"Website &amp; SEO",
-  icon:'<svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#F5CB1F" stroke-width="1.5"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 8h18M7 21h10"/></svg>',
-  desc:"Websites that convert visitors into customers, and SEO strategies that make you the first result — not an afterthought.",
-  tags:["Web design","On-page SEO","Local SEO"],
-  long:"A website should be your hardest-working salesperson. We design fast, mobile-first sites that look premium and convert — then optimise them to rank on Google so customers find you first.",
-  includes:["Custom responsive website design","Mobile &amp; speed optimisation","On-page &amp; technical SEO","Google Business Profile &amp; local SEO","Analytics &amp; search console setup"],
-  ideal:"any business without a site, or one that looks dated and doesn't bring in leads."},
- {num:"04",img:"https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?auto=format&fit=crop&w=640&q=60",imgAlt:"Social media content and video feed on a smartphone",name:"Social Media",
-  icon:'<svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#F5CB1F" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M12 2a10 10 0 00-7 17M12 22a10 10 0 007-17"/><circle cx="19" cy="5" r="2"/><circle cx="5" cy="19" r="2"/></svg>',
-  desc:"Consistent, on-brand content and community management for Instagram, LinkedIn and beyond — so your presence never goes quiet.",
-  tags:["Instagram","LinkedIn","Content calendar"],
-  long:"Showing up consistently is what builds trust online. We plan, design and publish scroll-stopping content that keeps your brand active, recognisable and growing across every platform.",
-  includes:["Monthly content calendar","Post &amp; reel design + captions","Hashtag &amp; posting strategy","Community management &amp; replies","Monthly growth reporting"],
-  ideal:"brands that want a professional, always-on presence without the daily effort."},
- {num:"05",img:"https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?auto=format&fit=crop&w=640&q=60",imgAlt:"Professional cinema camera filming a video advertisement on set",name:"Video Ads Creation",
-  icon:'<svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#F5CB1F" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="3"/><path d="M10 9l5 3-5 3z" fill="#F5CB1F" stroke="none"/></svg>',
-  desc:"Thumb-stopping video ads and reels — scripted, shot and edited to grab attention in the first three seconds and drive action.",
-  tags:["Reels &amp; shorts","Ad films","Motion graphics"],
-  long:"Video is what stops the scroll and sells in seconds. We handle the whole pipeline — concept, script, shoot and edit — producing platform-ready video ads and reels designed to convert, not just to look pretty.",
-  includes:["Concept &amp; scriptwriting","Short-form reels &amp; video ads","Professional editing &amp; motion graphics","Subtitles &amp; platform-specific cuts","Hooks &amp; thumbnails optimised for reach"],
-  ideal:"brands that want to grow on reels, run video ad campaigns, or launch a product with impact."},
- {num:"06",img:"https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=640&q=60",imgAlt:"Content strategist drafting long-form copy beside a laptop",name:"Content Strategy",
-  icon:'<svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#F5CB1F" stroke-width="1.5"><path d="M4 4h16v12H7l-3 3z"/><path d="M8 9h8M8 12h5"/></svg>',
-  desc:"Blogs, reels, case studies and copy — crafted to establish authority in your industry and rank in search engines.",
-  tags:["Copywriting","Blog SEO","Video scripts"],
-  long:"Great content turns strangers into followers and followers into customers. We create content that educates, builds authority and quietly does your selling — while ranking on search at the same time.",
-  includes:["SEO blog articles &amp; website copy","Reel &amp; video scripts","Email &amp; newsletter copy","Case studies &amp; landing pages","Content calendar &amp; topic research"],
-  ideal:"businesses that want to be seen as the expert in their field."},
- {num:"07",img:"https://images.unsplash.com/photo-1567532939604-b6b5b0db2604?auto=format&fit=crop&w=640&q=60",imgAlt:"Creator filming influencer marketing content with a ring light",name:"Brand Promotion",
-  icon:'<svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#F5CB1F" stroke-width="1.5"><path d="M3 11l18-5v12L3 13z"/><path d="M11.6 16.8a3 3 0 11-5.8-1.6"/></svg>',
-  desc:"PR strategies, influencer partnerships and launch campaigns that put your brand in front of the right audience at the right moment.",
-  tags:["PR &amp; outreach","Influencer","Launch campaigns"],
-  long:"Sometimes you need a moment that gets everyone talking. We design launch and promotion campaigns — with the right influencers and PR — to put your brand in front of thousands of the right people, fast.",
-  includes:["Launch campaign strategy","Influencer identification &amp; outreach","PR &amp; media coordination","Giveaway &amp; collaboration planning","Campaign performance tracking"],
-  ideal:"product launches, new openings, and brands ready for a visibility push."},
- {num:"08",img:"https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=640&q=60",imgAlt:"Dubai skyline at sunrise \u2014 the UAE\u2013India trade corridor",name:"UAE\u2013India Trade Facilitation",
-  icon:'<svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#F5CB1F" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a14 14 0 010 18 14 14 0 010-18"/></svg>',
-  desc:"Your bridge between the Indian and UAE markets — helping businesses on both sides expand, find partners and grow across borders.",
-  page:"trade-facilitation.html",
-  tags:["Market entry","Partner sourcing","CEPA advisory"],
-  long:"With offices in Indore and Sharjah and the India\u2013UAE CEPA opening doors both ways, we help businesses cross the bridge confidently \u2014 from market research and brand localisation to finding the right partners and setting up your presence in the other market.",
-  includes:["India &amp; UAE market research","Brand localisation for the target market","Partner &amp; distributor identification","Business-setup &amp; CEPA guidance","Bilingual marketing &amp; go-to-market support"],
-  ideal:"Indian businesses entering the UAE, and UAE businesses entering India."}
-];
-var WA="https://wa.me/917024397999";
-var W3F_KEY="WEB3FORMS_ACCESS_KEY";
-var CHECK='<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F5CB1F" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>';
 
-// ---- Render service cards ----
-var grid=document.getElementById('servicesGrid');
-SERVICES.forEach(function(s,i){
-  var b=document.createElement('button');
-  b.className='svc reveal';b.type='button';b.setAttribute('aria-label','View details for '+s.name.replace('&amp;','and'));
-  b.innerHTML=(s.img?'<span class="svc-media"><img class="lazy-img" src="'+s.img+'" alt="'+s.imgAlt+'" loading="lazy" decoding="async" width="640" height="360"></span>':'')+'<span class="svc-num">'+s.num+'</span><div class="svc-icon">'+s.icon+'</div>'+
-    '<h3 class="svc-name">'+s.name+'</h3><p class="svc-desc">'+s.desc+'</p>'+
-    '<div class="svc-tags">'+s.tags.map(function(t){return '<span class="svc-tag">'+t+'</span>'}).join('')+'</div>'+
-    '<span class="svc-more">Learn more &rarr;</span>';
-  b.addEventListener('click',function(){openModal(i)});
-  grid.appendChild(b);
-});
-
-// ---- Modal ----
-var overlay=document.getElementById('modalOverlay'),mBody=document.getElementById('modalBody'),lastFocus=null;
-function openModal(i){
-  var s=SERVICES[i];
-  var waMsg=WA+"?text="+encodeURIComponent("Hi Showmax Global, I'm interested in your "+s.name.replace('&amp;','&')+" service. Please share more details.");
-  mBody.innerHTML='<div class="modal-icon">'+s.icon+'</div>'+
-    '<h3 class="modal-title" id="modalTitle">'+s.name+'</h3>'+
-    '<p class="modal-desc">'+s.long+'</p>'+
-    '<p class="modal-sub">What\u2019s included</p>'+
-    '<ul class="modal-list">'+s.includes.map(function(x){return '<li>'+CHECK+'<span>'+x+'</span></li>'}).join('')+'</ul>'+
-    '<div class="modal-ideal"><strong>Ideal for:</strong> '+s.ideal+'</div>'+
-    '<div class="modal-actions">'+(s.page?'<a class="btn-gold" href="'+s.page+'">Full details &rarr;</a>':'')+'<a class="'+(s.page?'btn-outline':'btn-gold')+'" href="'+waMsg+'" target="_blank" rel="noopener">Enquire on WhatsApp</a><a class="btn-outline" href="#contact" id="modalContact">Contact form</a></div>';
-  overlay.classList.add('open');document.body.style.overflow='hidden';
-  lastFocus=document.activeElement;
-  document.getElementById('modalClose').focus();
-  document.getElementById('modalContact').addEventListener('click',closeModal);
-}
-function closeModal(){overlay.classList.remove('open');document.body.style.overflow='';if(lastFocus)lastFocus.focus();}
-document.getElementById('modalClose').addEventListener('click',closeModal);
-overlay.addEventListener('click',function(e){if(e.target===overlay)closeModal()});
-document.addEventListener('keydown',function(e){if(e.key==='Escape'&&overlay.classList.contains('open'))closeModal()});
-
-// ---- Nav ----
-var nav=document.getElementById('nav'),scrollTop=document.getElementById('scrollTop');
-window.addEventListener('scroll',function(){
-  nav.classList.toggle('scrolled',window.scrollY>40);
-  scrollTop.classList.toggle('show',window.scrollY>500);
-});
-scrollTop.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'})});
-var ham=document.getElementById('hamburger'),navLinks=document.getElementById('navLinks');
-ham.addEventListener('click',function(){
-  var open=navLinks.classList.toggle('open');
-  ham.classList.toggle('active',open);
-  ham.setAttribute('aria-expanded',open);
-});
-document.querySelectorAll('.nav-links a').forEach(function(a){a.addEventListener('click',function(){
-  navLinks.classList.remove('open');ham.classList.remove('active');ham.setAttribute('aria-expanded','false');
-})});
-
-// ---- Reveal on scroll ----
-var obs=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target)}})},{threshold:0.12});
-function watch(){document.querySelectorAll('.reveal').forEach(function(el){obs.observe(el)})}
-watch();
-
-// ---- FAQ accordion ----
-document.querySelectorAll('.faq-q').forEach(function(q){
-  q.addEventListener('click',function(){
-    var f=q.parentElement,a=q.nextElementSibling,isOpen=f.classList.contains('open');
-    document.querySelectorAll('.faq').forEach(function(x){x.classList.remove('open');x.querySelector('.faq-a').style.maxHeight=null});
-    if(!isOpen){f.classList.add('open');a.style.maxHeight=a.scrollHeight+'px';}
-  });
-});
-
-// ---- Contact form -> WhatsApp (genuinely working, no backend) ----
-var form=document.getElementById('contactForm');
-form.addEventListener('submit',function(e){
-  e.preventDefault();
-  var name=form.name.value.trim(),phone=form.phone.value.trim(),email=form.email.value.trim(),
-      service=form.service.value,message=form.message.value.trim();
-  var ok=true;
-  [['name',name],['phone',phone],['email',email]].forEach(function(p){
-    var el=form[p[0]];if(!p[1]){el.classList.add('err');ok=false}else{el.classList.remove('err')}
-  });
-  if(email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){form.email.classList.add('err');ok=false}
-  if(!ok)return;
-  function waFallback(){
-    var txt="New enquiry for Showmax Global%0A%0A"+
-      "Name: "+encodeURIComponent(name)+"%0A"+
-      "Phone: "+encodeURIComponent(phone)+"%0A"+
-      "Email: "+encodeURIComponent(email)+"%0A"+
-      "Service: "+encodeURIComponent(service||"Not specified")+"%0A"+
-      "Message: "+encodeURIComponent(message||"\u2014");
-    window.open(WA+"?text="+txt,"_blank");
-  }
-  function showOK(){
-    if(window.gtag){gtag('event','generate_lead',{service:service||'Not specified'});}
-    document.getElementById('formSuccess').style.display='block';
-    form.reset();
-    setTimeout(function(){document.getElementById('formSuccess').style.display='none'},6000);
-  }
-  var btn=form.querySelector('button[type=submit]'),orig=btn?btn.textContent:'';
-  if(btn){btn.disabled=true;btn.textContent='Sending\u2026';}
-  fetch('https://api.web3forms.com/submit',{method:'POST',
-    headers:{'Content-Type':'application/json',Accept:'application/json'},
-    body:JSON.stringify({access_key:W3F_KEY,subject:'New enquiry \u2014 Showmax Global',
-      from_name:name,name:name,phone:phone,email:email,
-      service:service||'Not specified',message:message||'\u2014'})})
-   .then(function(r){return r.json();})
-   .then(function(res){ if(res&&res.success){showOK();}else{waFallback();showOK();} })
-   .catch(function(){ waFallback(); showOK(); })
-   .finally(function(){ if(btn){btn.disabled=false;btn.textContent=orig;} });
-});
-
-// ---- Pricing region toggle (INR / AED) ----
-(function(){
-  var btns=document.querySelectorAll('.cur-toggle button');
-  if(!btns.length)return;
-  function setCur(cur){
-    document.querySelectorAll('.pkg-price .amount').forEach(function(a){var v=a.getAttribute('data-'+cur);if(v)a.textContent=v;});
-    btns.forEach(function(b){b.classList.toggle('active',b.getAttribute('data-cur')===cur);});
-  }
-  btns.forEach(function(b){b.addEventListener('click',function(){setCur(b.getAttribute('data-cur'));});});
-})();
-</script>
-<script>
-/* ===== VISUAL REFRESH interactions (additive; motion-safe) ===== */
-(function(){
-"use strict";
-var REDUCE=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-var FINE=window.matchMedia('(pointer: fine)').matches;
-
-/* Scroll progress bar */
-var sp=document.createElement('div');sp.className='scroll-progress';sp.setAttribute('aria-hidden','true');document.body.appendChild(sp);
-var spT=false;
-function updSP(){var h=document.documentElement,max=h.scrollHeight-h.clientHeight;sp.style.transform='scaleX('+(max>0?(window.scrollY||h.scrollTop)/max:0)+')';spT=false}
-window.addEventListener('scroll',function(){if(!spT){spT=true;requestAnimationFrame(updSP)}},{passive:true});updSP();
-
-/* Blur-up image loading */
-function ld(i){i.classList.add('ld')}
-document.querySelectorAll('img.lazy-img').forEach(function(i){
-  if(i.complete&&i.naturalWidth>0){ld(i)}
-  else{i.addEventListener('load',function(){ld(i)},{once:true});i.addEventListener('error',function(){ld(i)},{once:true})}
-});
-
-/* Staggered reveals (inline delay, cleared post-reveal so hover stays snappy) */
-function stag(sel,step,mod){document.querySelectorAll(sel).forEach(function(el,i){var d=(i%mod)*step;if(!d)return;el.style.transitionDelay=d+'ms';el.addEventListener('transitionend',function h(){el.style.transitionDelay='';el.removeEventListener('transitionend',h)})})}
-if(!REDUCE){stag('.services-grid .svc',70,4);stag('.why-grid .why',80,4);stag('.pkg-grid .pkg',90,3)}
-
-/* Animated stat counters (ends at the exact original text) */
-if(!REDUCE){
-  var cObs=new IntersectionObserver(function(es){es.forEach(function(e){
-    if(!e.isIntersecting)return;cObs.unobserve(e.target);
-    var el=e.target,m=/^([0-9]+)(.*)$/.exec(el.textContent.trim());if(!m)return;
-    var target=+m[1],suf=m[2],t0=null,DUR=1300;
-    function step(ts){if(!t0)t0=ts;var p=Math.min(1,(ts-t0)/DUR);p=1-Math.pow(1-p,3);el.textContent=Math.round(target*p)+suf;if(p<1)requestAnimationFrame(step)}
-    requestAnimationFrame(step);
-  })},{threshold:.6});
-  document.querySelectorAll('.stat strong').forEach(function(el){cObs.observe(el)});
-}
-
-/* Hero mouse parallax (orbs drift toward cursor) */
-var hero=document.querySelector('.hero'),orbs=document.querySelector('.hero-orbs');
-if(hero&&orbs&&FINE&&!REDUCE){
-  var pT=false,px=0,py=0;
-  hero.addEventListener('mousemove',function(e){
-    var r=hero.getBoundingClientRect();
-    px=((e.clientX-r.left)/r.width-.5)*26;py=((e.clientY-r.top)/r.height-.5)*18;
-    if(!pT){pT=true;requestAnimationFrame(function(){orbs.style.transform='translate3d('+px.toFixed(1)+'px,'+py.toFixed(1)+'px,0)';pT=false})}
-  });
-  hero.addEventListener('mouseleave',function(){orbs.style.transform=''});
-}
-
-/* Magnetic buttons (hero + CTA) */
-if(FINE&&!REDUCE){
-  document.querySelectorAll('.hero-actions a,.cta-actions a').forEach(function(b){
-    b.addEventListener('mousemove',function(e){var r=b.getBoundingClientRect();
-      b.style.transform='translate3d('+((e.clientX-r.left-r.width/2)*.22).toFixed(1)+'px,'+((e.clientY-r.top-r.height/2)*.34).toFixed(1)+'px,0)'});
-    b.addEventListener('mouseleave',function(){b.style.transform=''});
-  });
-}
-
-/* Ripple on gold buttons (delegated — covers modal buttons too) */
-if(!REDUCE){
-  document.addEventListener('click',function(e){
-    var b=e.target.closest('.btn-gold');if(!b)return;
-    var r=b.getBoundingClientRect(),s=Math.max(r.width,r.height);
-    var el=document.createElement('span');el.className='smx-ripple';
-    el.style.width=el.style.height=s+'px';
-    el.style.left=(e.clientX-r.left-s/2)+'px';el.style.top=(e.clientY-r.top-s/2)+'px';
-    b.appendChild(el);el.addEventListener('animationend',function(){el.remove()});
-  });
-}
-
-/* 3D tilt + cursor spotlight on cards */
-if(FINE&&!REDUCE){
-  function attach(sel,max){document.querySelectorAll(sel).forEach(function(c){
-    var tick=false,lx=.5,ly=.5;
-    c.addEventListener('mousemove',function(e){
-      var r=c.getBoundingClientRect();lx=(e.clientX-r.left)/r.width;ly=(e.clientY-r.top)/r.height;
-      if(!tick){tick=true;requestAnimationFrame(function(){
-        c.style.setProperty('--mx',(lx*100).toFixed(1)+'%');c.style.setProperty('--my',(ly*100).toFixed(1)+'%');
-        c.style.setProperty('--ry',((lx-.5)*2*max).toFixed(2)+'deg');c.style.setProperty('--rx',((.5-ly)*2*max).toFixed(2)+'deg');
-        tick=false})}
-    });
-    c.addEventListener('mouseleave',function(){c.style.removeProperty('--rx');c.style.removeProperty('--ry')});
-  })}
-  attach('.svc',3);attach('.pkg',2.2);attach('.why',2.2);
-}
-})();
-</script>
+<script src="assets/js/gsap.min.js" defer></script>
+<script src="assets/js/ScrollTrigger.min.js" defer></script>
+<script src="assets/js/main.js" defer></script>
 </body>
 </html>
