@@ -549,6 +549,7 @@
         'Service: ' + encodeURIComponent(service || 'Not specified') + '%0A' +
         'Message: ' + encodeURIComponent(message || '—');
       window.open(WA + '?text=' + txt, '_blank');
+      if (window.smxLead) window.smxLead('Contact form');
       var s = $('#formSuccess');
       if (s) {
         s.style.display = 'block';
@@ -558,4 +559,30 @@
     });
   })();
 
+})();
+
+/* ---------- Meta Pixel: Lead events on contact CTAs ---------- */
+/* Fires a standard `Lead` event when a visitor takes a real contact action:
+   submits the enquiry form, or clicks a WhatsApp / phone / email link.
+   Safely no-ops if the pixel (window.fbq) isn't present. */
+(function leadTracking() {
+  'use strict';
+  var lastAt = {};
+  function lead(channel) {
+    if (typeof window.fbq !== 'function') return;
+    var now = Date.now();
+    if (lastAt[channel] && now - lastAt[channel] < 1000) return; // de-dupe rapid repeats
+    lastAt[channel] = now;
+    window.fbq('track', 'Lead', { content_name: channel, content_category: 'contact' });
+  }
+  window.smxLead = lead; // let the contact-form handler report a Lead on success
+  document.addEventListener('click', function (e) {
+    var t = e.target;
+    var a = t && t.closest ? t.closest('a[href]') : null;
+    if (!a) return;
+    var href = a.getAttribute('href') || '';
+    if (/wa\.me|api\.whatsapp\.com/i.test(href)) lead('WhatsApp');
+    else if (/^tel:/i.test(href)) lead('Phone call');
+    else if (/^mailto:/i.test(href)) lead('Email');
+  }, true);
 })();
