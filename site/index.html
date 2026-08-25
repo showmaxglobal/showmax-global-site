@@ -51,7 +51,7 @@ src="https://www.facebook.com/tr?id=1403916338328512&ev=PageView&noscript=1"/></
   "description":"Premium digital marketing and branding agency in Indore, India offering brand identity, SEO, social media, website design, content strategy and brand promotion.",
   "url":"https://www.showmaxglobal.com/",
   "telephone":"+91-70243-97999",
-  "email":"showmaxglobal@gmail.com",
+  "email":"info@showmaxglobal.com",
   "image":"https://www.showmaxglobal.com/og-image.jpg",
   "priceRange":"$$",
   "slogan":"Your Gateway To Global Growth",
@@ -349,6 +349,12 @@ html.gsap [data-rev]{transition:none}
 .svc-more{display:inline-flex;align-items:center;gap:.5rem;font-size:.83rem;font-weight:600;color:var(--gold);margin-top:1.4rem}
 .svc-more::after{content:'\2192';transition:transform .35s var(--ease)}
 .svc:hover .svc-more::after{transform:translateX(5px)}
+.services-groups{display:grid;gap:clamp(2.4rem,4.6vw,3.6rem)}
+.svc-group-title{display:flex;align-items:center;gap:1.1rem;margin:0 0 clamp(1.3rem,2.6vw,1.9rem);font-family:var(--font-d);font-weight:800;font-size:clamp(1rem,1.9vw,1.35rem);letter-spacing:.14em;text-transform:uppercase;color:var(--gold)}
+.svc-group-title::before{content:'';flex:none;width:30px;height:2px;border-radius:2px;background:var(--gold)}
+.svc-group-rule{flex:1;height:1px;background:linear-gradient(90deg,rgba(245,203,31,.4),transparent 78%)}
+.svc-group-link{flex:none;font-size:.8rem;letter-spacing:.1em;color:var(--gold);text-decoration:none;white-space:nowrap;opacity:.85;transition:opacity .3s,transform .3s var(--ease)}
+.svc-group-link:hover{opacity:1;transform:translateX(3px)}
 
 /* ---------- Showreel strip ---------- */
 .reel{padding-top:0}
@@ -659,7 +665,7 @@ footer{border-top:1px solid var(--line);background:linear-gradient(180deg,var(--
   </ul>
   <div class="menu-foot">
     <a href="tel:+917024397999">+91 70243 97999</a>
-    <a href="mailto:showmaxglobal@gmail.com">showmaxglobal@gmail.com</a>
+    <a href="mailto:info@showmaxglobal.com">info@showmaxglobal.com</a>
     <span>Indore, MP — India</span>
   </div>
 </div>
@@ -756,7 +762,10 @@ footer{border-top:1px solid var(--line);background:linear-gradient(180deg,var(--
       </div>
       <p class="s-lead" data-rev>From identity to acquisition — every service connects back to one goal: making your brand the obvious choice in your market. Tap any service for full details.</p>
     </div>
-    <div class="services-grid" id="servicesGrid">
+    <div class="services-groups" id="servicesGrid">
+      <div class="svc-group">
+        <h3 class="svc-group-title"><span>Digital Marketing &amp; SEO</span><span class="svc-group-rule"></span><a class="svc-group-link" href="digital-marketing.html">Explore all &rarr;</a></h3>
+        <div class="services-grid">
       <button type="button" class="svc" data-svc="0" data-rev aria-label="View details for Branding and Advertisement">
         <span class="svc-shot"><img src="assets/img/work-brand-720.webp" alt="Luxury black and gold brand stationery with gold foil edges" width="720" height="405" loading="lazy" decoding="async"></span>
         <span class="svc-body">
@@ -827,6 +836,9 @@ footer{border-top:1px solid var(--line);background:linear-gradient(180deg,var(--
           <span class="svc-more">Learn more</span>
         </span>
       </button>
+        </div>
+      </div>
+      <div class="services-grid services-grid--solo">
       <button type="button" class="svc" data-svc="7" data-page="trade-facilitation.html" data-rev aria-label="View details for UAE-India Trade Facilitation">
         <span class="svc-shot"><img src="assets/img/svc-uae-720.webp" alt="Dubai skyline at night across the water" width="720" height="405" loading="lazy" decoding="async"></span>
         <span class="svc-body">
@@ -837,6 +849,7 @@ footer{border-top:1px solid var(--line);background:linear-gradient(180deg,var(--
           <span class="svc-more">Learn more</span>
         </span>
       </button>
+    </div>
     </div>
   </div>
 </section>
@@ -893,7 +906,7 @@ footer{border-top:1px solid var(--line);background:linear-gradient(180deg,var(--
       <div class="pkg" data-rev>
         <h3 class="pkg-name">Starter</h3>
         <p class="pkg-for">For new businesses finding their feet</p>
-        <div class="pkg-price"><span class="amount" data-inr="₹18,000" data-aed="AED 1,800">₹18,000</span><span>per month onward</span></div>
+        <div class="pkg-price"><span class="amount" data-inr="₹10,000" data-aed="AED 1,500">₹10,000</span><span>per month onward</span></div>
         <ul class="pkg-list"><li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F5CB1F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Social media management (2 platforms)</li><li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F5CB1F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>12 posts + 4 reels / month</li><li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F5CB1F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Google Business Profile setup</li><li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F5CB1F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Monthly performance report</li></ul>
         <a class="btn btn-ghost" href="https://wa.me/917024397999?text=Hi%20Showmax%20Global%2C%20I%27m%20interested%20in%20the%20STARTER%20package.%20Please%20share%20details." target="_blank" rel="noopener">Choose Starter</a>
       </div>
@@ -901,14 +914,14 @@ footer{border-top:1px solid var(--line);background:linear-gradient(180deg,var(--
         <span class="pkg-flag">Most popular</span>
         <h3 class="pkg-name">Growth</h3>
         <p class="pkg-for">For businesses ready to scale fast</p>
-        <div class="pkg-price"><span class="amount" data-inr="₹45,000" data-aed="AED 4,500">₹45,000</span><span>per month onward</span></div>
+        <div class="pkg-price"><span class="amount" data-inr="₹20,000" data-aed="AED 3,000">₹20,000</span><span>per month onward</span></div>
         <ul class="pkg-list"><li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F5CB1F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Everything in Starter</li><li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F5CB1F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Branding &amp; Advertisement creatives</li><li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F5CB1F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Paid ads management (Meta + Google)</li><li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F5CB1F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>SEO + 2 blog articles / month</li><li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F5CB1F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Website design or revamp</li><li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F5CB1F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>10 video ads/reels per month</li><li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F5CB1F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Bi-weekly strategy calls</li></ul>
         <a class="btn btn-gold" href="https://wa.me/917024397999?text=Hi%20Showmax%20Global%2C%20I%27m%20interested%20in%20the%20GROWTH%20package.%20Please%20share%20details." target="_blank" rel="noopener">Choose Growth</a>
       </div>
       <div class="pkg" data-rev>
         <h3 class="pkg-name">Premium</h3>
         <p class="pkg-for">For brands that want to dominate</p>
-        <div class="pkg-price"><span class="amount" data-inr="₹95,000" data-aed="AED 9,500">₹95,000</span><span>per month onward</span></div>
+        <div class="pkg-price"><span class="amount" data-inr="₹40,000" data-aed="AED 4,000">₹40,000</span><span>per month onward</span></div>
         <ul class="pkg-list"><li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F5CB1F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Everything in Growth</li><li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F5CB1F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Full Branding &amp; Advertisement suite</li><li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F5CB1F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Premium video ad production</li><li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F5CB1F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Dedicated account manager</li><li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F5CB1F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Influencer &amp; PR campaigns</li><li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F5CB1F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>UAE&ndash;India trade facilitation advisory</li><li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F5CB1F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Priority support &amp; weekly reporting</li></ul>
         <a class="btn btn-ghost" href="https://wa.me/917024397999?text=Hi%20Showmax%20Global%2C%20I%27m%20interested%20in%20the%20PREMIUM%20package.%20Please%20share%20details." target="_blank" rel="noopener">Get a quote</a>
       </div>
@@ -1017,7 +1030,7 @@ footer{border-top:1px solid var(--line);background:linear-gradient(180deg,var(--
         </div>
         <div class="contact-list">
           <div class="contact-detail"><div class="cd-ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6A19.8 19.8 0 012.1 4.2 2 2 0 014.1 2h3a2 2 0 012 1.7c.13.96.36 1.9.7 2.8a2 2 0 01-.45 2.1l-1.3 1.3a16 16 0 006 6l1.3-1.3a2 2 0 012.1-.45c.9.34 1.84.57 2.8.7A2 2 0 0122 16.9z"/></svg></div><div class="cd-text"><p>India — Phone / WhatsApp</p><a href="tel:+917024397999">+91 70243 97999</a></div></div>
-          <div class="contact-detail"><div class="cd-ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="4.5" width="19" height="15" rx="2.5"/><path d="M3 6.5l9 6.5 9-6.5"/></svg></div><div class="cd-text"><p>Email</p><a href="mailto:showmaxglobal@gmail.com">showmaxglobal@gmail.com</a></div></div>
+          <div class="contact-detail"><div class="cd-ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="4.5" width="19" height="15" rx="2.5"/><path d="M3 6.5l9 6.5 9-6.5"/></svg></div><div class="cd-text"><p>Email</p><a href="mailto:info@showmaxglobal.com">info@showmaxglobal.com</a></div></div>
           <div class="contact-detail"><div class="cd-ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round"><path d="M12 21s-6.5-5.2-6.5-10.2a6.5 6.5 0 0113 0C18.5 15.8 12 21 12 21z"/><circle cx="12" cy="10.5" r="2.4"/></svg></div><div class="cd-text"><p>India Office</p><a class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=16%2C%20Joshi%20Colony%2C%20Near%20Anand%20Hospital%2C%20B.K%20Sindhi%20colony%2C%20Indore%20%28M.P%29%20452001" target="_blank" rel="noopener">16, Joshi Colony, Near Anand Hospital,<br>B.K Sindhi Colony, Indore (M.P) 452001 &#8599;</a></div></div>
           <div class="contact-detail"><div class="cd-ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round"><path d="M12 21s-6.5-5.2-6.5-10.2a6.5 6.5 0 0113 0C18.5 15.8 12 21 12 21z"/><circle cx="12" cy="10.5" r="2.4"/></svg></div><div class="cd-text"><p>UAE Office</p><a class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=SPC%20Free%20Zone%2C%20E311%2C%20Sheikh%20Mohammed%20Bin%20Zayed%20Rd%2C%20AL%20Zahia%2C%20Sharjah%2C%20U.A.E" target="_blank" rel="noopener">SPC Free Zone, E311, Sheikh Mohammed Bin Zayed Rd,<br>Al Zahia, Sharjah, U.A.E &#8599;</a><a href="tel:+971523406199">+971 52 340 6199</a></div></div>
           <div class="contact-detail"><div class="cd-ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.2 2"/></svg></div><div class="cd-text"><p>Working hours</p><span>Mon – Sat &nbsp;10:00 AM – 7:00 PM</span></div></div>
@@ -1038,7 +1051,7 @@ footer{border-top:1px solid var(--line);background:linear-gradient(180deg,var(--
         <div class="fg"><label for="service">Service you're interested in</label><select id="service" name="service"><option value="">Select a service</option><option>Branding &amp; Advertisement</option><option>Digital Marketing</option><option>Website &amp; SEO</option><option>Social Media</option><option>Video Ads Creation</option><option>Content Strategy</option><option>Brand Promotion</option><option>UAE&ndash;India Trade Facilitation</option><option>Full package</option></select></div>
         <div class="fg"><label for="message">Tell us about your project</label><textarea id="message" name="message" rows="4" placeholder="Brief description of your business and what you're looking to achieve..."></textarea></div>
         <button type="submit" class="btn btn-gold" style="width:100%">Send via WhatsApp <span class="ar">&rarr;</span></button>
-        <p class="form-note">Or email us directly at <a href="mailto:showmaxglobal@gmail.com">showmaxglobal@gmail.com</a></p>
+        <p class="form-note">Or email us directly at <a href="mailto:info@showmaxglobal.com">info@showmaxglobal.com</a></p>
         <div id="formSuccess" class="form-success" role="status">&#10003; Opening WhatsApp with your message — just hit send!</div>
       </form>
     </div>
@@ -1062,11 +1075,11 @@ footer{border-top:1px solid var(--line);background:linear-gradient(180deg,var(--
     <div class="foot-col"><h4>Services</h4><a href="#services">Branding &amp; Advertisement</a><a href="#services">Digital Marketing</a><a href="#services">Website &amp; SEO</a><a href="#services">Social Media</a><a href="#services">Video Ads Creation</a><a href="#services">Content Strategy</a><a href="#services">Brand Promotion</a><a href="trade-facilitation.html">UAE&ndash;India Trade</a></div>
     <div class="foot-col"><h4>Company</h4><a href="#about">About us</a><a href="#packages">Packages</a><a href="#process">Our process</a><a href="/blog/">Blog</a><a href="#faq">FAQ</a><a href="#contact">Contact</a></div>
     <div class="foot-col"><h4>Offices</h4><a href="https://www.google.com/maps/search/?api=1&amp;query=16%2C%20Joshi%20Colony%2C%20Near%20Anand%20Hospital%2C%20B.K%20Sindhi%20colony%2C%20Indore%20%28M.P%29%20452001" target="_blank" rel="noopener">Indore, India &#8599;</a><a href="https://www.google.com/maps/search/?api=1&amp;query=SPC%20Free%20Zone%2C%20E311%2C%20Sheikh%20Mohammed%20Bin%20Zayed%20Rd%2C%20AL%20Zahia%2C%20Sharjah%2C%20U.A.E" target="_blank" rel="noopener">Sharjah, UAE &#8599;</a><a href="tel:+917024397999">+91 70243 97999</a><a href="tel:+971523406199">+971 52 340 6199</a></div>
-    <div class="foot-col"><h4>Connect</h4><a href="https://www.instagram.com/showmax_global" target="_blank" rel="noopener">Instagram</a><a href="https://www.facebook.com/share/1iaK2ngsa5/" target="_blank" rel="noopener">Facebook</a><a href="https://www.linkedin.com/company/showmax-global/" target="_blank" rel="noopener">LinkedIn</a><a href="https://wa.me/917024397999?text=Hi%20Showmax%20Global%21" target="_blank" rel="noopener">WhatsApp</a><a href="https://g.page/r/CWuAAw9jF0qmEBM/review" target="_blank" rel="noopener">Review us on Google &#9733;</a><a href="tel:+917024397999">Call us</a><a href="mailto:showmaxglobal@gmail.com">Email</a></div>
+    <div class="foot-col"><h4>Connect</h4><a href="https://www.instagram.com/showmax_global" target="_blank" rel="noopener">Instagram</a><a href="https://www.facebook.com/share/1iaK2ngsa5/" target="_blank" rel="noopener">Facebook</a><a href="https://www.linkedin.com/company/showmax-global/" target="_blank" rel="noopener">LinkedIn</a><a href="https://wa.me/917024397999?text=Hi%20Showmax%20Global%21" target="_blank" rel="noopener">WhatsApp</a><a href="https://g.page/r/CWuAAw9jF0qmEBM/review" target="_blank" rel="noopener">Review us on Google &#9733;</a><a href="tel:+917024397999">Call us</a><a href="mailto:info@showmaxglobal.com">Email</a></div>
   </div>
   <div class="foot-bottom">
     <p>&copy; 2025 Showmax Global. All rights reserved.</p>
-    <p><a href="privacy.html">Privacy Policy</a> &nbsp;&middot;&nbsp; <a href="mailto:showmaxglobal@gmail.com">showmaxglobal@gmail.com</a></p>
+    <p><a href="privacy.html">Privacy Policy</a> &nbsp;&middot;&nbsp; <a href="mailto:info@showmaxglobal.com">info@showmaxglobal.com</a></p>
   </div>
 </footer>
 
