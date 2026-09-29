@@ -423,7 +423,7 @@
       ideal: 'product launches, new openings, and brands ready for a visibility push.' },
     { name: 'UAE\u2013India Trade Facilitation',
       icon: '<svg viewBox="0 0 24 24" fill="none" stroke="#F5CB1F" stroke-width="1.5" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a15 15 0 010 18M12 3a15 15 0 000 18"/></svg>',
-      long: 'With offices in Indore and Sharjah and the India\u2013UAE CEPA opening doors both ways, we help businesses cross the bridge confidently \u2014 from market research and brand localisation to finding the right partners and setting up your presence in the other market.',
+      long: 'With offices in Mumbai and Sharjah and the India\u2013UAE CEPA opening doors both ways, we help businesses cross the bridge confidently \u2014 from market research and brand localisation to finding the right partners and setting up your presence in the other market.',
       includes: ['India & UAE market research', 'Brand localisation for the target market', 'Partner & distributor identification', 'Business-setup & CEPA guidance', 'Bilingual marketing & go-to-market support'],
       ideal: 'Indian businesses entering the UAE, and UAE businesses entering India.' }
   ];

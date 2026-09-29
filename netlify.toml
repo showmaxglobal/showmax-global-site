@@ -4,6 +4,19 @@
   publish = "site"
   command = ""
 
+# Office moved Indore -> Mumbai (2026-09): 301 the old Indore article slug to the Mumbai one
+[[redirects]]
+  from = "/blog/digital-marketing-agency-indore/*"
+  to = "/blog/digital-marketing-agency-mumbai/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog/digital-marketing-agency-indore"
+  to = "/blog/digital-marketing-agency-mumbai/"
+  status = 301
+  force = true
+
 [[headers]]
   for = "/*"
   [headers.values]
