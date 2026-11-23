@@ -3,4 +3,4 @@ Allow: /
 Allow: /blog/
 Disallow: /privacy.html
 
-Sitemap: https://www.showmaxglobal.com/sitemap.xml
+Sitemap: https://showmaxglobal.com/sitemap.xml
